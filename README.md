@@ -1,4 +1,4 @@
-#Student projects 2020 - Product MVP 04 - Company Listing App
+# Student projects 2020 - Product MVP 04 - Company Listing App
 ### sp2020-pr04-cla
 
 ## ⚙Project Name: Company Listing App
