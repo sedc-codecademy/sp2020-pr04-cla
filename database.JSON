@@ -9,7 +9,7 @@
         "emailAddress": "example1@email.com",
         "companyName": "Company One LTD",
         "country": "Macedonia",
-        "companyAddress": "Wall Street Butel 1",
+        "companyAddress": "Ilija Miov",
         "can_advertise": true,
         "dateOfRegistration": "11-02-2020",
         "website": "www.exampleweb.com"
@@ -23,7 +23,7 @@
         "emailAddress": "second@mail.example",
         "companyName": "Company Two LTD",
         "country": "Germany",
-        "companyAddress": "Germanija Be",
+        "companyAddress": "Rilski Kongres 38",
         "can_advertise": true,
         "dateOfRegistration": "30-01-2020",
         "website": ["www.test.com", "someweb.com", "extraweb.com"]
@@ -36,7 +36,7 @@
         "emailAddress": "example1@email.com",
         "companyName": "Something - Company",
         "country": "Macedonia",
-        "companyAddress": "Aerodromska 10",
+        "companyAddress": "Jurij Gagarin",
         "can_advertise": false,
         "dateOfRegistration": "15-01-2020",
         "website": "www.testtest.com"
@@ -49,7 +49,7 @@
         "emailAddress": "bomb@shout.com",
         "companyName": "CLA",
         "country": "United States",
-        "companyAddress": "Wall Street New York",
+        "companyAddress": "Prashka",
         "can_advertise": true,
         "dateOfRegistration": "11-09-2018",
         "website": "fakewebsite.net"
@@ -62,7 +62,7 @@
         "emailAddress": "plastic@skopje.com",
         "companyName": "Extra Company",
         "country": "Macedonia",
-        "companyAddress": "Plasticarska 3",
+        "companyAddress": "Sofiska",
         "can_advertise": false,
         "dateOfRegistration": "11-03-2020",
         "website": "www.plastikaeftinocom"
