@@ -38,8 +38,7 @@
         "companyAddress": "11 Oktomvri 33A, 1000 Skopje",
         "can_advertise": false,
         "dateOfRegistration": "15-01-2020",
-        "website": "www.testtest.com",
-        "category": "Computer Electronics & Technology"   
+        "website": "www.testtest.com",  
       },
       {
         "userId": 4,
