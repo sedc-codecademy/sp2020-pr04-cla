@@ -13,8 +13,6 @@
         "can_advertise": true,
         "dateOfRegistration": "11-02-2020",
         "website": "www.exampleweb.com",
-        
-
       },
       {
         "userId": 2,
@@ -40,8 +38,8 @@
         "companyAddress": "11 Oktomvri 33A, 1000 Skopje",
         "can_advertise": false,
         "dateOfRegistration": "15-01-2020",
-        "website": "www.testtest.com"
-        
+        "website": "www.testtest.com",
+        "category": "Computer Electronics & Technology"   
       },
       {
         "userId": 4,
