@@ -1,0 +1,84 @@
+{
+    "users": [
+      {
+        "userId": 1,
+        "firstName": "Krish",
+        "lastName": "Lee",
+        "username": "firstUsername",
+        "phoneNumber": "123456",
+        "emailAddress": "example1@email.com",
+        "companyName": "Company One LTD",
+        "country": "Macedonia",
+        "companyAddress": "Ilija Miov",
+        "can_advertise": true,
+        "dateOfRegistration": "11-02-2020",
+        "website": "www.exampleweb.com"
+      },
+      {
+        "userId": 2,
+        "firstName": "racks",
+        "lastName": "jacson",
+        "phoneNumber": "123456",
+        "emailAddress": "second@mail.example",
+        "companyName": "Company Two LTD",
+        "country": "Germany",
+        "companyAddress": "Rilski Kongres 38",
+        "can_advertise": true,
+        "dateOfRegistration": "30-01-2020",
+        "website": ["www.test.com", "someweb.com", "extraweb.com"]
+      },
+      {
+        "userId": 3,
+        "firstName": "denial",
+        "lastName": "roast",
+        "phoneNumber": "33333333",
+        "emailAddress": "example1@email.com",
+        "companyName": "SEDC - Company",
+        "country": "Macedonia",
+        "companyAddress": "11 Oktomvri 33A, 1000 Skopje",
+        "can_advertise": false,
+        "dateOfRegistration": "15-01-2020",
+        "website": "www.testtest.com",
+        "category": "Computer Electronics & Technology"
+      },
+      {
+        "userId": 4,
+        "firstName": "devid",
+        "lastName": "neo",
+        "phoneNumber": "222222222",
+        "emailAddress": "bomb@shout.com",
+        "companyName": "CLA- Kiko Home",
+        "country": "United States",
+        "companyAddress": "Emile Zola 7, Skopje",
+        "can_advertise": true,
+        "dateOfRegistration": "11-09-2018",
+        "website": "fakewebsite.net"
+      },
+      {
+        "userId": 5,
+        "firstName": "jone",
+        "lastName": "mac",
+        "phoneNumber": "111111111",
+        "emailAddress": "plastic@skopje.com",
+        "companyName": "Extra Company",
+        "country": "Macedonia",
+        "companyAddress": "Boulevard Krushevska Republika Skopje 1000",
+        "can_advertise": false,
+        "dateOfRegistration": "11-03-2020",
+        "website": "www.plastikaeftino.com"
+      },
+        {
+        "userId": 6,
+        "firstName": "Bob",
+        "lastName": "Bobski",
+        "phoneNumber": "1133331111",
+        "emailAddress": "helloworld@skopje.com",
+        "companyName": "Cedevita Company",
+        "country": "Macedonia",
+        "companyAddress": "Boulevard Nikola Karev, Skopje",
+        "can_advertise": false,
+        "dateOfRegistration": "11-03-2020",
+        "website": "www.vinaria-bobski.com"
+        }
+    ]
+}
