@@ -1,0 +1,95 @@
+body {
+    background-color: whitesmoke;
+}
+.navColor {
+    background-color: #1b1c1d;
+}
+.ui.stackable.borderless.container.menu.inverted .item{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.ui.small.image {
+    margin-right: 107px;
+}
+.ui.container > .ui.items {
+    position: relative;
+    top: 2em;
+}
+.ui.container > .ui.items > .ui.large.grey.header {
+    position: relative;
+    left: 2em;
+}
+.ui.right.floated.grey.tiny.header {
+    position: relative;
+    bottom: 3.2em;
+}
+.sixteen.wide.center.aligned.column > .ui.image {
+    position: relative;
+    top: 2em;
+    left: 5em;
+}
+.sixteen.wide.mobile.eight.wide.tablet.eight.wide.computer.column > .ui.segment {
+    position: relative;
+    left: 5em;
+}
+.four.wide.column > .ui.large.grey.header {
+    position: relative;
+    top: 3em;
+    right: .3em;
+}
+.row .twelve.wide.column {
+    position: relative;
+    left: .5em;
+}
+.twelve.wide.column .ui.large.blue.button {
+    position: relative;
+    top: .5em;
+    margin-bottom: 1em;
+}
+.twelve.wide.column .ui.large.green.button {
+    position: relative;
+    top: .5em;
+    margin-bottom: 1em;
+}
+.twelve.wide.column .ui.subheader {
+    line-height: 27px;
+    color: #6e7d89;
+}
+.sixteen.wide.mobile.sixteen.wide.tablet.eight.wide.computer.column.customMargin {
+    margin-top: 2em;
+}
+footer {
+    background-color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+}
+.ui.basic.segment {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    position: relative;
+    right: .7em;
+}
+.list .item.customFontFooter {
+margin-left: 30%;
+margin-top: 12%;
+font-size: 25px;
+color: white;
+}
+.list > .item.customFontFooter > a.customFontFooter  {
+    color: white;
+}
+.eight.wide.mobile.only.column .list .item.customFontFooter {
+    margin: 8px;
+    margin-bottom: 9px;
+}
+.ui.center.aligned.white.inverted.header.customFontFooter {
+    font-size: 10px;
+}

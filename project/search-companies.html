@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="./style/custom.css" type="text/css">
+  <link rel="stylesheet" href="./style/searchStyle.css" type="text/css">
+  <title>Search</title>
+</head>
+
+<body>
+
+
+
+  <div class="navColor">
+    <nav class="ui stackable borderless container menu inverted">
+      <img class="ui small image" src="./img/cla-logo.png" alt="CLA Logo">
+      <a href="./home.html" class="item">Home</a>
+      <a href="./category-page/index.html" class="item">Categories</a>
+      <a href="about.html" class="item">About</a>
+      <a href="contact.html" class="item">Contact</a>
+      <div class=" ui dropdown item">
+        Search <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="./search-companies.html">Search Companies</a>
+          <a class="item" href="./search-ads.html">Search Ads</a>
+          <a class="item">Search Jobs</a>
+        </div>
+      </div>
+      <div class="ui dropdown item">
+        Info <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="./how-it-works/index.html">How it Works</a>
+          <a class="item" href="./pricing-page/index.html">Pricing</a>
+          <a class="item" href="./profile-and-ad-pages/company-profile.html">Company Profile</a>
+          <a class="item" href="./profile-and-ad-pages/classified-ad.html">Ad Page</a>
+        </div>
+      </div>
+
+      <div class="right menu">
+        <form class="item">
+          <div class="ui buttons">
+            <a href="company.html">
+              <div class="ui button">Sign Up</div>
+            </a>
+            <div class="or"></div>
+            <a href="./login.html">
+              <div class="ui positive button">Log in</div>
+              </a>
+          </div>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <br>
+
+
+  <!-- Left side - MAP -->
+  <div class="ui grid stackable">
+
+    <div id="map-wraper" class="eight wide column map-side-class">
+
+      <div id="map" class="container">
+
+      </div>
+
+    </div>
+
+    <!-- Right side of the Page  -->
+
+    <div id="rightSide" class="eight wide column right-side-elements">
+
+      <h4 class="ui header title-right-side">
+        <i class="search icon"></i>
+        <div class="content">
+          Search for Companies
+          <div class="sub header">Manage your preferences</div>
+        </div>
+        </h2>
+
+        <!-- Right top menu sectipon -->
+
+
+        <div class="topmenu-container">
+
+
+          <div class="firsttop-menu-div">
+
+            <div class="ui icon input">
+              <input id="keywordInput" type="text" placeholder="Enter Keyword...">
+              <i class="search icon"></i>
+            </div>
+
+            <div class="ui icon input">
+              <input id="locationInput" type="text" placeholder="Enter Country...">
+              <i class="search icon"></i>
+            </div>
+
+          </div>
+
+
+          <br>
+
+          <div class="secondtop-menu-div">
+
+            <div class="field">
+
+              <select class="ui dropdown" id="categoryIndustry">
+                <option value = "" class="item">Category</option>
+                <option class="item">IT Industry</option>
+                <option class="item">Call centers</option>
+                <option class="item">Metallurgy</option>
+                <option class="item">Computer Electronics & Technology</option>
+
+              </select>
+            </div>
+
+
+            <div class="ui floating dropdown labeled search icon button">
+              <i class="world icon"></i>
+              <span class="text">Select Radius</span>
+              <div class="menu">
+                <div class="item">100km</div>
+                <div class="item">50km</div>
+                <div class="item">25km</div>
+              </div>
+            </div>
+          </div>
+
+
+          <br>
+          <div class="thirdtop-menu-div">
+
+            <div class="ui grid undersearch-info">
+              <div class="two column row">
+                <div class="column searchbar-notification">
+                  <p>No Ads found in the "Woodshop Table"</p>
+                </div>
+                <div class="column">
+                  <div id="searchBtn" class="ui green button">Search</div>
+                  <div id="resetBtn" class="ui blue basic button">Reset</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+        <!-- end of Right top menu sectipon -->
+
+
+        <div id="postContainer">
+
+
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img src="./img/Google Office image 1.jpg" class="visible content">
+              <img src="./img/Microsoft Building some image.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header">Team Fu &amp; Hess</a>
+              <div class="meta">
+                <span class="date">Created in Sep 2014</span>
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="users icon"></i>
+                2 Members
+              </a>
+            </div>
+          </div>
+
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img src="./img/Google Office image 1.jpg" class="visible content">
+              <img src="./img/Microsoft Building some image.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header">Team Fu &amp; Hess</a>
+              <div class="meta">
+                <span class="date">Created in Sep 2014</span>
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="users icon"></i>
+                2 Members
+              </a>
+            </div>
+          </div>
+
+
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img src="./img/Google Office image 1.jpg" class="visible content">
+              <img src="./img/Microsoft Building some image.jpg" class="hidden content">
+            </div>
+            <div class="content">
+              <a class="header">Team Fu &amp; Hess</a>
+              <div class="meta">
+                <span class="date">Created in Sep 2014</span>
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="users icon"></i>
+                2 Members
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <script>
+    $(".rating").rating();
+    $('.ui.dropdown')
+      .dropdown();
+  </script>
+  <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmgNZGoslcNki771U-ED3hx10crn-EmFU&callback=initMap">
+    </script>
+  <script src="./script/searchCompanies.js"></script>
+</body>
+
+</html>
