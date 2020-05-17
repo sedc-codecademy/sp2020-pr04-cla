@@ -1,0 +1,116 @@
+[
+    {
+        "userId": 1,
+        "firstName": "Krish",
+        "lastName": "Lee",
+        "username": "firstUsername",
+        "companyPhone": "123456",
+        "companyEmail": "example1@email.com",
+        "companyName": "Company One LTD",
+        "companyCountry": "Macedonia",
+        "companyAddress": "Ilija Miov",
+        "can_advertise": true,
+        "dateOfRegistration": "11-02-2020",
+        "companyWebsite": "www.exampleweb.com"
+    },
+    {
+        "userId": 2,
+        "firstName": "racks",
+        "lastName": "jacson",
+        "companyPhone": "123456",
+        "companyEmail": "second@mail.example",
+        "companyName": "Company Two LTD",
+        "companyCountry": "Germany",
+        "companyAddress": "Rilski Kongres 38",
+        "can_advertise": true,
+        "dateOfRegistration": "30-01-2020",
+        "companyWebsite": [
+            "www.test.com",
+            "someweb.com",
+            "extraweb.com"
+        ]
+    },
+    {
+        "userId": 3,
+        "firstName": "denial",
+        "lastName": "roast",
+        "companyPhone": "33333333",
+        "companyEmail": "example1@email.com",
+        "companyName": "SEDC - Company",
+        "companyCountry": "Macedonia",
+        "companyAddress": "11 Oktomvri 33A, 1000 Skopje",
+        "can_advertise": false,
+        "dateOfRegistration": "15-01-2020",
+        "companyWebsite": "www.testtest.com",
+        "category": "Computer Electronics & Technology"
+    },
+    {
+        "userId": 4,
+        "firstName": "devid",
+        "lastName": "neo",
+        "companyPhone": "222222222",
+        "companyEmail": "bomb@shout.com",
+        "companyName": "CLA- Kiko Home",
+        "companyCountry": "United States",
+        "companyAddress": "Emile Zola 7, Skopje",
+        "can_advertise": true,
+        "dateOfRegistration": "11-09-2018",
+        "companyWebsite": "fakewebsite.net"
+    },
+    {
+        "userId": 5,
+        "firstName": "jone",
+        "lastName": "mac",
+        "companyPhone": "111111111",
+        "companyEmail": "plastic@skopje.com",
+        "companyName": "Extra Company",
+        "companyCountry": "Macedonia",
+        "companyAddress": "Boulevard Krushevska Republika Skopje 1000",
+        "can_advertise": false,
+        "dateOfRegistration": "11-03-2020",
+        "companyWebsite": "www.plastikaeftino.com"
+    },
+    {
+        "userId": 6,
+        "firstName": "Bob",
+        "lastName": "Bobski",
+        "companyPhone": "1133331111",
+        "companyEmail": "helloworld@skopje.com",
+        "companyName": "Cedevita Company",
+        "companyCountry": "Macedonia",
+        "companyAddress": "Boulevard Nikola Karev, Skopje",
+        "can_advertise": false,
+        "dateOfRegistration": "11-03-2020",
+        "companyWebsite": "www.vinaria-bobski.com"
+    },
+    {
+        "companyName": "qwe",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyCountry": "Macedonia",
+        "companyRegNumber": "qwe123",
+        "companyCategory": "Education companies",
+        "companyEmail": "qwe@gmail.com",
+        "companyPhone": "071455455",
+        "companyWebsite": "www.test.com"
+    },
+    {
+        "companyName": "Company Two",
+        "companyAddress": "Slavko Lumbarko, Bitola, North Macedonia",
+        "companyCountry": "Macedonia",
+        "companyRegNumber": "qwe123",
+        "companyCategory": "",
+        "companyEmail": "compant-two@gmail.com",
+        "companyPhone": "07111111",
+        "companyWebsite": "www.company-two.com"
+    },
+    {
+        "companyName": "Test Three",
+        "companyAddress": "Vero Center Mall, Skopje, North Macedonia",
+        "companyCountry": "Macedonia",
+        "companyRegNumber": "qwe1234",
+        "companyCategory": "",
+        "companyEmail": "very@gmail.com",
+        "companyPhone": "072555555",
+        "companyWebsite": "www.vero.com"
+    }
+]
