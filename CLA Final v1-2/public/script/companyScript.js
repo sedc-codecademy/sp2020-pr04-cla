@@ -23,10 +23,10 @@ function Company(cName, cAddress, companyCountry, cRegNumber, cCategoryIndustry,
     this.companyAddress = cAddress;
     this.companyCountry = companyCountry;
     this.companyRegNumber = cRegNumber;
-    this.companyCategoryIndustry = cCategoryIndustry;
+    this.companyCategory = cCategoryIndustry;
     this.companyEmail = cEmail;
     this.companyPhone = cPhone;
-    this.companyWebsite = cWebsite;
+    this.companyWebsite = cWebsite;    
 }
 
 // Clearing function 
@@ -236,10 +236,29 @@ let validate = () => {
 
 let companyAbout = null;
 
-let storingObj = (key) => {
-    companyAbout = new Company(companyName.value, companyAddress.value, companyCountry.value, companyRegNumber.value, companyCategoryIndustry.value, companyEmail.value, companyPhone.value, companyWebsite.value);
-    localStorage.setItem(key, JSON.stringify(companyAbout));
-}
+// let storingObj = (key) => {
+//     companyAbout = new Company(companyName.value, companyAddress.value, companyCountry.value, companyRegNumber.value, companyCategoryIndustry.value, companyEmail.value, companyPhone.value, companyWebsite.value);
+//     localStorage.setItem(key, JSON.stringify(companyAbout));
+// }
+
+
+const postUrl = "http://localhost/createNewComp";
+
+const postData = async (urls, content) => {
+    const response = await fetch(urls, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(content)
+    }).then(function (res) { console.log(res) })
+        .catch(function (res) { console.log(res) })
+
+};
+
+
+
 
 
 
@@ -247,8 +266,8 @@ btn.addEventListener("click", function () {
     validate()
     if (companyNameValidation() === true && companyAddressValidation() === true && companyCountryValidation() === true && companyRegNumberValidation() === true && emailValidation() === true && phoneValidation() === true && companyUrlValidation() === true && termsAndConditi() === true) {
         companyAbout = new Company(companyName.value, companyAddress.value, companyCountry.value, companyRegNumber.value, companyCategoryIndustry.value, companyEmail.value, companyPhone.value, companyWebsite.value);
-        storingObj(companyName.value)
-        console.log('clicked')
+        // storingObj(companyName.value)
+        postData(postUrl, companyAbout)
 
         Swal.fire({
             position: 'center',

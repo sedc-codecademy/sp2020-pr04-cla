@@ -1,4 +1,6 @@
-const jsonURL = "https://raw.githubusercontent.com/sedc-codecademy/sp2020-pr04-cla/master/database.JSON";
+// const jsonURL = "https://raw.githubusercontent.com/sedc-codecademy/sp2020-pr04-cla/master/database.JSON";
+const newJsonUrl = "http://localhost/getCompData";
+const newCompaniesUrl = "http://localhost/getNewComp";
 let currentInfoWindow = null;
 
 
@@ -16,14 +18,15 @@ function initMap() {
         showData(data);
     };
 
-    getData(jsonURL);
+
+    getData(newJsonUrl);
+    
 
     const showData = (info) => {
-        info.users.forEach(element => {
-            codeAddress(element.companyAddress, element.companyName, element.emailAddress, element.phoneNumber, element.website);
+        info.forEach(element => {
+            codeAddress(element.companyAddress, element.companyName, element.companyEmail, element.companyPhone, element.companyWebsite);
         });
     };
-
 
     // Geocoder za convert na adresi vo lat i lng
 
@@ -209,15 +212,15 @@ function initMap() {
         })
     };
 
-    let allObjs = localStorage
-    let getItemObj = function (key) {
-        for (let i = 0; i < key.length; i++) {
-            let retrivedObject = localStorage.getItem(key.key(i))
-            let parsedObject = JSON.parse(retrivedObject)
-            codeAddress(parsedObject.companyAddress, parsedObject.companyName, parsedObject.companyEmail, parsedObject.companyPhone, parsedObject.companyWebsite)
-        }
-    }
-    getItemObj(allObjs)
+    // let allObjs = localStorage
+    // let getItemObj = function (key) {
+    //     for (let i = 0; i < key.length; i++) {
+    //         let retrivedObject = localStorage.getItem(key.key(i))
+    //         let parsedObject = JSON.parse(retrivedObject)
+    //         codeAddress(parsedObject.companyAddress, parsedObject.companyName, parsedObject.companyEmail, parsedObject.companyPhone, parsedObject.companyWebsite)
+    //     }
+    // }
+    // getItemObj(allObjs)
 };
 
 
