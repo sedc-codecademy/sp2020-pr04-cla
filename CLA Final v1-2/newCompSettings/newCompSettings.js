@@ -1,5 +1,8 @@
 class newCompanies {
-    constructor({ companyName, companyAddress, companyCountry, companyRegNumber, companyCategory, companyEmail, companyPhone, companyWebsite}){
+    constructor({ firstName, lastName, password, companyName, companyAddress, companyCountry, companyRegNumber, companyCategory, companyEmail, companyPhone, companyWebsite}){
+        this.firstName = firstName
+        this.lastName = lastName
+        this.password = password
         this.companyName = companyName
         this.companyAddress = companyAddress
         this.companyCountry = companyCountry

@@ -9,7 +9,8 @@ let categoryIndustry = document.getElementById("categoryIndustry");
 let currentInfoWindow = null;
 let markers = [];
 
-const database = 'https://raw.githubusercontent.com/sedc-codecademy/sp2020-pr04-cla/master/database.JSON';
+
+const database = "http://localhost/getCompData";
 
 reset.addEventListener("click", function () {
   postContainer.innerHTML = "";
@@ -32,7 +33,7 @@ function initMap() {
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
-            for (const item of result.users) {
+            for (const item of result) {
               if (item.companyName.includes(keywordInput.value)) {
                 console.log(item)
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
@@ -73,7 +74,7 @@ function initMap() {
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
-            for (const item of result.users) {
+            for (const item of result) {
               if (locationInput.value === item.country) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 postContainer.innerHTML += `
@@ -114,8 +115,8 @@ function initMap() {
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
-            for (const item of result.users) {
-              if (item.category === categoryIndustry.value) {
+            for (const item of result) {
+              if (item.companyCategory === categoryIndustry.value) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 console.log(item)
                 postContainer.innerHTML += `
@@ -155,7 +156,7 @@ function initMap() {
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
-            for (const item of result.users) {
+            for (const item of result) {
               postContainer.innerHTML += `
                 <div class="ui card">
                 <div class="ui slide masked reveal image">
