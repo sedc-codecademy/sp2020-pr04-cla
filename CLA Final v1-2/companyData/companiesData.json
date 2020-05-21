@@ -11,7 +11,8 @@
         "companyAddress": "Ilija Miov",
         "can_advertise": true,
         "dateOfRegistration": "11-02-2020",
-        "companyWebsite": "www.exampleweb.com"
+        "companyWebsite": "www.exampleweb.com",
+        "companyCategory": "Heavy industry & Engineering"
     },
     {
         "userId": 2,
@@ -28,7 +29,8 @@
             "www.test.com",
             "someweb.com",
             "extraweb.com"
-        ]
+        ],
+        "companyCategory": "Scince & Education"
     },
     {
         "userId": 3,
@@ -42,7 +44,7 @@
         "can_advertise": false,
         "dateOfRegistration": "15-01-2020",
         "companyWebsite": "www.testtest.com",
-        "category": "Computer Electronics & Technology"
+        "companyCategory": "Computer Electronics & Technology"
     },
     {
         "userId": 4,
@@ -55,7 +57,8 @@
         "companyAddress": "Emile Zola 7, Skopje",
         "can_advertise": true,
         "dateOfRegistration": "11-09-2018",
-        "companyWebsite": "fakewebsite.net"
+        "companyWebsite": "fakewebsite.net",
+        "companyCategory": "Health"
     },
     {
         "userId": 5,
@@ -68,7 +71,8 @@
         "companyAddress": "Boulevard Krushevska Republika Skopje 1000",
         "can_advertise": false,
         "dateOfRegistration": "11-03-2020",
-        "companyWebsite": "www.plastikaeftino.com"
+        "companyWebsite": "www.plastikaeftino.com",
+        "companyCategory": "Finance"
     },
     {
         "userId": 6,
@@ -81,36 +85,7 @@
         "companyAddress": "Boulevard Nikola Karev, Skopje",
         "can_advertise": false,
         "dateOfRegistration": "11-03-2020",
-        "companyWebsite": "www.vinaria-bobski.com"
-    },
-    {
-        "companyName": "qwe",
-        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
-        "companyCountry": "Macedonia",
-        "companyRegNumber": "qwe123",
-        "companyCategory": "Education companies",
-        "companyEmail": "qwe@gmail.com",
-        "companyPhone": "071455455",
-        "companyWebsite": "www.test.com"
-    },
-    {
-        "companyName": "Company Two",
-        "companyAddress": "Slavko Lumbarko, Bitola, North Macedonia",
-        "companyCountry": "Macedonia",
-        "companyRegNumber": "qwe123",
-        "companyCategory": "",
-        "companyEmail": "compant-two@gmail.com",
-        "companyPhone": "07111111",
-        "companyWebsite": "www.company-two.com"
-    },
-    {
-        "companyName": "Test Three",
-        "companyAddress": "Vero Center Mall, Skopje, North Macedonia",
-        "companyCountry": "Macedonia",
-        "companyRegNumber": "qwe1234",
-        "companyCategory": "",
-        "companyEmail": "very@gmail.com",
-        "companyPhone": "072555555",
-        "companyWebsite": "www.vero.com"
+        "companyWebsite": "www.vinaria-bobski.com",
+        "companyCategory": "Arts & Entertainment"
     }
 ]
