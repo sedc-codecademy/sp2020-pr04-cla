@@ -70,6 +70,21 @@
                 <div class="ui  form ">
 
                     <div class="field required">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" value="" placeholder="First Name">
+                        <p class="errorParagCo"></p>
+                    </div>
+                    <div class="field required">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" value="" placeholder="Last Name">
+                        <p class="errorParagCo"></p>
+                    </div>
+                    <div class="field required">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" value="" placeholder="Password">
+                        <p class="errorParagCo"></p>
+                    </div>
+                    <div class="field required">
                         <label for="companyName">Company Name</label>
                         <input type="text" id="companyName" name="companyName" value="" placeholder="Company Name">
                         <p class="errorParagCo"></p>
@@ -89,12 +104,7 @@
                         <p class="errorParagCo"></p>
                     </div>
 
-                    <div class="field required">
-                        <label for="companyRegNumber">Company Reg. Number</label>
-                        <input type="text" id="companyRegNumber" name="companyRegNumber" value=""
-                            placeholder="Company Reg. Number">
-                        <p class="errorParagCo"></p>
-                    </div>
+                    
 
                 </div>
             </div>
@@ -103,10 +113,29 @@
                     <div class="field">
                         <label for="companyCategoryIndustry">Company Category / Industry</label>
                         <select class="ui dropdown" id="companyCategoryIndustry">
-                            <option>Education companies</option>
-                            <option>Clothing companies‎ </option>
-                            <option>Electric companies‎</option>
+                            <option class="item">Computer Electronics & Technology</option>
+                            <option class="item">Arts & Entertainment</option>
+                            <option class="item">Business and Consumer Servicese</option>
+                            <option class="item">E-Commerce & Shopping</option>
+                            <option class="item">Finance</option>
+                            <option class="item">Food & Drink</option>
+                            <option class="item">Health</option>
+                            <option class="item">Heavy industry & Engineering</option>
+                            <option class="item">Home & Garden</option>
+                            <option class="item">Pets & Animals</option>
+                            <option class="item">Real Estate</option>
+                            <option class="item">Scince & Education</option>
+                            <option class="item">Sports</option>
+                            <option class="item">Travel & Tourism</option>
+                            <option class="item">Vehicles</option>
                         </select>
+                    </div>
+
+                    <div class="field required">
+                        <label for="companyRegNumber">Company Reg. Number</label>
+                        <input type="text" id="companyRegNumber" name="companyRegNumber" value=""
+                            placeholder="Company Reg. Number">
+                        <p class="errorParagCo"></p>
                     </div>
 
                     <div class="field required">
@@ -243,6 +272,7 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmgNZGoslcNki771U-ED3hx10crn-EmFU&libraries=places&callback=initMap"
     async defer></script>
+    <script src="./script/checkSameCompany.js"></script>
     <script src="./script/companyScript.js"></script>
 </body>
 

@@ -1,3 +1,6 @@
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const password = document.getElementById("password");
 const companyName = document.getElementById("companyName");
 const companyAddress = document.getElementById("companyAddress");
 const companyCountry = document.getElementById("companyCountry");
@@ -12,13 +15,16 @@ const btn = document.getElementById("sumbitBtnGj");
 
 // AutoComplete
 
-function initMap(){
+function initMap() {
     var input = document.getElementById('companyAddress');
     var autocomplete = new google.maps.places.Autocomplete(input)
 }
 
 
-function Company(cName, cAddress, companyCountry, cRegNumber, cCategoryIndustry, cEmail, cPhone, cWebsite) {
+function Company(fName, lName, pass, cName, cAddress, companyCountry, cRegNumber, cCategoryIndustry, cEmail, cPhone, cWebsite) {
+    this.firstName = fName,
+    this.lastName = lName,
+    this.password = pass,
     this.companyName = cName;
     this.companyAddress = cAddress;
     this.companyCountry = companyCountry;
@@ -26,7 +32,7 @@ function Company(cName, cAddress, companyCountry, cRegNumber, cCategoryIndustry,
     this.companyCategory = cCategoryIndustry;
     this.companyEmail = cEmail;
     this.companyPhone = cPhone;
-    this.companyWebsite = cWebsite;    
+    this.companyWebsite = cWebsite;
 }
 
 // Clearing function 
@@ -39,6 +45,12 @@ let clear = () => {
     errorParagCo[4].innerHTML = "";
     errorParagCo[5].innerHTML = "";
     errorParagCo[6].innerHTML = "";
+    errorParagCo[7].innerHTML = "";
+    errorParagCo[8].innerHTML = "";
+    errorParagCo[9].innerHTML = "";
+    firstName.value = "";
+    lastName.value = "";
+    password.value = "";
     companyName.value = "";
     companyAddress.value = "";
     companyCountry.value = "";
@@ -48,28 +60,84 @@ let clear = () => {
     companyWebsite.value = "";
 };
 
+// Validate First Name
+let validateFirstName = () => {
+    let regex = /^[a-zA-Z ]+(([\'\,\.\-][a-zA-Z])?[a-zA-Z]*)*$/i;
+    if (regex.test(firstName.value) === false) {
+        errorParagCo[0].style.color = "red"
+        errorParagCo[0].innerHTML = "* Please enter a valid first name!"
+        return false;
+    } else if (firstName.value.length <= 1) {
+        errorParagCo[0].style.color = "red"
+        errorParagCo[0].innerHTML = "* First name too short!"
+        return false;
+    } else if (firstName.value.length >= 30) {
+        errorParagCo[0].style.color = "red"
+        errorParagCo[0].innerHTML = "* First name to big!"
+        return false;
+    } else {
+        errorParagCo[0].innerHTML = ""
+        return true;
+    }
+};
+
+//Validate Last Name
+let validateLastName = () => {
+    let regex = /^[a-zA-Z ]+(([\'\,\.\-][a-zA-Z])?[a-zA-Z]*)*$/i;
+    if (regex.test(lastName.value) === false) {
+        errorParagCo[1].style.color = "red"
+        errorParagCo[1].innerHTML = "* Please enter a valid last name!"
+        return false;
+    } else if (lastName.value.length <= 1) {
+        errorParagCo[1].style.color = "red"
+        errorParagCo[1].innerHTML = "* Last name too short!"
+        return false;
+    } else if (lastName.value.length >= 30) {
+        errorParagCo[1].style.color = "red"
+        errorParagCo[1].innerHTML = "* Last name to big!"
+        return false;
+    } else {
+        errorParagCo[1].innerHTML = ""
+        return true
+    }
+}
+
+//Password
+
+let validatePass = () => {
+    let regex = /^[a-zA-Z]\w{3,14}$/i
+    if (regex.test(password.value) === false) {
+        errorParagCo[2].style.color = "red"
+        errorParagCo[2].innerHTML = "* Please enter a valid password!"
+        return false;
+    } else {
+        errorParagCo[2].innerHTML = ""
+        return true
+    }
+}
+
 //Company Name
 
 function companyNameValidation() {
     let regex = /^[a-zA-Z ]+(([\'\,\.\-][a-zA-Z])?[a-zA-Z]*)*$/i;
 
     if (regex.test(companyName.value) === false) {
-        errorParagCo[0].style.color = "red"
-        errorParagCo[0].innerHTML = "* Please enter a valid company name!"
+        errorParagCo[3].style.color = "red"
+        errorParagCo[3].innerHTML = "* Please enter a valid company name!"
         return false;
     }
     else if (companyName.value.length >= 30) {
-        errorParagCo[0].style.color = "red"
-        errorParagCo[0].innerHTML = "* First name to big!"
+        errorParagCo[3].style.color = "red"
+        errorParagCo[3].innerHTML = "* First name to big!"
         return false;
     }
     else if (companyName.value.length < 3) {
-        errorParagCo[0].style.color = "red"
-        errorParagCo[0].innerHTML = "* First name too short!"
+        errorParagCo[3].style.color = "red"
+        errorParagCo[3].innerHTML = "* First name too short!"
         return false;
     }
     else {
-        errorParagCo[0].innerHTML = "";
+        errorParagCo[3].innerHTML = "";
         return true;
     }
 }
@@ -81,22 +149,22 @@ function companyNameValidation() {
 function companyAddressValidation() {
 
     if (companyAddress.value === "") {
-        errorParagCo[1].style.color = "red"
-        errorParagCo[1].innerHTML = "* Please enter Address!"
+        errorParagCo[4].style.color = "red"
+        errorParagCo[4].innerHTML = "* Please enter Address!"
         return false;
     }
     else if (companyAddress.value.length >= 100) {
-        errorParagCo[1].style.color = "red"
-        errorParagCo[1].innerHTML = "* Address too long!"
+        errorParagCo[4].style.color = "red"
+        errorParagCo[4].innerHTML = "* Address too long!"
         return false;
     }
     else if (companyAddress.value.length <= 3) {
-        errorParagCo[1].style.color = "red"
-        errorParagCo[1].innerHTML = "* Address too short!"
+        errorParagCo[4].style.color = "red"
+        errorParagCo[4].innerHTML = "* Address too short!"
         return false;
     }
     else {
-        errorParagCo[2].innerHTML = "";
+        errorParagCo[4].innerHTML = "";
         return true;
     }
 }
@@ -109,27 +177,27 @@ function companyCountryValidation() {
     let lettersOnlyRegex = /^[A-Za-z]+$/
 
     if (companyCountry.value === "") {
-        errorParagCo[2].style.color = "red"
-        errorParagCo[2].innerHTML = "* Please fill the input!"
+        errorParagCo[5].style.color = "red"
+        errorParagCo[5].innerHTML = "* Please fill the input!"
         return false;
     }
     else if (companyCountry.value.length >= 30) {
-        errorParagCo[2].style.color = "red"
-        errorParagCo[2].innerHTML = "* Input too big!"
+        errorParagCo[5].style.color = "red"
+        errorParagCo[5].innerHTML = "* Input too big!"
         return false;
     }
     else if (companyCountry.value.length <= 2) {
-        errorParagCo[2].style.color = "red"
-        errorParagCo[2].innerHTML = "* Input too short!"
+        errorParagCo[5].style.color = "red"
+        errorParagCo[5].innerHTML = "* Input too short!"
         return false;
     }
     else if (lettersOnlyRegex.test(companyCountry.value) === false) {
-        errorParagCo[2].style.color = "red"
-        errorParagCo[2].innerHTML = "* Please enter valid country name!"
+        errorParagCo[5].style.color = "red"
+        errorParagCo[5].innerHTML = "* Please enter valid country name!"
         return false;
     }
     else {
-        errorParagCo[2].innerHTML = "";
+        errorParagCo[5].innerHTML = "";
         return true;
     }
 }
@@ -141,17 +209,17 @@ function companyRegNumberValidation() {
     let regexNum = /([A-Za-z]{2,4})([a-zA-Z0-9\-\_ ]{2,12})/;
 
     if (companyRegNumber.value === "") {
-        errorParagCo[3].style.color = "red"
-        errorParagCo[3].innerHTML = "* Please fill the Registration Number! ex. Letters and Numbers"
+        errorParagCo[6].style.color = "red"
+        errorParagCo[6].innerHTML = "* Please fill the Registration Number! ex. Letters and Numbers"
         return false;
     }
     else if (regexNum.test(companyRegNumber.value) === false) {
-        errorParagCo[3].style.color = "red"
-        errorParagCo[3].innerHTML = "* Please fill the Registration Number!"
+        errorParagCo[6].style.color = "red"
+        errorParagCo[6].innerHTML = "* Company Reg. Number must contain letters and numbers!"
         return false;
     }
     else {
-        errorParagCo[3].innerHTML = "";
+        errorParagCo[6].innerHTML = "";
         return true
     }
 }
@@ -162,11 +230,11 @@ function emailValidation() {
     let regex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i
 
     if (regex.test(companyEmail.value) === false) {
-        errorParagCo[4].style.color = "red"
-        errorParagCo[4].innerHTML = "* Please enter valid e-mail address!"
+        errorParagCo[7].style.color = "red"
+        errorParagCo[7].innerHTML = "* Please enter valid e-mail address!"
         return false;
     } else {
-        errorParagCo[4].innerHTML = "";
+        errorParagCo[7].innerHTML = "";
         return true;
     }
 }
@@ -179,12 +247,12 @@ function phoneValidation() {
     let phoneNumRegex = /^([\+][0-9]{1,3}([ \.\-])?)?([\(]{1}[0-9]{3}[\)])?([0-9A-Z \.\-]{1,32})((x|ext|extension)?[0-9]{1,4}?)$/i
 
     if (phoneNumRegex.test(companyPhone.value) === false) {
-        errorParagCo[5].style.color = "red"
-        errorParagCo[5].innerHTML = "* Please enter valid phone number!"
+        errorParagCo[8].style.color = "red"
+        errorParagCo[8].innerHTML = "* Please enter valid phone number!"
         return false;
     }
     else {
-        errorParagCo[5].innerHTML = "";
+        errorParagCo[8].innerHTML = "";
         return true;
     }
 }
@@ -195,17 +263,17 @@ function companyUrlValidation() {
     let phoneNumRegex = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/;
 
     if (phoneNumRegex.test(companyWebsite.value) === false) {
-        errorParagCo[6].style.color = "red"
-        errorParagCo[6].innerHTML = "* Please enter valid web address!"
+        errorParagCo[9].style.color = "red"
+        errorParagCo[9].innerHTML = "* Please enter valid web address!"
         return false;
     }
     else if (companyWebsite.value.length >= 60) {
-        errorParagCo[6].style.color = "red"
-        errorParagCo[6].innerHTML = "* Web address name too big!"
+        errorParagCo[9].style.color = "red"
+        errorParagCo[9].innerHTML = "* Web address name too big!"
         return false;
     }
     else {
-        errorParagCo[6].innerHTML = "";
+        errorParagCo[9].innerHTML = "";
         return true
     }
 }
@@ -215,13 +283,14 @@ function companyUrlValidation() {
 function termsAndConditi() {
 
     if (!termsAndCond.checked) {
-        errorParagCo[7].style.color = "red"
-        errorParagCo[7].innerHTML = "* Please accept the terms and conditions to proceed!";
+        errorParagCo[10].style.color = "red"
+        errorParagCo[10].innerHTML = "* Please accept the terms and conditions to proceed!";
     } else {
-        errorParagCo[7].innerHTML = ""
+        errorParagCo[10].innerHTML = ""
         return true
     }
 }
+
 
 let validate = () => {
     companyNameValidation()
@@ -232,6 +301,9 @@ let validate = () => {
     phoneValidation()
     companyUrlValidation()
     termsAndConditi()
+    validateFirstName()
+    validateLastName()
+    validatePass()
 }
 
 let companyAbout = null;
@@ -259,13 +331,12 @@ const postData = async (urls, content) => {
 
 
 
-
-
-
 btn.addEventListener("click", function () {
-    validate()
-    if (companyNameValidation() === true && companyAddressValidation() === true && companyCountryValidation() === true && companyRegNumberValidation() === true && emailValidation() === true && phoneValidation() === true && companyUrlValidation() === true && termsAndConditi() === true) {
-        companyAbout = new Company(companyName.value, companyAddress.value, companyCountry.value, companyRegNumber.value, companyCategoryIndustry.value, companyEmail.value, companyPhone.value, companyWebsite.value);
+    validate();
+
+
+    if (companyNameValidation() === true && companyAddressValidation() === true && companyCountryValidation() === true && companyRegNumberValidation() === true && emailValidation() === true && phoneValidation() === true && companyUrlValidation() === true && termsAndConditi() === true && validateFirstName() === true && validateLastName() === true && validatePass() === true) {
+        companyAbout = new Company(firstName.value, lastName.value, password.value, companyName.value, companyAddress.value, companyCountry.value, companyRegNumber.value, companyCategoryIndustry.value, companyEmail.value, companyPhone.value, companyWebsite.value);
         // storingObj(companyName.value)
         postData(postUrl, companyAbout)
 
