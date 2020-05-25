@@ -3,10 +3,7 @@ const newJsonUrl = "http://localhost/getCompData";
 const newCompaniesUrl = "http://localhost/getNewComp";
 let currentInfoWindow = null;
 
-
 const markers = [];
-
-
 
 function initMap() {
 
@@ -206,6 +203,10 @@ function initMap() {
                     <button class="ui teal basic button">Show Listing</button>
                     </div>`
                 })
+
+
+
+                
             } else {
                 alert('Not success' + status);
             }

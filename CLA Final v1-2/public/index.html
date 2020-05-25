@@ -87,13 +87,13 @@
       </div>
       <div class="column">
         <div class="ui fluid icon input focus">
-          <input type="text" placeholder="Enter Address">
+          <input id="enterAddress" type="text" placeholder="Enter Address">
           <i class="inverted circular location arrow icon"></i>
         </div>
       </div>
       <div class="column">
         <div class="ui fluid icon input focus">
-          <input type="text" placeholder="Keyword">
+          <input id="enterKeyword" type="text" placeholder="Keyword">
           <i class="inverted circular crosshairs icon"></i>
         </div>
       </div>
@@ -106,7 +106,7 @@
                 <option selected="" value="articles">25km</option>
                 <option value="products">50km</option>
               </select>
-              <div class="ui green button">Search</div>
+              <div id="searchBtn" class="ui green button">Search</div>
             </div>
           </form>
         </div>
@@ -728,7 +728,9 @@
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmgNZGoslcNki771U-ED3hx10crn-EmFU&callback=initMap">
     </script>
+  <script type="module" src="./script/homeSearch.js" ></script>
   <script src="./script/main.js"></script>
+
 </body>
 
 </html>
