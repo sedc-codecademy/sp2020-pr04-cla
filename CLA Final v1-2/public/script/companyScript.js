@@ -287,6 +287,7 @@ function termsAndConditi() {
         errorParagCo[10].innerHTML = "* Please accept the terms and conditions to proceed!";
     } else {
         errorParagCo[10].innerHTML = ""
+        console.log(termsAndCond.value)
         return true
     }
 }
