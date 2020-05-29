@@ -1,0 +1,20 @@
+.ui.grid.stackable {
+    justify-content: center;
+}
+
+#companyType {
+    height: 35px;
+    margin-top: 7px;
+}
+
+
+#textarea {
+   margin-top: 30px;
+
+}
+
+#sumbitBtnGj {
+  width: 300px;
+}
+
+

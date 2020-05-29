@@ -7,14 +7,14 @@ const ncc = new newCompanyController();
 
 
 newCompany.post('/', (req, res) => {
-    console.log(req.body)
+
     if (!req.body) {
         res.status(412).json({ error: { msg: "Error" } })
     } else {
         if (ncc.saveComp(req.body, res)) {
-            res.status(200).json({})
+            console.log('Success');
         } else {
-            res.status(400).json({ error: { msg: 'Company cannot be added' } })
+            res.status(400).json({ error: { msg: 'Same Email' } })
         }
     }
 
