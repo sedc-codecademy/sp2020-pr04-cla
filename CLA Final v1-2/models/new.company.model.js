@@ -1,8 +1,9 @@
 const fs = require('fs');
 const newCompanies = require('./new.comp.setting.model');
 
+
 class SaveComp {
-    constructor() { }
+    constructor() {}
 
     saveCompany = async (answers, responde) => {
 
@@ -23,18 +24,19 @@ class SaveComp {
                     console.log('Success');
                 }
             })
-
+        responde.status(200).json({})
     }
 
-    showCompanies(file){
+    showCompanies(file) {
         return file
     }
-
-
-
-
-
 }
+
+
+
+
+
+
 
 
 

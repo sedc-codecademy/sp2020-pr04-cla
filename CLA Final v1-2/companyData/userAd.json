@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "adCategory": [
+            " Accounting",
+            " Chemical Lab",
+            " Stores"
+        ],
+        "adTitle": "Selling User 1",
+        "adType": "Products User 1",
+        "adAmount": "A lot of products",
+        "adDescription": "User Id 1 dummy description User Id 1 dummy description"
+    },
+    {
+        "id": 2,
+        "adCategory": [
+            " Accounting",
+            " Chemical Lab"
+
+        ],
+        "adTitle": "Selling User 2",
+        "adType": "Products User 2",
+        "adAmount": "Some Products",
+        "adDescription": "User Id 2 dummy description User Id 2 dummy description"
+    },
+    {
+        "id": 3,
+        "adCategory": [
+            " Accounting"
+        ],
+        "adTitle": "Selling User 3",
+        "adType": "Products User 3",
+        "adAmount": "Some Products",
+        "adDescription": "User Id 3 dummy description User Id 3 dummy description"
+    },
+    {
+        "id": 4,
+        "adCategory": [
+            " Chemical Lab"
+        ],
+        "adTitle": "Selling User 4",
+        "adType": "Products User 4",
+        "adAmount": "Some Products",
+        "adDescription": "User Id 4 dummy description User Id 4 dummy description"
+    },
+    {
+        "id": 5,
+        "adCategory": [
+            " Chemical Lab",
+            " Stores"
+        ],
+        "adTitle": "Selling User 5",
+        "adType": "Products User 5",
+        "adAmount": "A lot Products",
+        "adDescription": "User Id 5 dummy description User Id 5 dummy description"
+    },
+    {
+        "id": 8,
+        "adCategory": [
+            " Accounting",
+            " Chemical Lab",
+            " Stores"
+        ],
+        "adTitle": "Selling Something",
+        "adType": "Products",
+        "adAmount": "A lot of products",
+        "adDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+        "id": 8,
+        "adCategory": [
+            " Accounting",
+            " Chemical Lab"
+        ],
+        "adTitle": "Dummy Dummy",
+        "adType": "Dummy Dummy Dummy",
+        "adAmount": "Dummy Dummy Dummy Amount",
+        "adDescription": "Dummy Dummy Dummy Dummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy Dummy"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            " Construction",
+            " Stores"
+        ],
+        "adTitle": "Dummy Title George",
+        "adType": "Dummy Type George",
+        "adAmount": "Dummy Ammount George",
+        "adDescription": "Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!"
+    }
+]

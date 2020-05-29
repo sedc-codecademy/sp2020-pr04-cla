@@ -18,9 +18,6 @@ app.use(express.static(staticRoute));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-    res.status(200).json({})
-})
 
 app.use('/', routes);
 
