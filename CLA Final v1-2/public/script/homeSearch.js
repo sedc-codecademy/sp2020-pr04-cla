@@ -1,28 +1,28 @@
-let selectCategory = document.getElementById("selectCategory");
-let enterAddress = document.getElementById("enterAddress");
-let enterKeyword = document.getElementById("enterKeyword");
+var selectCategory = document.getElementById("companyCategoryIndustry");
+var enterAddress = document.getElementById("enterAddress");
+var enterKeyword = document.getElementById("enterKeyword");
 
 
-let obj = [];
+var obj = {};
 
 const searchBtn = document.getElementById("searchBtn");
 
 
 searchBtn.addEventListener("click", function(){
 
-    let inputCategory = selectCategory.options[selectCategory.selectedIndex].text;
-    let inputAddress = enterAddress.value;
-    let inputKeyword = enterKeyword.value;
-    
-    obj.push({
-        Cat: inputCategory,
-        Address: inputAddress,
-        Keyword: inputKeyword
-    });
+    var inputCategory = selectCategory.value;
+    var inputAddress = enterAddress.value;
+    var inputKeyword = enterKeyword.value;
 
+    obj.keyword = inputKeyword;
+    obj.address = inputAddress;
+    obj.category = inputCategory;
 
-    window.open('../search-companies.html', '_blank')
+    const entries = Object.entries(obj);
+
+    for (let [key, value] of entries) {
+        localStorage.setItem(key, value);
+    }
+
+    window.open('../search-companies.html', '_self');
 })
-
-
-// export default obj;

@@ -5,13 +5,6 @@ let keywordInput = document.getElementById("keywordInput");
 let locationInput = document.getElementById("locationInput");
 let categoryIndustry = document.getElementById("categoryIndustry");
 
-// const dataFromHome = require("./homeSearch.js");
-// console.log(dataFromHome);
-
-// import obj from "./homeSearch";
-
-// let dataObj = obj;
-
 let currentInfoWindow = null;
 let markers = [];
 
@@ -38,13 +31,13 @@ const searchDataPosts = function (item) {
           <div class="content">
             <a class="header">${item.companyName}</a>
             <div class="meta">
-              <span class="date">${item.country}</span>
+              <span class="date">${item.companyCountry}</span>
             </div>
           </div>
           <div class="extra content">
             <a>
               <i class="users icon"></i>
-              ${item.emailAddress}
+              ${item.companyEmail}
             </a>
           </div>
         </div>`
@@ -52,28 +45,71 @@ const searchDataPosts = function (item) {
 
 function initMap() {
 
-  if (document.referrer === "http://localhost/index.html") {
-  keywordInput.value = "SEDC";
+  if (document.referrer === "http://localhost/index.html" && localStorage.keyword != "") {
+    keywordInput.value = localStorage.keyword;
 
-  fetch(database)
-    .then(data => data.json())
-    .then(function (result) {
-      try {
-        postContainer.innerHTML = "";
-        for (const item of result.users) {
-          if (item.companyName.includes(keywordInput.value)) {
-            console.log(item)
-            codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
-
-            postContainer.innerHTML += searchDataPosts(item);
+    fetch(database)
+      .then(data => data.json())
+      .then(function (result) {
+        try {
+          postContainer.innerHTML = "";
+          for (const item of result) {
+            if (item.companyName.includes(keywordInput.value)) {
+              console.log(item)
+              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              postContainer.innerHTML += searchDataPosts(item);
+            }
           }
-        }
 
-      } catch (error) {
-        console.log("Error: " + error);
-      }
-    })
-}
+        } catch (error) {
+          console.log("Error: " + error);
+        }
+      })
+  } else if (document.referrer === "http://localhost/index.html" && localStorage.address != "") {
+    locationInput.value = localStorage.address;
+
+    fetch(database)
+      .then(data => data.json())
+      .then(function (result) {
+        try {
+          postContainer.innerHTML = "";
+          for (const item of result) {
+            if (locationInput.value === item.companyCountry) {
+              console.log(item)
+              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              postContainer.innerHTML += searchDataPosts(item);
+            }
+          }
+
+        } catch (error) {
+          console.log("Error: " + error);
+        }
+      })
+
+  } else if (document.referrer === "http://localhost/index.html" && localStorage.category != "") {
+    categoryIndustry.value = localStorage.category;
+
+    fetch(database)
+      .then(data => data.json())
+      .then(function (result) {
+        try {
+          postContainer.innerHTML = "";
+          for (const item of result) {
+            if (categoryIndustry.value  === item.companyCategory) {
+              console.log(item)
+              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              postContainer.innerHTML += searchDataPosts(item);
+            }
+          }
+
+        } catch (error) {
+          console.log("Error: " + error);
+        }
+      })
+  }
+
+  localStorage.clear();
+
 
   search.addEventListener("click", function () {
 
@@ -112,7 +148,7 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              if (locationInput.value === item.country) {
+              if (locationInput.value === item.companyCountry) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 postContainer.innerHTML += searchDataPosts(item);
               }
@@ -133,7 +169,7 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              if (item.companyCategory === categoryIndustry.value) {
+              if (categoryIndustry.value  === item.companyCategory) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 console.log(item)
                 postContainer.innerHTML += searchDataPosts(item);
@@ -153,7 +189,7 @@ function initMap() {
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
-            for (const item of result.users) {
+            for (const item of result) {
               postContainer.innerHTML += searchDataPosts(item);
             }
 

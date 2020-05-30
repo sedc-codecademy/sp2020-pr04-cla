@@ -87,5 +87,19 @@
         "dateOfRegistration": "11-03-2020",
         "companyWebsite": "www.vinaria-bobski.com",
         "companyCategory": "Arts & Entertainment"
+    }, 
+    {
+        "userId": 7,
+        "firstName": "Jhon",
+        "lastName": "Doe",
+        "companyPhone": "1133331111",
+        "companyEmail": "helloworld@skopje.com",
+        "companyName": "Cedevita2 Company",
+        "companyCountry": "Macedonia",
+        "companyAddress": "Boulevard Nikola Karev, Skopje",
+        "can_advertise": false,
+        "dateOfRegistration": "11-03-2020",
+        "companyWebsite": "www.vinaria-bobski.com",
+        "companyCategory": "Arts & Entertainment"
     }
 ]
