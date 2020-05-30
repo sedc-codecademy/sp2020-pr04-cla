@@ -2,6 +2,7 @@
 const newJsonUrl = "http://localhost/getCompData";
 const newCompaniesUrl = "http://localhost/getNewComp";
 let currentInfoWindow = null;
+const companyURL = "http://localhost/createNewComp";
 
 const markers = [];
 
@@ -16,7 +17,7 @@ function initMap() {
     };
 
 
-    getData(newJsonUrl);
+    getData(companyURL);
     
 
     const showData = (info) => {

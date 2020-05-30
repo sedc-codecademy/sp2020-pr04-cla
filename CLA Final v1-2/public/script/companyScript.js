@@ -23,9 +23,9 @@ function initMap() {
 
 function Company(fName, lName, pass, cName, cAddress, companyCountry, cRegNumber, cCategoryIndustry, cEmail, cPhone, cWebsite) {
     this.firstName = fName,
-    this.lastName = lName,
-    this.password = pass,
-    this.companyName = cName;
+        this.lastName = lName,
+        this.password = pass,
+        this.companyName = cName;
     this.companyAddress = cAddress;
     this.companyCountry = companyCountry;
     this.companyRegNumber = cRegNumber;
@@ -33,6 +33,11 @@ function Company(fName, lName, pass, cName, cAddress, companyCountry, cRegNumber
     this.companyEmail = cEmail;
     this.companyPhone = cPhone;
     this.companyWebsite = cWebsite;
+}
+
+function Validate(email, compName) {
+    this.companyEmail = email
+    this.companyName = compName
 }
 
 // Clearing function 
@@ -229,14 +234,19 @@ function companyRegNumberValidation() {
 function emailValidation() {
     let regex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i
 
+
     if (regex.test(companyEmail.value) === false) {
         errorParagCo[7].style.color = "red"
         errorParagCo[7].innerHTML = "* Please enter valid e-mail address!"
         return false;
-    } else {
+    }
+    else {
         errorParagCo[7].innerHTML = "";
         return true;
     }
+
+
+
 }
 
 
@@ -287,6 +297,7 @@ function termsAndConditi() {
         errorParagCo[10].innerHTML = "* Please accept the terms and conditions to proceed!";
     } else {
         errorParagCo[10].innerHTML = ""
+        console.log(termsAndCond.value)
         return true
     }
 }
@@ -307,14 +318,15 @@ let validate = () => {
 }
 
 let companyAbout = null;
+let validateCreditentials = null;
 
-// let storingObj = (key) => {
-//     companyAbout = new Company(companyName.value, companyAddress.value, companyCountry.value, companyRegNumber.value, companyCategoryIndustry.value, companyEmail.value, companyPhone.value, companyWebsite.value);
-//     localStorage.setItem(key, JSON.stringify(companyAbout));
-// }
+let storingObj = async (key) => {
+    companyAbout = await new Company(firstName.value, lastName.value, password.value, companyName.value, companyAddress.value, companyCountry.value, companyRegNumber.value, companyCategoryIndustry.value, companyEmail.value, companyPhone.value, companyWebsite.value);
+    localStorage.setItem(key, JSON.stringify(companyAbout));
+}
 
 
-const postUrl = "http://localhost/createNewComp";
+const postUrl = "http://localhost/validate";
 
 const postData = async (urls, content) => {
     const response = await fetch(urls, {
@@ -324,7 +336,27 @@ const postData = async (urls, content) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(content)
-    }).then(function (res) { console.log(res) })
+    }).then(function (res) {
+        if (res.status === 400) {
+            console.log(res.msg)
+            swal({
+                position: 'center',
+                icon: 'error',
+                title: `${res.statusText}`,
+            }).then((value) => {
+                if (value)
+                    window.location.href = "../company.html"
+                else
+                    window.location.href = "../company.html"
+
+            })
+        } else {
+            storingObj("company")
+            window.location.href = '../Company Information/index.html'
+            clear();
+            return true
+        }
+    })
         .catch(function (res) { console.log(res) })
 
 };
@@ -336,19 +368,11 @@ btn.addEventListener("click", function () {
 
 
     if (companyNameValidation() === true && companyAddressValidation() === true && companyCountryValidation() === true && companyRegNumberValidation() === true && emailValidation() === true && phoneValidation() === true && companyUrlValidation() === true && termsAndConditi() === true && validateFirstName() === true && validateLastName() === true && validatePass() === true) {
-        companyAbout = new Company(firstName.value, lastName.value, password.value, companyName.value, companyAddress.value, companyCountry.value, companyRegNumber.value, companyCategoryIndustry.value, companyEmail.value, companyPhone.value, companyWebsite.value);
-        // storingObj(companyName.value)
-        postData(postUrl, companyAbout)
 
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'You created your company successfully!',
-            html: '<a href="index.html">Go to Home Page!</a>',
-            showConfirmButton: false,
+        validateCreditentials = new Validate(companyEmail.value, companyName.value)
 
-        })
-        clear();
+        postData(postUrl, validateCreditentials)
+
     }
 
 });

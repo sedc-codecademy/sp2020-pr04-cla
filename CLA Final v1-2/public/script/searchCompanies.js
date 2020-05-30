@@ -9,7 +9,7 @@ let currentInfoWindow = null;
 let markers = [];
 
 
-const database = "http://localhost/getCompData";
+const database = "http://localhost/createNewComp";
 
 
 

@@ -13,53 +13,53 @@
 <body>
 
 
- <!-- Top Navigation Menu -->
+  <!-- Top Navigation Menu -->
 
- <div class="navColor">
+  <div class="navColor">
     <nav class="ui stackable borderless container menu inverted">
-        <img class="ui small image logo" src="./img/cla-logo.png" alt="CLA Logo">
-        <a href="./index.html" class="item">Home</a>
-        <a href="./category-page/index.html" class="item">Categories</a>
-        <a href="about.html" class="item">About</a>
-        <a href="contact.html" class="item">Contact</a>
-        <div class="ui dropdown item">
-            Search <i class="dropdown icon"></i>
-            <div class="menu">
-                <a class="item" href="./search-companies.html">Search Companies</a>
-                <a class="item" href="./search-ads.html">Search Ads</a>
-                <a class="item">Search Jobs</a>
-            </div>
+      <img class="ui small image logo" src="./img/cla-logo.png" alt="CLA Logo">
+      <a href="./index.html" class="item">Home</a>
+      <a href="./category-page/index.html" class="item">Categories</a>
+      <a href="about.html" class="item">About</a>
+      <a href="contact.html" class="item">Contact</a>
+      <div class="ui dropdown item">
+        Search <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="./search-companies.html">Search Companies</a>
+          <a class="item" href="./search-ads.html">Search Ads</a>
+          <a class="item">Search Jobs</a>
         </div>
-        <div class="ui dropdown item" value="active">
-            Info <i class="dropdown icon"></i>
-            <div class="menu active">
-                <a class="item" href="./how-it-works/index.html">How it Works</a>
-                <a class="item" href="./pricing-page/index.html">Pricing</a>
-                <a class="item" href="./profile-and-ad-pages/company-profile.html">Company Profile</a>
-                <a class="item" href="./profile-and-ad-pages/classified-ad.html">Ad Page</a>
-                <a class="item" href="create-ad.html">Create Ad</a>
-                <a class="item" href="./faq/index.html">FAQ</a>
-                
-            </div>
-        </div>
+      </div>
+      <div class="ui dropdown item" value="active">
+        Info <i class="dropdown icon"></i>
+        <div class="menu active">
+          <a class="item" href="./how-it-works/index.html">How it Works</a>
+          <a class="item" href="./pricing-page/index.html">Pricing</a>
+          <a class="item" href="./profile-and-ad-pages/company-profile.html">Company Profile</a>
+          <a class="item" href="./profile-and-ad-pages/classified-ad.html">Ad Page</a>
+          <a class="item" href="create-ad.html">Create Ad</a>
+          <a class="item" href="./faq/index.html">FAQ</a>
 
-        <div class="right menu">
-            <form class="item">
-                <div class="ui buttons">
-                    <a href="./company.html">
-                        <div class="ui blue button">Sign Up</div>
-                    </a>
-                    <div class="or"></div>
-                    <a href="./login.html">
-                        <div class="ui green button active">Log In</div>
-                    </a>
-                </div>
-            </form>
         </div>
+      </div>
+
+      <div class="right menu">
+        <form class="item">
+          <div class="ui buttons">
+            <a href="./company.html">
+              <div class="ui blue button">Sign Up</div>
+            </a>
+            <div class="or"></div>
+            <a href="./login.html">
+              <div class="ui green button active">Log In</div>
+            </a>
+          </div>
+        </form>
+      </div>
     </nav>
-</div>
+  </div>
 
-<!-- END Of - Top Navigation Menu -->
+  <!-- END Of - Top Navigation Menu -->
 
 
 
@@ -78,7 +78,7 @@
           <div class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" name="email" id="usernameLogin" placeholder="Username or e-mail">
+              <input type="text" name="email" id="usernameLogin" placeholder="E-mail">
             </div>
           </div>
           <div class="field">
@@ -93,7 +93,7 @@
               <label>Remember me</label>
             </div>
           </div>
-          <button class="ui inverted green button" id="btn">Login</button>
+          <button class="ui inverted green button" id="loginBtn">Login</button>
         </div>
       </div>
       <div class="ui gray segment">
@@ -125,14 +125,14 @@
 
 
 
-
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
       <script>
         $(".rating").rating();
         $('.ui.dropdown').dropdown();
-    </script>
-    
+      </script>
+      <script src="./script/login.js"></script>
 </body>
 
 </html>
