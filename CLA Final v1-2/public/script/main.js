@@ -6,8 +6,6 @@ const companyURL = "http://localhost/createNewComp";
 
 const markers = [];
 
-
-
 function initMap() {
 
     // Our Json Data
@@ -206,6 +204,10 @@ function initMap() {
                     <button class="ui teal basic button">Show Listing</button>
                     </div>`
                 })
+
+
+
+                
             } else {
                 alert('Not success' + status);
             }
