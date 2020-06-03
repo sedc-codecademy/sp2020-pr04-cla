@@ -408,8 +408,8 @@ function initMap() {
                     <button class="ui teal basic button">Show Listing</button>
                     </div>`
         })
-      } else {
-        alert('Not success' + status);
+      } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+        setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite), 100);
       }
     })
   };

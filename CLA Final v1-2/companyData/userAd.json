@@ -16,7 +16,6 @@
         "adCategory": [
             " Accounting",
             " Chemical Lab"
-
         ],
         "adTitle": "Selling User 2",
         "adType": "Products User 2",
@@ -87,5 +86,49 @@
         "adType": "Dummy Type George",
         "adAmount": "Dummy Ammount George",
         "adDescription": "Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!"
+    },
+    {
+        "id": 9,
+        "adCategory": [
+            " Accounting",
+            " Stores"
+        ],
+        "adTitle": "Pipes to sell",
+        "adType": "Selling/Buying",
+        "adAmount": "A lot",
+        "adDescription": "We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! "
+    },
+    {
+        "id": 17,
+        "adCategory": [
+            " IT Industry",
+            " Construction"
+        ],
+        "adTitle": "QWEqwe",
+        "adType": "qweqwe",
+        "adAmount": "qwe1213",
+        "adDescription": "qweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewq"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "Accounting",
+            "Chemical Lab"
+        ],
+        "adTitle": "TEst Test",
+        "adType": "TEst TestTEst Test",
+        "adAmount": "TEst TestTEst Test",
+        "adDescription": "TEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst Test"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "Construction",
+            "Accounting"
+        ],
+        "adTitle": "New New New",
+        "adType": "New New New",
+        "adAmount": "New New New",
+        "adDescription": "New New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New New"
     }
 ]

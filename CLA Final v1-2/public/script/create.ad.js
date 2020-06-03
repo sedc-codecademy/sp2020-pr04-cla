@@ -9,21 +9,16 @@ const termsCond = document.getElementById("termsCond");
 const errMsg = document.getElementsByClassName("errMsg");
 const myBtn = document.getElementById("btn");
 const menu = document.querySelector("#menuCate");
+const myInputTest = document.getElementById("myInputTest")
 
-let testArr = selCateg.nextSibling.parentNode.children
-let categArr = []
+
 
 window.onload = () => {
+     checkLC();
+};
 
-    for (let i = 0; i < categ.length; i++) {
-        categ[i].addEventListener("click", function () {
-            categArr.push(categ[i].innerText)
-            console.log(categArr)
-        })
-    }
-    checkLC()
 
-}
+
 
 let LCInfo;
 
@@ -31,9 +26,8 @@ let checkLC = async () => {
     if (localStorage.length > 0) {
         let lStorageComapny = await localStorage.getItem("user");
         LCInfo = JSON.parse(lStorageComapny);
-        console.log(LCInfo[0].id)
     }
-}
+};
 
 
 
@@ -45,13 +39,11 @@ function Ad(id, category, title, type, amount, description) {
     this.adType = type
     this.adAmount = amount
     this.adDescription = description
-}
-
-
+};
 
 
 const checkCategory = () => {
-    if (categArr.length === 0) {
+    if (myInputTest.value === "") {
         errMsg[0].style.color = "red";
         errMsg[0].innerText = "* You must fill atleast one category!";
         return false;
@@ -78,7 +70,7 @@ const checkAdTitle = () => {
         errMsg[1].innerText = "";
         return true;
     }
-}
+};
 
 const checkprodType = () => {
     if (prodType.value === "") {
@@ -97,7 +89,7 @@ const checkprodType = () => {
         errMsg[2].innerText = "";
         return true;
     }
-}
+};
 
 const checkAmount = () => {
     if (amount.value === "") {
@@ -116,7 +108,7 @@ const checkAmount = () => {
         errMsg[3].innerText = "";
         return true;
     }
-}
+};
 
 const checkDescription = () => {
     if (txtArea.value === "") {
@@ -135,7 +127,7 @@ const checkDescription = () => {
         errMsg[4].innerText = "";
         return true;
     }
-}
+};
 
 
 const trmAndCond = () => {
@@ -147,7 +139,7 @@ const trmAndCond = () => {
         errMsg[5].innerHTML = "";
         return true;
     }
-}
+};
 
 const clering = () => {
     errMsg[0].innerText = "";
@@ -156,13 +148,12 @@ const clering = () => {
     errMsg[3].innerText = "";
     errMsg[4].innerText = "";
     errMsg[5].innerText = "";
-    categArr = [];
     adTitle.value = "";
     prodType.value = "";
     amount.value = "";
     txtArea.value = "";
     termsCond.checked = false;
-}
+};
 
 let validate = () => {
     checkCategory();
@@ -171,7 +162,7 @@ let validate = () => {
     checkAmount();
     checkDescription();
     trmAndCond();
-}
+};
 
 const postUrl = "http://localhost/createAd";
 
@@ -193,14 +184,11 @@ const postData = async (urls, content) => {
 
 
 
-
-
-
 myBtn.addEventListener("click", function () {
 
     validate();
     if (checkCategory() === true && checkAdTitle() === true && checkprodType() === true && checkAmount() === true && checkDescription() === true && trmAndCond() === true) {
-        let ad = new Ad(LCInfo[0].id, categArr, adTitle.value, prodType.value, amount.value, txtArea.value)
+        let ad = new Ad(LCInfo[0].id, myInputTest.value.split(','), adTitle.value, prodType.value, amount.value, txtArea.value)
         console.log(ad)
         postData(postUrl, ad)
         clering()
@@ -210,9 +198,9 @@ myBtn.addEventListener("click", function () {
             title: `Ad successfully created`,
         }).then((value) => {
             if (value)
-                window.location.href = "../create-ad.html"
+                window.location.href = "../profile-and-ad-pages/company-profile.html"
             else
-                window.location.href = "../create-ad.html"
+                window.location.href = "../profile-and-ad-pages/company-profile.html"
 
         })
         // window.location.reload()

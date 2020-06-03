@@ -9,6 +9,7 @@ let heavyIndustry = document.getElementById("industry");
 let homeAndGarden = document.getElementById("home");
 let petsAndAnimals = document.getElementById("pets");
 
+
 function initCompCategory() {
   const getData = async (url) => {
     let response = await fetch(url);
