@@ -5,12 +5,14 @@ let keywordInput = document.getElementById("keywordInput");
 let locationInput = document.getElementById("locationInput");
 let categoryIndustry = document.getElementById("categoryIndustry");
 
-
 let currentInfoWindow = null;
 let markers = [];
 
 
 const database = "http://localhost/createNewComp";
+
+
+
 
 reset.addEventListener("click", function () {
   postContainer.innerHTML = "";
@@ -18,10 +20,99 @@ reset.addEventListener("click", function () {
   locationInput.value = "";
 })
 
+
+
+const searchDataPosts = function (item) {
+  return ` <div class="ui card">
+          <div class="ui slide masked reveal image">
+            <img src="./img/Google Office image 1.jpg" class="visible content">
+            <img src="./img/Microsoft Building some image.jpg" class="hidden content">
+          </div>
+          <div class="content">
+            <a class="header">${item.companyName}</a>
+            <div class="meta">
+              <span class="date">${item.companyCountry}</span>
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="users icon"></i>
+              ${item.companyEmail}
+            </a>
+          </div>
+        </div>`
+}
+
 function initMap() {
+
+  if (document.referrer === "http://localhost/index.html" && localStorage.keyword != "") {
+    keywordInput.value = localStorage.keyword;
+
+    fetch(database)
+      .then(data => data.json())
+      .then(function (result) {
+        try {
+          postContainer.innerHTML = "";
+          for (const item of result) {
+            if (item.companyName.includes(keywordInput.value)) {
+              console.log(item)
+              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              postContainer.innerHTML += searchDataPosts(item);
+            }
+          }
+
+        } catch (error) {
+          console.log("Error: " + error);
+        }
+      })
+  } else if (document.referrer === "http://localhost/index.html" && localStorage.address != "") {
+    locationInput.value = localStorage.address;
+
+    fetch(database)
+      .then(data => data.json())
+      .then(function (result) {
+        try {
+          postContainer.innerHTML = "";
+          for (const item of result) {
+            if (locationInput.value === item.companyCountry) {
+              console.log(item)
+              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              postContainer.innerHTML += searchDataPosts(item);
+            }
+          }
+
+        } catch (error) {
+          console.log("Error: " + error);
+        }
+      })
+
+  } else if (document.referrer === "http://localhost/index.html" && localStorage.category != "") {
+    categoryIndustry.value = localStorage.category;
+
+    fetch(database)
+      .then(data => data.json())
+      .then(function (result) {
+        try {
+          postContainer.innerHTML = "";
+          for (const item of result) {
+            if (categoryIndustry.value  === item.companyCategory) {
+              console.log(item)
+              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              postContainer.innerHTML += searchDataPosts(item);
+            }
+          }
+
+        } catch (error) {
+          console.log("Error: " + error);
+        }
+      })
+  }
+
+  localStorage.clear();
 
 
   search.addEventListener("click", function () {
+
     // Ova e test ako potpolni poveke parametri za prebaruvanje!
     if (keywordInput.value !== "" && locationInput.value !== "") {
       alert('Error');
@@ -38,25 +129,7 @@ function initMap() {
                 console.log(item)
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
 
-                postContainer.innerHTML += `
-                    <div class="ui card">
-                    <div class="ui slide masked reveal image">
-                      <img src="./img/Google Office image 1.jpg" class="visible content">
-                      <img src="./img/Microsoft Building some image.jpg" class="hidden content">
-                    </div>
-                    <div class="content">
-                      <a class="header">${item.companyName}</a>
-                      <div class="meta">
-                        <span class="date">${item.country}</span>
-                      </div>
-                    </div>
-                    <div class="extra content">
-                      <a>
-                        <i class="users icon"></i>
-                        ${item.emailAddress}
-                      </a>
-                    </div>
-                  </div>`
+                postContainer.innerHTML += searchDataPosts(item);
               }
             }
 
@@ -75,31 +148,11 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              if (locationInput.value === item.country) {
+              if (locationInput.value === item.companyCountry) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
-                postContainer.innerHTML += `
-                    <div class="ui card">
-                    <div class="ui slide masked reveal image">
-                      <img src="./img/Google Office image 1.jpg" class="visible content">
-                      <img src="./img/Microsoft Building some image.jpg" class="hidden content">
-                    </div>
-                    <div class="content">
-                      <a class="header">${item.companyName}</a>
-                      <div class="meta">
-                        <span class="date">${item.country}</span>
-                      </div>
-                    </div>
-                    <div class="extra content">
-                      <a>
-                        <i class="users icon"></i>
-                        ${item.emailAddress}
-                      </a>
-                    </div>
-                  </div>`
+                postContainer.innerHTML += searchDataPosts(item);
               }
             }
-
-
 
           } catch (error) {
             console.log(error)
@@ -116,32 +169,12 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              if (item.companyCategory === categoryIndustry.value) {
+              if (categoryIndustry.value  === item.companyCategory) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 console.log(item)
-                postContainer.innerHTML += `
-                    <div class="ui card">
-                    <div class="ui slide masked reveal image">
-                      <img src="./img/Google Office image 1.jpg" class="visible content">
-                      <img src="./img/Microsoft Building some image.jpg" class="hidden content">
-                    </div>
-                    <div class="content">
-                      <a class="header">${item.companyName}</a>
-                      <div class="meta">
-                        <span class="date">${item.country}</span>
-                      </div>
-                    </div>
-                    <div class="extra content">
-                      <a>
-                        <i class="users icon"></i>
-                        ${item.emailAddress}
-                      </a>
-                    </div>
-                  </div>`
+                postContainer.innerHTML += searchDataPosts(item);
               }
             }
-
-
 
           } catch (error) {
             console.log(error)
@@ -157,25 +190,7 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              postContainer.innerHTML += `
-                <div class="ui card">
-                <div class="ui slide masked reveal image">
-                  <img src="./img/Google Office image 1.jpg" class="visible content">
-                  <img src="./img/Microsoft Building some image.jpg" class="hidden content">
-                </div>
-                <div class="content">
-                  <a class="header">${item.companyName}</a>
-                  <div class="meta">
-                    <span class="date">${item.country}</span>
-                  </div>
-                </div>
-                <div class="extra content">
-                  <a>
-                    <i class="users icon"></i>
-                    ${item.emailAddress}
-                  </a>
-                </div>
-              </div>`
+              postContainer.innerHTML += searchDataPosts(item);
             }
 
 
@@ -416,19 +431,3 @@ function initMap() {
 
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

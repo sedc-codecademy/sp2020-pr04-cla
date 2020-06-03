@@ -66,34 +66,34 @@
   <div id="topMenuDiv" class="ui container menu-container-mid">
     <div class="four column stackable ui grid search-bar-container">
       <div class="column">
-        <select class="ui compact selection dropdown first-dropdown">
+        <select id="companyCategoryIndustry" class="ui compact selection dropdown first-dropdown">
           <option selected="" value="articles">All Categories</option>
-          <option value="products">Arts & Entertainment</option>
-          <option value="products">Business and Consumer Servicese</option>
-          <option value="products">Computer Electronics & Technology</option>
-          <option value="products">E-Commerce & Shopping</option>
-          <option value="products">Finance</option>
-          <option value="products">Food & Drink</option>
-          <option value="products">Health</option>
-          <option value="products">Heavy industry & Engineering</option>
-          <option value="products">Home & Garden</option>
-          <option value="products">Pets & Animals</option>
-          <option value="products">Real Estate</option>
-          <option value="products">Scince & Education</option>
-          <option value="products">Sports</option>
-          <option value="products">Travel & Tourism</option>
-          <option value="products">Vehicles</option>
+          <option class="item">Arts & Entertainment</option>
+          <option class="item">Business and Consumer Servicese</option>
+          <option class="item">Computer Electronics & Technology</option>
+          <option class="item">E-Commerce & Shopping</option>
+          <option class="item">Finance</option>
+          <option class="item">Food & Drink</option>
+          <option class="item">Health</option>
+          <option class="item">Heavy industry & Engineering</option>
+          <option class="item">Home & Garden</option>
+          <option class="item">Pets & Animals</option>
+          <option class="item">Real Estate</option>
+          <option class="item">Scince & Education</option>
+          <option class="item">Sports</option>
+          <option class="item">Travel & Tourism</option>
+          <option class="item">Vehicles</option>
         </select>
       </div>
       <div class="column">
         <div class="ui fluid icon input focus">
-          <input type="text" placeholder="Enter Address">
+          <input id="enterAddress" type="text" placeholder="Enter Country">
           <i class="inverted circular location arrow icon"></i>
         </div>
       </div>
       <div class="column">
         <div class="ui fluid icon input focus">
-          <input type="text" placeholder="Keyword">
+          <input id="enterKeyword" type="text" placeholder="Keyword">
           <i class="inverted circular crosshairs icon"></i>
         </div>
       </div>
@@ -106,7 +106,7 @@
                 <option selected="" value="articles">25km</option>
                 <option value="products">50km</option>
               </select>
-              <div class="ui green button">Search</div>
+              <div id="searchBtn" class="ui green button">Search</div>
             </div>
           </form>
         </div>
