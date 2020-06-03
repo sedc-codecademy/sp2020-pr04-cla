@@ -13,17 +13,38 @@ function initMap() {
         let response = await fetch(url);
         let data = await response.json();
         console.log(data);
+
         showData(data);
+
+
     };
 
 
     getData(companyURL);
-    
+
 
     const showData = (info) => {
-        info.forEach(element => {
-            codeAddress(element.companyAddress, element.companyName, element.companyEmail, element.companyPhone, element.companyWebsite);
-        });
+
+        for (let i = 0; i < info.length; i++) {
+            // console.log(info[i])
+
+            // break
+            setTimeout(() => {
+                codeAddress(info[i].companyAddress, info[i].companyName, info[i].companyEmail, info[i].companyPhone, info[i].companyWebsite);
+            }, 400);
+
+            // setInterval(() => {
+            //     codeAddress(info[i].companyAddress, info[i].companyName, info[i].companyEmail, info[i].companyPhone, info[i].companyWebsite);
+            // }, 300);
+
+        }
+
+        // info.forEach(element => {
+
+
+        //     codeAddress(element.companyAddress, element.companyName, element.companyEmail, element.companyPhone, element.companyWebsite);
+
+        // });
     };
 
     // Geocoder za convert na adresi vo lat i lng
@@ -179,39 +200,53 @@ function initMap() {
     // Funkcija za dinamicki stavanje pinpoint! mora da ima evtlistener
 
     var codeAddress = function (props, about, mailAdd, phoneNum, webSite) {
+
+
         let address = props;
 
+
         geocoder.geocode({ 'address': address }, function (results, status) {
-            if (status === 'OK') {
+            // console.log(results)
+            if (status === "OK") {
+
+
                 map.setCenter(results[0].geometry.location);
+
                 addMarker({
                     coords: results[0].geometry.location,
                     content: `<div class="ui raised segment">
-                    <h3 style="color: teal;" class="ui header">Company Name: ${about}</h3>
-                    <div class="ui fitted divider"></div> 
-                    <div class="ui teal  segment">
-                        <h4>Email: ${mailAdd}</h4>
-                    </div>
-                    <div class="ui teal segment">
-                        <h4>Phone Number: ${phoneNum}</h4>
-                    </div>
-                    <div class="ui teal segment">
-                        <h4>Web Address: <a href="${webSite}" target="_blank">${webSite}</a></h4>
-                    </div>
-                    <br/>
-                    
-                    <button class="ui teal basic button">Company Profile</button>
-                    <button class="ui teal basic button">Show Listing</button>
-                    </div>`
+                                    <h3 style="color: teal;" class="ui header">Company Name: ${about}</h3>
+                                    <div class="ui fitted divider"></div> 
+                                    <div class="ui teal  segment">
+                                        <h4>Email: ${mailAdd}</h4>
+                                    </div>
+                                    <div class="ui teal segment">
+                                        <h4>Phone Number: ${phoneNum}</h4>
+                                    </div>
+                                    <div class="ui teal segment">
+                                        <h4>Web Address: <a href="${webSite}" target="_blank">${webSite}</a></h4>
+                                    </div>
+                                    <br/>
+                                    
+                                    <button class="ui teal basic button">Company Profile</button>
+                                    <button class="ui teal basic button">Show Listing</button>
+                                    </div>`
                 })
 
 
 
-                
-            } else {
-                alert('Not success' + status);
-            }
+
+            } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+                setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite ), 200);  
+            } 
+
         })
+
+
+
+
+
+
     };
 
     // let allObjs = localStorage
