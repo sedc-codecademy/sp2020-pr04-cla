@@ -242,9 +242,8 @@ function initMap() {
 
 
             } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
-                setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite ), 200);
-            }
-
+                setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite ), 200);  
+            } 
 
         })
 
