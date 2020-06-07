@@ -4,12 +4,18 @@ let reset = document.getElementById("resetBtn");
 let keywordInput = document.getElementById("keywordInput");
 let locationInput = document.getElementById("locationInput");
 let categoryIndustry = document.getElementById("categoryIndustry");
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
+
+
+checkingForUser(signLogBtns, yourProfilebtn);
 
 let currentInfoWindow = null;
 let markers = [];
 
 
-const database = "http://localhost/createNewComp";
+// const database = "http://localhost/createNewComp";
+const database = "http://localhost/createAd";
 
 reset.addEventListener("click", function () {
   postContainer.innerHTML = "";
@@ -28,7 +34,7 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              if (item.companyName.includes(keywordInput.value)) {
+              if (item.adTitle.includes(keywordInput.value)) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 postContainer.innerHTML += `
                     <div class="ui card">
@@ -36,9 +42,9 @@ function initMap() {
                     <img src="./img/Steel-Factory-640x428.jpg">
                     </a>
                     <div class="content">
-                    <a class="header" href="#">Procuding Epoxy Tables</a>
+                    <a class="header" href="#">${item.adTitle}</a>
                     <div class="meta">
-                    <a>${item.dateOfRegistration}</a>
+                    <p>${item.adType}</p>
                     <br>
                     <a><b>${item.companyName}</b></a>
                     </div>
@@ -65,22 +71,24 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              if (locationInput.value === item.country) {
+              if (locationInput.value === item.companyCountry) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 postContainer.innerHTML += `
-                    <div class="ui card">
-                    <a class="image" href="#">
-                    <img src="./img/Steel-Factory-640x428.jpg">
-                    </a>
-                    <div class="content">
-                    <a class="header" href="#">Procuding Epoxy Tables</a>
-                    <div class="meta">
-                    <a>${item.dateOfRegistration}</a>
-                    <br>
-                    <a><b>${item.companyName}</b></a>
-                    </div>
-                    </div>
-                    </div>`
+                <div class="ui card">
+                <a class="image" href="#">
+                <img src="./img/Steel-Factory-640x428.jpg">
+                </a>
+                <div class="content">
+                <a class="header" href="#">${item.adTitle}</a>
+                <div class="meta">
+                <p>${item.adType}</p>
+                <br>
+                <a><b>${item.companyName}</b></a>
+                </div>
+                </div>
+                </div>
+
+                `
               }
             }
 
@@ -100,28 +108,25 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              if (item.companyCategory === categoryIndustry.value) {
+              if (item.adCategory.includes(categoryIndustry.value)) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 console.log(item)
                 postContainer.innerHTML += `
-                    <div class="ui card">
-                    <div class="ui slide masked reveal image">
-                      <img src="./img/Google Office image 1.jpg" class="visible content">
-                      <img src="./img/Microsoft Building some image.jpg" class="hidden content">
-                    </div>
-                    <div class="content">
-                      <a class="header">${item.companyName}</a>
-                      <div class="meta">
-                        <span class="date">${item.country}</span>
-                      </div>
-                    </div>
-                    <div class="extra content">
-                      <a>
-                        <i class="users icon"></i>
-                        ${item.emailAddress}
-                      </a>
-                    </div>
-                  </div>`
+                <div class="ui card">
+                <a class="image" href="#">
+                <img src="./img/Steel-Factory-640x428.jpg">
+                </a>
+                <div class="content">
+                <a class="header" href="#">${item.adTitle}</a>
+                <div class="meta">
+                <p>${item.adType}</p>
+                <br>
+                <a><b>${item.companyName}</b></a>
+                </div>
+                </div>
+                </div>
+
+                `
               }
             }
 
@@ -142,19 +147,21 @@ function initMap() {
             postContainer.innerHTML = "";
             for (const item of result) {
               postContainer.innerHTML += `
-                <div class="ui card">
-                <a class="image" href="#">
-                <img src="./img/Steel-Factory-640x428.jpg">
-                </a>
-                <div class="content">
-                <a class="header" href="#">Procuding Epoxy Tables</a>
-                <div class="meta">
-                <a>${item.dateOfRegistration}</a>
-                <br>
-                <a><b>${item.companyName}</b></a>
-                </div>
-                </div>
-                </div>`
+              <div class="ui card">
+              <a class="image" href="#">
+              <img src="./img/Steel-Factory-640x428.jpg">
+              </a>
+              <div class="content">
+              <a class="header" href="#">${item.adTitle}</a>
+              <div class="meta">
+              <p>${item.adType}</p>
+              <br>
+              <a><b>${item.companyName}</b></a>
+              </div>
+              </div>
+              </div>
+
+              `
             }
 
 

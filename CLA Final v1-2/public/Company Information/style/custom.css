@@ -5,7 +5,9 @@ body {
     height: 50vh;
     width: 100%;
 }
-
+#yourProfilebtn{
+    display: none;
+}
 .navColor {
     background-color: #1b1c1d;
 }

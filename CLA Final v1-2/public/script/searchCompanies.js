@@ -4,6 +4,11 @@ let reset = document.getElementById("resetBtn");
 let keywordInput = document.getElementById("keywordInput");
 let locationInput = document.getElementById("locationInput");
 let categoryIndustry = document.getElementById("categoryIndustry");
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
+
+
+checkingForUser(signLogBtns, yourProfilebtn);
 
 let currentInfoWindow = null;
 let markers = [];

@@ -3,8 +3,13 @@ const newJsonUrl = "http://localhost/getCompData";
 const newCompaniesUrl = "http://localhost/getNewComp";
 let currentInfoWindow = null;
 const companyURL = "http://localhost/createNewComp";
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
 
+
+checkingForUser(signLogBtns, yourProfilebtn);
 const markers = [];
+
 
 function initMap() {
 
@@ -25,26 +30,26 @@ function initMap() {
 
     const showData = (info) => {
 
-        for (let i = 0; i < info.length; i++) {
-            // console.log(info[i])
+        // for (let i = 0; i < info.length; i++) {
+        //     // console.log(info[i])
 
-            // break
-            setTimeout(() => {
-                codeAddress(info[i].companyAddress, info[i].companyName, info[i].companyEmail, info[i].companyPhone, info[i].companyWebsite);
-            }, 400);
+        //     // break
+        //     setTimeout(() => {
+        //         codeAddress(info[i].companyAddress, info[i].companyName, info[i].companyEmail, info[i].companyPhone, info[i].companyWebsite);
+        //     }, 400);
 
-            // setInterval(() => {
-            //     codeAddress(info[i].companyAddress, info[i].companyName, info[i].companyEmail, info[i].companyPhone, info[i].companyWebsite);
-            // }, 300);
+        //     // setInterval(() => {
+        //     //     codeAddress(info[i].companyAddress, info[i].companyName, info[i].companyEmail, info[i].companyPhone, info[i].companyWebsite);
+        //     // }, 300);
 
-        }
+        // }
 
-        // info.forEach(element => {
+        info.forEach(element => {
 
 
-        //     codeAddress(element.companyAddress, element.companyName, element.companyEmail, element.companyPhone, element.companyWebsite);
+            codeAddress(element.companyAddress, element.companyName, element.companyEmail, element.companyPhone, element.companyWebsite);
 
-        // });
+        });
     };
 
     // Geocoder za convert na adresi vo lat i lng
