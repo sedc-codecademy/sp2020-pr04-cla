@@ -10,7 +10,11 @@ const errMsg = document.getElementsByClassName("errMsg");
 const myBtn = document.getElementById("btn");
 const menu = document.querySelector("#menuCate");
 const myInputTest = document.getElementById("myInputTest")
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
 
+
+checkingForUser(signLogBtns, yourProfilebtn);
 
 
 window.onload = () => {
@@ -32,13 +36,19 @@ let checkLC = async () => {
 
 
 
-function Ad(id, category, title, type, amount, description) {
+function Ad(id, category, title, type, amount, description, companyAddress, companyName, companyEmail, companyWebsite, companyPhone, companyCountry) {
     this.id = id
     this.adCategory = category
     this.adTitle = title
     this.adType = type
     this.adAmount = amount
     this.adDescription = description
+    this.companyAddress = companyAddress
+    this.companyName = companyName
+    this.companyEmail = companyEmail
+    this.companyWebsite = companyWebsite
+    this.companyPhone = companyPhone
+    this.companyCountry = companyCountry
 };
 
 
@@ -188,7 +198,7 @@ myBtn.addEventListener("click", function () {
 
     validate();
     if (checkCategory() === true && checkAdTitle() === true && checkprodType() === true && checkAmount() === true && checkDescription() === true && trmAndCond() === true) {
-        let ad = new Ad(LCInfo[0].id, myInputTest.value.split(','), adTitle.value, prodType.value, amount.value, txtArea.value)
+        let ad = new Ad(LCInfo[0].id, myInputTest.value.split(','), adTitle.value, prodType.value, amount.value, txtArea.value, LCInfo[0].companyAddress, LCInfo[0].companyName, LCInfo[0].companyEmail, LCInfo[0].companyWebsite, LCInfo[0].companyPhone, LCInfo[0].companyCountry)
         console.log(ad)
         postData(postUrl, ad)
         clering()

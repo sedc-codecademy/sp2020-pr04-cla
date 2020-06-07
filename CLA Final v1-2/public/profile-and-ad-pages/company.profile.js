@@ -17,6 +17,11 @@ const companEmailMobile = document.getElementById("companEmailMobile");
 const aboutTheCompany = document.getElementsByClassName("aboutTheCompany");
 const body = document.querySelector("body")
 const ads = document.getElementById("ads");
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
+
+
+checkingForUser(signLogBtns, yourProfilebtn);
 
 let loggedUser;
 

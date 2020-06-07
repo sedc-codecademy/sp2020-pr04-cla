@@ -1,12 +1,17 @@
 
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
 
-$('#next').click(function(){
-  
+
+checkingForUser(signLogBtns, yourProfilebtn);
+
+$('#next').click(function () {
+
   $('.shape')
-  
-  .shape('flip right');
-  
-  });
+
+    .shape('flip right');
+
+});
 
 
 

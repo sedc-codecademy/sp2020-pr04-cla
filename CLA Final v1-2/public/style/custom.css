@@ -1,6 +1,11 @@
 body {
     background-color: whitesmoke;
 }
+
+#yourProfilebtn{
+    display: none;
+}
+
 #map{
     height: 50vh;
     width: 100%;

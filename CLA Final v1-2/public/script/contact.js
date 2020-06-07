@@ -4,6 +4,11 @@ const emailGj = document.getElementById("emailGj");
 const sumbitBtnGj = document.getElementById("sumbitBtnGj");
 const textareaGj = document.getElementById("textareaGj");
 const errorParagGj = document.getElementsByClassName("errorParagGj");
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
+
+
+checkingForUser(signLogBtns, yourProfilebtn);
 
 // Clear Function
 

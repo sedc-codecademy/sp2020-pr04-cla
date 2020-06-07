@@ -6,7 +6,19 @@ const login = async () => {
 
     let user;
 
-    email && password ? user = await makeLogin({ email, password }) : alert('Missing email or password');
+    // email && password ? user = await makeLogin({ email, password }) : swal('Missing email or password');
+
+    if (email && password) {
+        user = await makeLogin({ email, password })
+        return true;
+    } else {
+        swal({
+            position: 'center',
+            icon: 'error',
+            title: 'Missing email or password',
+        })
+        return false;
+    }
 
 }
 
@@ -31,7 +43,7 @@ const makeLogin = ({ email, password }) => {
                         window.location.href = "../login.html"
                     else
                         window.location.href = "../login.html"
-    
+
                 })
                 return false;
             } else {
@@ -49,7 +61,7 @@ const makeLogin = ({ email, password }) => {
         })
 }
 
-loginBtn.addEventListener('click', function(e){
+loginBtn.addEventListener('click', function (e) {
     e.preventDefault();
     login();
 })
