@@ -13,8 +13,7 @@ checkingForUser(signLogBtns, yourProfilebtn);
 let currentInfoWindow = null;
 let markers = [];
 
-
-// const database = "http://localhost/createNewComp";
+const clientDatabase = "http://localhost/createNewComp";
 const database = "http://localhost/createAd";
 
 reset.addEventListener("click", function () {
@@ -22,6 +21,39 @@ reset.addEventListener("click", function () {
   keywordInput.value = "";
   locationInput.value = "";
 })
+
+function checkIdandReturn(item){
+  let companyName = "";
+  fetch(clientDatabase)
+  .then(data => data.json())
+  .then(function(result){
+    for (const client of result) {
+      if(client.userId === item){
+        companyName = client.companyName;
+        return companyName;
+      }
+    }
+  })
+}
+
+
+function cardContentDynamic(item){
+    return `
+  <div class="ui card">
+  <a class="image" href="#">
+  <img src="./img/Steel-Factory-640x428.jpg">
+  </a>
+  <div class="content">
+  <a class="header" href="#">${item.adTitle}</a>
+  <div class="meta">
+  <a>${checkIdandReturn(item.userId)}</a>
+  <br>
+  <a><b>${item.adCategory}</b></a>
+  </div>
+  </div>
+  </div>`
+}
+
 
 function initMap() {
 
@@ -36,22 +68,7 @@ function initMap() {
             for (const item of result) {
               if (item.adTitle.includes(keywordInput.value)) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
-                postContainer.innerHTML += `
-                    <div class="ui card">
-                    <a class="image" href="#">
-                    <img src="./img/Steel-Factory-640x428.jpg">
-                    </a>
-                    <div class="content">
-                    <a class="header" href="#">${item.adTitle}</a>
-                    <div class="meta">
-                    <p>${item.adType}</p>
-                    <br>
-                    <a><b>${item.companyName}</b></a>
-                    </div>
-                    </div>
-                    </div>
-    
-                    `
+                postContainer.innerHTML += cardContentDynamic(item);
               }
             }
 
@@ -73,22 +90,7 @@ function initMap() {
             for (const item of result) {
               if (locationInput.value === item.companyCountry) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
-                postContainer.innerHTML += `
-                <div class="ui card">
-                <a class="image" href="#">
-                <img src="./img/Steel-Factory-640x428.jpg">
-                </a>
-                <div class="content">
-                <a class="header" href="#">${item.adTitle}</a>
-                <div class="meta">
-                <p>${item.adType}</p>
-                <br>
-                <a><b>${item.companyName}</b></a>
-                </div>
-                </div>
-                </div>
-
-                `
+                postContainer.innerHTML += cardContentDynamic(item);
               }
             }
 
@@ -111,22 +113,7 @@ function initMap() {
               if (item.adCategory.includes(categoryIndustry.value)) {
                 codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
                 console.log(item)
-                postContainer.innerHTML += `
-                <div class="ui card">
-                <a class="image" href="#">
-                <img src="./img/Steel-Factory-640x428.jpg">
-                </a>
-                <div class="content">
-                <a class="header" href="#">${item.adTitle}</a>
-                <div class="meta">
-                <p>${item.adType}</p>
-                <br>
-                <a><b>${item.companyName}</b></a>
-                </div>
-                </div>
-                </div>
-
-                `
+                postContainer.innerHTML += cardContentDynamic(item);
               }
             }
 
@@ -146,22 +133,7 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              postContainer.innerHTML += `
-              <div class="ui card">
-              <a class="image" href="#">
-              <img src="./img/Steel-Factory-640x428.jpg">
-              </a>
-              <div class="content">
-              <a class="header" href="#">${item.adTitle}</a>
-              <div class="meta">
-              <p>${item.adType}</p>
-              <br>
-              <a><b>${item.companyName}</b></a>
-              </div>
-              </div>
-              </div>
-
-              `
+              postContainer.innerHTML += cardContentDynamic(item);
             }
 
 
