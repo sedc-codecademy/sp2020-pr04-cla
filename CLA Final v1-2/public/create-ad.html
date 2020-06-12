@@ -12,9 +12,9 @@
 <body>
 
 
-       <!-- Top Navigation Menu -->
+    <!-- Top Navigation Menu -->
 
-       <div class="navColor">
+    <div class="navColor">
         <nav class="ui stackable borderless container menu inverted">
             <img class="ui small image logo" src="./img/cla-logo.png" alt="CLA Logo">
             <a href="./index.html" class="item">Home</a>
@@ -34,25 +34,28 @@
                 <div class="menu active">
                     <a class="item" href="./how-it-works/index.html">How it Works</a>
                     <a class="item" href="./pricing-page/index.html">Pricing</a>
-                    <a class="item" href="./profile-and-ad-pages/company-profile.html">Company Profile</a>
-                    <a class="item" href="./profile-and-ad-pages/classified-ad.html">Ad Page</a>
-                    <a class="item active" href="create-ad.html">Create Ad</a>
                     <a class="item" href="./faq/index.html">FAQ</a>
                 </div>
             </div>
 
             <div class="right menu">
-                <form class="item">
-                    <div class="ui buttons">
-                        <a href="./company.html">
-                            <div class="ui blue button">Sign Up</div>
-                        </a>
-                        <div class="or"></div>
-                        <a href="./login.html">
-                            <div class="ui green button">Log In</div>
-                        </a>
+                <form  class="item">
+                    <div id="signLogBtns" class="ui buttons">
+                      <a href="company.html">
+                        <div class="ui button">Sign Up</div>
+                      </a>
+                      <div class="or"></div>
+                      <a href="./login.html">
+                        <div class="ui positive button">Log in</div>
+                      </a>
                     </div>
-                </form>
+                    <div id="yourProfilebtn" class="ui buttons">
+                      <a href="./profile-and-ad-pages/company-profile.html">
+                        <div class="ui inverted blue button">Your Profile</div>
+                      </a>
+                    </div>
+                    
+                  </form>
             </div>
         </nav>
     </div>
@@ -72,43 +75,80 @@
             <div class="ui center aligned segment">
                 <h4 class="ui dividing header">Industry</h4>
                 <div class="field"></div>
-                 
-                 <div class="ui fluid multiple search selection dropdown">
-                   <input type="hidden" name="receipt" />
-                   <i class="dropdown icon"></i>
-                   <div id="selCateg" class="default text">Select Category/s </div>
-                 
-                   <div id="menuCate" class="menu">
-                     <div class="item categ" data-value="IT Industry" data-text="IT Industry">
-                        <i class="building scale blue icon"></i>
-                            IT Industry
-                     </div>
-                     <div class="item categ" data-value="Accounting" data-text="Accounting">
-                        <i class="briefcase scale blue icon"></i>
-                        Accounting
-                     </div>
-                     <div class="item categ" data-value="Construction" data-text="Construction">
-                        <i class="wrench scale blue icon"></i> 
-                        Construction
-                     </div>
-                     <div class="item categ" data-value="Chemical Lab" data-text="Chemical Lab">
-                        <i class="flask scale blue icon"></i>
-                        Chemical Lab
-                     </div>
-                     <div class="item categ" data-value="Stores" data-text="Stores">
-                        <i class="shopping basket scale blue icon"></i>
-                        Stores
-                     </div>
-                     <div class="item categ" data-value="Engineering" data-text="Engineering">
-                        <i class="rocket scale blue icon"></i>
-                        Engineering
-                     </div>
-                     
-                   </div>
+
+                <div id="catInput " class="ui fluid multiple search selection dropdown">
+                    <input id="myInputTest" type="hidden" name="receipt" />
+                    <i class="dropdown icon"></i>
+                    <div id="selCateg" class="default text">Select Category/s </div>
+
+                    <div id="menuCate" class="menu">
+                        <div class="item categ" data-value="IT Industry" data-text="IT Industry">
+                            <i class="building scale blue icon"></i>
+                            Computer Electronics & Technology
+                        </div>
+                        <div class="item categ" data-value="Accounting" data-text="Accounting">
+                            <i class="briefcase scale blue icon"></i>
+                            Business and Consumer Servicese
+                        </div>
+                        <div class="item categ" data-value="Construction" data-text="Construction">
+                            <i class="wrench scale blue icon"></i>
+                            Heavy industry & Engineering
+                        </div>
+                        <div class="item categ" data-value="Chemical Lab" data-text="Chemical Lab">
+                            <i class="flask scale blue icon"></i>
+                            Health
+                        </div>
+                        <div class="item categ" data-value="Stores" data-text="Stores">
+                            <i class="shopping basket scale blue icon"></i>
+                            Home & Garden
+                        </div>
+                        <div class="item categ" data-value="Engineering" data-text="Engineering">
+                            <i class="rocket scale blue icon"></i>
+                            Scince & Education
+                        </div>
+                        <div class="item categ" data-value="Sports" data-text="Sports">
+                            <i class="futbol outline blue icon"></i>
+                            Sports
+                        </div>
+                        <div class="item categ" data-value="Travel & Tourism" data-text="Travel & Tourism">
+                            <i class="globe blue icon"></i>
+                            Travel & Tourism
+                        </div>
+                        <div class="item categ" data-value="Vehicles" data-text="Vehicles">
+                            <i class="car blue icon"></i>
+                            Vehicles
+                        </div>
+                        <div class="item categ" data-value="Real Estate" data-text="Real Estate">
+                            <i class="map pin blue icon"></i>
+                            Real Estate
+                        </div>
+                        <div class="item categ" data-value="Pets & Animals" data-text="Pets & Animals">
+                            <i class="paw blue icon"></i>
+                            Pets & Animals
+                        </div>
+                        <div class="item categ" data-value="Food & Drink" data-text="Food & Drink">
+                            <i class="utensils blue icon"></i>
+                            Food & Drink
+                        </div>
+                        <div class="item categ" data-value="Finance" data-text="Finance">
+                            <i class="money bill alternate blue icon"></i>
+                            Finance
+                        </div>
+                        <div class="item categ" data-value="E-Commerce & Shopping" data-text="E-Commerce & Shopping">
+                            <i class="credit card outline blue icon"></i>
+                            E-Commerce & Shopping
+                        </div>
+                        <div class="item categ" data-value="Arts & Entertainment" data-text="Arts & Entertainment">
+                            <i class="paint brush blue icon"></i>
+                            Arts & Entertainment
+                        </div>
+                        
+
+                    </div>
                 </div>
                 <p class="errMsg"></p>
             </div>
-            </div>
+        </div>
 
 
         <div class="ui row">
@@ -156,8 +196,8 @@
             </div>
         </div>
 
-        
-        
+
+
 
         <div class="ui row">
             <div class="ui center aligned segment">
@@ -196,7 +236,7 @@
         <div class="ui row last-row-off">
             <div class="ui center aligned segment">
                 <div class="ui green animated button" tabindex="0">
-                    <div  class="visible content">Confirm and Publish Ad</div>
+                    <div class="visible content">Confirm and Publish Ad</div>
                     <div id="btn" class="hidden content">
                         <i class="paper plane icon"></i>
                     </div>
@@ -216,7 +256,7 @@
 
 
 
-
+        <script src="./script/signUp.logIn.btns.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -225,7 +265,7 @@
             $('.checkbox').checkbox('attach events', '.toggle.button');
             $('.ui.dropdown').dropdown();
         </script>
-    <script src="./script/create.ad.js"></script>
+        <script src="./script/create.ad.js"></script>
 
 </body>
 

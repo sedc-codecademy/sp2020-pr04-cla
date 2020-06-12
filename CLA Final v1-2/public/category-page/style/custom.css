@@ -1,6 +1,9 @@
 body {
     background-color: whitesmoke;
 }
+#yourProfilebtn{
+    display: none;
+}
 .navColor {
     background-color: #1b1c1d;
 }

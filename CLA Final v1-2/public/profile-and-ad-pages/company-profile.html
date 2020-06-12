@@ -32,16 +32,13 @@
                 <div class="menu">
                     <a class="item" href="../how-it-works/index.html">How it Works</a>
                     <a class="item" href="../pricing-page/index.html">Pricing</a>
-                    <a class="item active" href="../profile-and-ad-pages/company-profile.html">Company Profile</a>
-                    <a class="item" href="../profile-and-ad-pages/classified-ad.html">Ad Page</a>
-                    <a class="item" href="../profile-and-ad-pages/classified-ad.html">Create Ad</a>
                     <a class="item" href="../faq/index.html">FAQ</a>
                 </div>
             </div>
 
             <div class="right menu">
                 <form class="item">
-                    <div class="ui buttons">
+                    <div id="signLogBtns" class="ui buttons">
                         <a href="../company.html">
                             <div class="ui button">Sign Up</div>
                         </a>
@@ -50,6 +47,12 @@
                             <div class="ui positive button">Log in</div>
                         </a>
                     </div>
+                    <div id="yourProfilebtn" class="ui buttons">
+                        <a href="../profile-and-ad-pages/company-profile.html">
+                            <div class="ui inverted blue button">Your Profile</div>
+                        </a>
+                    </div>
+
                 </form>
             </div>
         </nav>
@@ -74,7 +77,7 @@
                                 <a>CEO</a>
                             </div>
                             <div class="description">
-                                
+
                             </div>
                         </div>
                         <div class="extra content">
@@ -106,10 +109,10 @@
                             <!-- <div class="meta">
                                 <span class="date">something</span>
                             </div> -->
-                            <div id="aboutCompany"class="description">
-                                
-                                
-                                
+                            <div id="aboutCompany" class="description">
+
+
+
                             </div>
                         </div>
                         <div class="extra content">
@@ -134,19 +137,19 @@
                 </div>
             </div>
             <div class="sixteen wide mobile sixteen wide tablet only center aligned column">
-                <h1  id="welcomeUserMobile" class="ui medium grey header"></h1>
+                <h1 id="welcomeUserMobile" class="ui medium grey header"></h1>
                 <div id="cards" class="ui link two stackable cards">
                     <div class="card">
                         <div class="image">
                             <img src="./assets/images/CEO.jpg">
                         </div>
                         <div class="content">
-                            <div  id="fullNameMobile" class="header"></div>
+                            <div id="fullNameMobile" class="header"></div>
                             <div class="meta">
                                 <a>CEO</a>
                             </div>
                             <div id="descriptionMobile" class="description">
-                                
+
                             </div>
                         </div>
                         <div class="extra content">
@@ -179,8 +182,8 @@
                                 <span class="date">something</span>
                             </div> -->
                             <div id="aboutCompanyMobile" class="description">
-                                
-                                
+
+
                             </div>
                         </div>
                         <div class="extra content">
@@ -340,6 +343,7 @@
     </footer>
 
 
+    <script src="../script/signUp.logIn.btns.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

@@ -7,6 +7,11 @@ const companyAbout = document.getElementById("companyAbout");
 const termsAndCond = document.getElementById("termsAndCond");
 const errorParagCo = document.getElementsByClassName("errorParagCo");
 const btn = document.getElementById("sumbitBtnGj");
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
+
+
+checkingForUser(signLogBtns, yourProfilebtn);
 
 
 let radioValue;

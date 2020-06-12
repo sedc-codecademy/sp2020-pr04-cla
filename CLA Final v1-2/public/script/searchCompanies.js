@@ -4,6 +4,11 @@ let reset = document.getElementById("resetBtn");
 let keywordInput = document.getElementById("keywordInput");
 let locationInput = document.getElementById("locationInput");
 let categoryIndustry = document.getElementById("categoryIndustry");
+const signLogBtns = document.getElementById("signLogBtns");
+const yourProfilebtn = document.getElementById("yourProfilebtn");
+
+
+checkingForUser(signLogBtns, yourProfilebtn);
 
 let currentInfoWindow = null;
 let markers = [];
@@ -423,8 +428,8 @@ function initMap() {
                     <button class="ui teal basic button">Show Listing</button>
                     </div>`
         })
-      } else {
-        alert('Not success' + status);
+      } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+        setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite), 100);
       }
     })
   };
