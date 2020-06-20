@@ -51,6 +51,7 @@ const searchDataPosts = function (item) {
 function initMap() {
 
   if (document.referrer === "http://localhost/index.html" && localStorage.keyword != "") {
+
     keywordInput.value = localStorage.keyword;
 
     fetch(database)
@@ -71,6 +72,7 @@ function initMap() {
         }
       })
   } else if (document.referrer === "http://localhost/index.html" && localStorage.address != "") {
+
     locationInput.value = localStorage.address;
 
     fetch(database)
@@ -92,6 +94,7 @@ function initMap() {
       })
 
   } else if (document.referrer === "http://localhost/index.html" && localStorage.category != "") {
+    
     categoryIndustry.value = localStorage.category;
 
     fetch(database)
@@ -113,7 +116,9 @@ function initMap() {
       })
   }
 
-  localStorage.clear();
+  localStorage.removeItem("keyword");
+  localStorage.removeItem("category");
+  localStorage.removeItem("address");
 
 
   search.addEventListener("click", function () {
