@@ -1,6 +1,8 @@
 const fs = require('fs');
 const newAds = require('./user.ad.settings.model');
-
+const path = require('path');
+const jsonAds = path.join(__dirname, '../companyData/userAd.json');
+const adFile = JSON.parse(fs.readFileSync(jsonAds))
 
 class SaveAd {
     constructor(){
@@ -29,6 +31,15 @@ class SaveAd {
 
     showAds(file){
         return file
+    }
+
+    getSingleAd( id){
+        return adFile.filter(ad => ad.id == id);
+    }
+
+    getAdByTitle(title){
+        return adFile.filter(ad => ad.adTitle == title);
+
     }
 }
 

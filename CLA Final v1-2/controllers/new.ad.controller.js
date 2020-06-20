@@ -12,6 +12,14 @@ class NewAdController {
     showAd(file){
         return nam.showAds(file)
     }
+
+    showSingleAd(id){
+        return nam.getSingleAd(id)
+    }
+    
+    getAdTitle(title){
+        return nam.getAdByTitle(title)
+    }
 }
 
 module.exports = NewAdController;

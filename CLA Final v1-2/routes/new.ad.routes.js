@@ -10,7 +10,7 @@ newAd.post('/', (req, res) => {
         res.status(412).json({ error: { msg: "Error" } })
     }
     else {
-        if( nac.saveAd(req.body, res)){
+        if (nac.saveAd(req.body, res)) {
             console.log('Ad Successfully added');
         }
         else {
@@ -22,6 +22,17 @@ newAd.post('/', (req, res) => {
 
 newAd.get('/', (req, res) => {
     nac.showAd(res.sendFile(jsonAds))
+})
+
+newAd.get('/:id', (req, res) => {
+    if (req.params.id) {
+        res.status(200).json(nac.showSingleAd(req.params.id))
+    }
+})
+newAd.get('/title/:name', (req, res) => {
+    if(req.params.name)
+    res.status(200).json(nac.getAdTitle(req.params.name))
+
 })
 
 module.exports = newAd;
