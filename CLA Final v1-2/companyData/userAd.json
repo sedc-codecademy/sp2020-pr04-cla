@@ -40,7 +40,7 @@
     {
         "id": 3,
         "adCategory": [
-            "Finance"  
+            "Finance"
         ],
         "adTitle": "Selling User 3",
         "adType": "Products User 3",
@@ -190,8 +190,8 @@
     {
         "id": 7,
         "adCategory": [
-        "Vehicles",
-        "Business and Consumer Servicese"
+            "Vehicles",
+            "Business and Consumer Servicese"
         ],
         "adTitle": "New New New",
         "adType": "New New New",
@@ -234,6 +234,23 @@
         "companyName": "My Comapany",
         "companyEmail": "test.mail@gmail.com",
         "companyWebsite": "www.test.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 18,
+        "adCategory": [
+            "Accounting",
+            "Engineering"
+        ],
+        "adTitle": "Dummy Title",
+        "adType": "Dummy Type",
+        "adAmount": "A lot",
+        "adDescription": "Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test ",
+        "companyAddress": "Partizanski Odredi 87, Boulevard Partizanski Odredi, Skopje, North Macedonia",
+        "companyName": "Martin Company",
+        "companyEmail": "martin@gmail.com",
+        "companyWebsite": "www.martin.com",
         "companyPhone": "071555555",
         "companyCountry": "Macedonia"
     }
