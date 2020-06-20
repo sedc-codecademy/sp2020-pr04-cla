@@ -22,19 +22,19 @@ reset.addEventListener("click", function () {
   locationInput.value = "";
 })
 
-function checkIdandReturn(item){
-  let companyName = "";
-  fetch(clientDatabase)
-  .then(data => data.json())
-  .then(function(result){
-    for (const client of result) {
-      if(client.userId === item){
-        companyName = client.companyName;
-        return companyName;
-      }
-    }
-  })
-}
+// function checkIdandReturn(item){
+//   let companyName = "";
+//   fetch(clientDatabase)
+//   .then(data => data.json())
+//   .then(function(result){
+//     for (const client of result) {
+//       if(client.userId === item){
+//         companyName = client.companyName;
+//         return companyName;
+//       }
+//     }
+//   })
+// }
 
 
 function cardContentDynamic(item){
@@ -46,7 +46,10 @@ function cardContentDynamic(item){
   <div class="content">
   <a class="header" href="#">${item.adTitle}</a>
   <div class="meta">
-  <a>${checkIdandReturn(item.userId)}</a>
+  <a>${item.companyName}</a>
+  <br>
+  <a>${item.companyAddress} |</a>
+  <a>${item.companyCountry} </a>
   <br>
   <a><b>${item.adCategory}</b></a>
   </div>
