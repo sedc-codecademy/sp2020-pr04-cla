@@ -47,11 +47,16 @@
                             <div class="ui positive button">Log in</div>
                         </a>
                     </div>
-                    <div id="yourProfilebtn" class="ui buttons">
-                        <a href="../profile-and-ad-pages/company-profile.html">
-                            <div class="ui inverted blue button">Your Profile</div>
-                        </a>
-                    </div>
+                    <div id="yourProfilebtn" class="ui teal compact selection dropdown inverted">
+						<i class="dropdown icon"></i>
+						<div class="text ">Profile</div>
+						<div class="menu">
+							<a class="item" href="../profile-and-ad-pages/company-profile.html">Your Profile</a>
+							<a class="item" id="logoutBtn">
+								Logout
+							</a>
+						</div>
+					</div>
 
                 </form>
             </div>
@@ -214,7 +219,6 @@
                         <button class="ui small button"><a href="../create-ad.html">Create Listing</a></button>
                         <button class="ui small button"><a href="../messages.html">Messages</a></button>
                         <button class="ui small button">Settings</button>
-                        <button id="logoutBtn" class="ui small button">Logout</button>
                     </div>
                 </div>
                 <div id="about" class="ui piled segment">
@@ -346,13 +350,13 @@
     <script src="../script/signUp.logIn.btns.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script>
         $('.ui.dropdown').dropdown();
-    </script>
-    <script src="./logout.js"></script>
+        </script>
     <script src="./company.profile.js"></script>
+    <script src="./logout.js"></script>
 </body>
 
 </html>

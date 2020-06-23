@@ -51,10 +51,15 @@
               <div class="ui positive button">Log in</div>
             </a>
           </div>
-          <div id="yourProfilebtn" class="ui buttons">
-            <a href="./profile-and-ad-pages/company-profile.html">
-              <div class="ui inverted blue button">Your Profile</div>
-            </a>
+          <div id="yourProfilebtn" class="ui teal compact selection dropdown inverted">
+            <i class="dropdown icon"></i>
+            <div class="text ">Profile</div>
+            <div class="menu">
+              <a class="item" href="./profile-and-ad-pages/company-profile.html">Your Profile</a>
+              <a class="item" id="logoutBtn">
+                Logout
+              </a>
+            </div>
           </div>
 
         </form>
@@ -261,6 +266,7 @@
     </script>
   <!-- <script src="./script/homeSearch.js" ></script> -->
   <script src="./script/searchCompanies.js"></script>
+  <script src="./profile-and-ad-pages/logout.js"></script>
 </body>
 
 </html>
