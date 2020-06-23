@@ -39,23 +39,28 @@
             </div>
 
             <div class="right menu">
-                <form  class="item">
+                <form class="item">
                     <div id="signLogBtns" class="ui buttons">
-                      <a href="company.html">
-                        <div class="ui button">Sign Up</div>
-                      </a>
-                      <div class="or"></div>
-                      <a href="./login.html">
-                        <div class="ui positive button">Log in</div>
-                      </a>
+                        <a href="company.html">
+                            <div class="ui button">Sign Up</div>
+                        </a>
+                        <div class="or"></div>
+                        <a href="./login.html">
+                            <div class="ui positive button">Log in</div>
+                        </a>
                     </div>
-                    <div id="yourProfilebtn" class="ui buttons">
-                      <a href="./profile-and-ad-pages/company-profile.html">
-                        <div class="ui inverted blue button">Your Profile</div>
-                      </a>
+                    <div id="yourProfilebtn" class="ui teal compact selection dropdown inverted">
+                        <i class="dropdown icon"></i>
+                        <div class="text ">Profile</div>
+                        <div class="menu">
+                            <a class="item" href="./profile-and-ad-pages/company-profile.html">Your Profile</a>
+                            <a class="item" id="logoutBtn">
+                                Logout
+                            </a>
+                        </div>
                     </div>
-                    
-                  </form>
+
+                </form>
             </div>
         </nav>
     </div>
@@ -142,7 +147,7 @@
                             <i class="paint brush blue icon"></i>
                             Arts & Entertainment
                         </div>
-                        
+
 
                     </div>
                 </div>
@@ -266,6 +271,7 @@
             $('.ui.dropdown').dropdown();
         </script>
         <script src="./script/create.ad.js"></script>
+        <script src="./profile-and-ad-pages/logout.js"></script>
 
 </body>
 

@@ -80,6 +80,15 @@ const getAds = async (url) => {
     filterUserAds(data);
 };
 
+const adRedirect = (element) => {
+    window.location.href =  '../profile-and-ad-pages/classified-ad.html';
+
+
+    localStorage.removeItem("adToRedirect")
+    localStorage.setItem('adToRedirect', JSON.stringify(element.innerHTML));
+  
+  }
+
 
 let test;
 const filterUserAds = (arr) => {
@@ -87,20 +96,19 @@ const filterUserAds = (arr) => {
         if (ad.id === loggedUser.id) {
             ads.innerHTML += `
     <div class="left floated card">
-            <div class="content">
+            <div  class="content">
                 <img class="left floated mini ui image" src="./assets/images/unnamed.jpg">
                 <div class="header">
                     ${ad.adType}
                 </div>
-                <div class="meta">
-                    ${ad.adTitle}
+                <div id="${ad.adTitle.replace(/\s/g, "")}" class="meta">${ad.adTitle}
                 </div>
                 <div class="description">
                     ${ad.adDescription}
                 </div>
             </div>
             <div class="extra content">
-                <button class="positive ui button">See AD</button>
+                <button onclick="adRedirect(document.getElementById('${ad.adTitle.replace(/\s/g, "")}'))" class="positive ui button">See AD</button>
             </div>
     </div>
         `
