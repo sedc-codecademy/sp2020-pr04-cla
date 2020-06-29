@@ -17,8 +17,6 @@ let markers = [];
 const database = "http://localhost/createNewComp";
 
 
-
-
 reset.addEventListener("click", function () {
   postContainer.innerHTML = "";
   keywordInput.value = "";
@@ -49,6 +47,32 @@ const searchDataPosts = function (item) {
 }
 
 function initMap() {
+
+  if(document.referrer === "http://localhost/category-page/index.html" && localStorage.category_value != ""){
+    
+    categoryIndustry.value = localStorage.category_value;
+    // categoryIndustry.textContent = localStorage.category_value;
+    
+    
+    fetch(database)
+      .then(data => data.json())
+      .then(function (result) {
+        try {
+          postContainer.innerHTML = "";
+          for (const item of result) {
+            if (categoryIndustry.value  === item.companyCategory) {
+              console.log(item)
+              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              postContainer.innerHTML += searchDataPosts(item);
+            }
+          }
+        }
+         catch (error) {
+          console.log("Error: " + error);
+        }
+  });}
+
+  localStorage.removeItem("category_value");
 
   if (document.referrer === "http://localhost/index.html" && localStorage.keyword != "") {
 
