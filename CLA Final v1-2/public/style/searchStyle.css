@@ -15,7 +15,13 @@ body {
 }
 
 #map-wraper {
-    position: sticky;
+    position: sticky !important;
+    z-index: 2010;
+}
+
+#map {
+    position: sticky !important;
+    z-index: 1000000000;
 }
 
 /* #rightSide{
