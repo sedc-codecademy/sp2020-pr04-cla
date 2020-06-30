@@ -1,0 +1,257 @@
+[
+    {
+        "id": 1,
+        "adCategory": [
+            "Finance",
+            "Scince & Education"
+        ],
+        "adTitle": "Selling User 1",
+        "adType": "Products User 1",
+        "adAmount": "A lot of products",
+        "adDescription": "User Id 1 dummy description User Id 1 dummy description",
+        "companyAddress": "Ilija Miov",
+        "companyName": "Company One LTD",
+        "companyEmail": "example1@email.com",
+        "companyWebsite": "www.exampleweb.com",
+        "companyPhone": "123456",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 2,
+        "adCategory": [
+            "Finance",
+            "Scince & Education"
+        ],
+        "adTitle": "Selling User 2",
+        "adType": "Products User 2",
+        "adAmount": "Some Products",
+        "adDescription": "User Id 2 dummy description User Id 2 dummy description",
+        "companyAddress": "Rilski Kongres 38",
+        "companyName": "Company Two LTD",
+        "companyEmail": "second@mail.example",
+        "companyWebsite": [
+            "www.test.com",
+            "someweb.com",
+            "extraweb.com"
+        ],
+        "companyPhone": "123456",
+        "companyCountry": "Germany"
+    },
+    {
+        "id": 3,
+        "adCategory": [
+            "Finance"
+        ],
+        "adTitle": "Selling User 3",
+        "adType": "Products User 3",
+        "adAmount": "Some Products",
+        "adDescription": "User Id 3 dummy description User Id 3 dummy description",
+        "companyAddress": "Emile Zola 7, Skopje",
+        "companyName": "SEDC - Company",
+        "companyEmail": "example1@email.com",
+        "companyWebsite": "www.testtest.com",
+        "companyPhone": "33333333",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 4,
+        "adCategory": [
+            "Heavy industry & Engineering"
+        ],
+        "adTitle": "Selling User 4",
+        "adType": "Products User 4",
+        "adAmount": "Some Products",
+        "adDescription": "User Id 4 dummy description User Id 4 dummy description",
+        "companyAddress": "Emile Zola 7, Skopje",
+        "companyName": "Extra Company",
+        "companyEmail": "bomb@shout.com",
+        "companyWebsite": "fakewebsite.net",
+        "companyPhone": "222222222",
+        "companyCountry": "United States"
+    },
+    {
+        "id": 5,
+        "adCategory": [
+            "Home & Garden"
+        ],
+        "adTitle": "Selling User 5",
+        "adType": "Products User 5",
+        "adAmount": "A lot Products",
+        "adDescription": "User Id 5 dummy description User Id 5 dummy description",
+        "companyAddress": "Boulevard Krushevska Republika Skopje 1000",
+        "companyName": "Extra Company",
+        "companyEmail": "plastic@skopje.com",
+        "companyWebsite": "www.plastikaeftino.com",
+        "companyPhone": "111111111",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 8,
+        "adCategory": [
+            "Pets & Animals",
+            "Sports"
+        ],
+        "adTitle": "Selling Something",
+        "adType": "Products",
+        "adAmount": "A lot of products",
+        "adDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "companyAddress": "Solunska 22, Gevgelija, North Macedonia",
+        "companyName": "Toni Company",
+        "companyEmail": "toni@gmail.com",
+        "companyWebsite": "www.toni.com",
+        "companyPhone": "123123123",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 8,
+        "adCategory": [
+            " Accounting",
+            " Chemical Lab"
+        ],
+        "adTitle": "Dummy Dummy",
+        "adType": "Dummy Dummy Dummy",
+        "adAmount": "Dummy Dummy Dummy Amount",
+        "adDescription": "Dummy Dummy Dummy Dummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy DummyDummy Dummy Dummy",
+        "companyAddress": "Solunska 22, Gevgelija, North Macedonia",
+        "companyName": "Toni Company",
+        "companyEmail": "toni@gmail.com",
+        "companyWebsite": "www.toni.com",
+        "companyPhone": "123123123",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "E-Commerce & Shopping",
+            "Computer Electronics & Technology"
+        ],
+        "adTitle": "Dummy Title George",
+        "adType": "Dummy Type George",
+        "adAmount": "Dummy Ammount George",
+        "adDescription": "Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!Dummy description from Georges Company!",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyName": "My Comapany",
+        "companyEmail": "test.mail@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 9,
+        "adCategory": [
+            "Computer Electronics & Technology",
+            "Health"
+        ],
+        "adTitle": "Pipes to sell",
+        "adType": "Selling/Buying",
+        "adAmount": "A lot",
+        "adDescription": "We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! We sell pipes ! Those pipes are dummy testing! ",
+        "companyAddress": "Partizanska 35, Skopje, North Macedonia",
+        "companyName": "Ace Company-Delcevo",
+        "companyEmail": "ace@yahoo.com",
+        "companyWebsite": "www.ace.com",
+        "companyPhone": "071696969",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 17,
+        "adCategory": [
+            "Health",
+            "Travel & Tourism"
+        ],
+        "adTitle": "QWEqwe",
+        "adType": "qweqwe",
+        "adAmount": "qwe1213",
+        "adDescription": "qweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewqqweqweqweqwewq",
+        "companyAddress": "Rilski Kongres, Skopje, North Macedonia",
+        "companyName": "Trajcev Company",
+        "companyEmail": "trajcev@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "Travel & Tourism",
+            "Vehicles"
+        ],
+        "adTitle": "TEst Test",
+        "adType": "TEst TestTEst Test",
+        "adAmount": "TEst TestTEst Test",
+        "adDescription": "TEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst TestTEst Test",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyName": "My Comapany",
+        "companyEmail": "test.mail@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "Vehicles",
+            "Business and Consumer Servicese"
+        ],
+        "adTitle": "New New New",
+        "adType": "New New New",
+        "adAmount": "New New New",
+        "adDescription": "New New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New NewNew New New",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyName": "My Comapany",
+        "companyEmail": "test.mail@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 10,
+        "adCategory": [
+            "Business and Consumer Servicese",
+            "Food & Drink"
+        ],
+        "adTitle": "Test Test",
+        "adType": "Test Test",
+        "adAmount": "Test TestTest Test",
+        "adDescription": "Test TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest TestTest Test",
+        "companyAddress": "Kocani, North Macedonia",
+        "companyName": "Ace Company",
+        "companyEmail": "ace1@yahoo.com",
+        "companyWebsite": "www.ace.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "Food & Drink"
+        ],
+        "adTitle": "Selling Protein",
+        "adType": "Whey Protein",
+        "adAmount": "200kg",
+        "adDescription": "We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein We sell whey protein ",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyName": "My Comapany",
+        "companyEmail": "test.mail@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 18,
+        "adCategory": [
+            "Accounting",
+            "Engineering"
+        ],
+        "adTitle": "Dummy Title",
+        "adType": "Dummy Type",
+        "adAmount": "A lot",
+        "adDescription": "Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test ",
+        "companyAddress": "Partizanski Odredi 87, Boulevard Partizanski Odredi, Skopje, North Macedonia",
+        "companyName": "Martin Company",
+        "companyEmail": "martin@gmail.com",
+        "companyWebsite": "www.martin.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    }
+]

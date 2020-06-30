@@ -1,0 +1,120 @@
+/* .eight.wide.column.map-side-class{
+    width: 40% !important;
+} */
+
+body {
+    min-width: 420px;
+}
+
+#map{
+    height: 88vh;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 4px white;
+}
+
+#map-wraper {
+    position: sticky !important;
+    z-index: 2010;
+}
+
+#map {
+    position: sticky !important;
+    z-index: 1000000000;
+}
+
+/* #rightSide{
+    min-width: 54%;
+} */
+
+/* #map-div{
+    max-width: 100%;
+    height: 88vh;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 4px white;
+} */
+
+.topmenu-container{
+    text-align: center;
+    background-color: white;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+}
+
+.firsttop-menu-div{
+    display: inline-block;
+}
+
+.secondtop-menu-div .field{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.firsttop-menu-div .input{
+    margin-right: 65px;
+    margin-left: 45px;
+    width: 210px;
+}
+
+.secondtop-menu-div .dropdown{
+    margin-right: 65px;
+    margin-left: 45px;
+    width: 210px;
+}
+
+.secondtop-menu-div .dropdown{
+    margin-right: 65px;
+    margin-left: 45px;
+    width: 210px;
+}
+
+
+#postContainer {
+    text-align: center;
+}
+
+#postContainer .ui.card{
+    display: inline-block;
+    margin: 20px;
+    max-width: 240px;
+}
+
+.right-side-elements .title-right-side{
+    padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 820px) { */
+
+    /* /* #map-wraper {
+        display: none;
+    } */
+ 
+     #rightSide{
+        min-width: 100%;
+    } 
+
+    .topmenu-container .input{
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    .topmenu-container .dropdown{
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    .topmenu-container button{
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    #postContainer{
+        text-align: center;
+    }
+  } 

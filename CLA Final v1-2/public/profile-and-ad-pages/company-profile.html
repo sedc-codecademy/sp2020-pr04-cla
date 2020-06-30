@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Top Menu Navigation  -->
+    <div class="navColor">
+        <nav class="ui stackable borderless container menu inverted">
+            <img class="ui small image" src="../img/cla-logo.png" alt="CLA Logo">
+            <a href="../index.html" class="item">Home</a>
+            <a href="../category-page/index.html" class="item">Categories</a>
+            <a href="../about.html" class="item">About</a>
+            <a href="../contact.html" class="item">Contact</a>
+            <div class="ui dropdown item">
+                Search <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="../search-companies.html">Search Companies</a>
+                    <a class="item" href="../search-ads.html">Search Ads</a>
+                    <a class="item">Search Jobs</a>
+                </div>
+            </div>
+            <div class="ui dropdown item">
+                Info <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="../how-it-works/index.html">How it Works</a>
+                    <a class="item" href="../pricing-page/index.html">Pricing</a>
+                    <a class="item" href="../faq/index.html">FAQ</a>
+                </div>
+            </div>
+
+            <div class="right menu">
+                <form class="item">
+                    <div id="signLogBtns" class="ui buttons">
+                        <a href="../company.html">
+                            <div class="ui button">Sign Up</div>
+                        </a>
+                        <div class="or"></div>
+                        <a href="../login.html">
+                            <div class="ui positive button">Log in</div>
+                        </a>
+                    </div>
+                    <div id="yourProfilebtn" class="ui teal compact selection dropdown inverted">
+						<i class="dropdown icon"></i>
+						<div class="text ">Profile</div>
+						<div class="menu">
+							<a class="item" href="../profile-and-ad-pages/company-profile.html">Your Profile</a>
+							<a class="item" id="logoutBtn">
+								Logout
+							</a>
+						</div>
+					</div>
+
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- End OF Top Menu Nav  -->
+
+
+
+    <div class="ui container">
+        <div class="ui two column grid">
+            <div class="four wide computer only center aligned column">
+                <h1 id="welcomeUser" class="ui medium grey header"></h1>
+                <div id="cards" class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/CEO.jpg">
+                        </div>
+                        <div class="content">
+                            <div id="fullName" class="header"></div>
+                            <div class="meta">
+                                <a>CEO</a>
+                            </div>
+                            <div class="description">
+
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span>
+                                Follow me:
+                            </span>
+                            <span class="right floated">
+                                <i class="facebook icon"></i>
+                                <a href="#">Facebook</a>
+                            </span>
+                            <br>
+                            <span class="right floated">
+                                <i class="twitter icon"></i>
+                                <a href="#">Twitter</a>
+                            </span>
+                            <br>
+                            <span class="right floated">
+                                <i class="linkedin icon"></i>
+                                <a href="#">LINKEDIN</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/building.jpg">
+                        </div>
+                        <div class="content">
+                            <div id="companyName" class="header"></div>
+                            <!-- <div class="meta">
+                                <span class="date">something</span>
+                            </div> -->
+                            <div id="aboutCompany" class="description">
+
+
+
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span>
+                                <i class="building outline icon"></i>
+                                <a href="#" id="street"></a>
+                            </span>
+                            <br>
+                            <br>
+                            <span>
+                                <i class="phone icon"></i>
+                                <a href="#" id="phoneNumber"></a>
+                            </span>
+                            <br>
+                            <br>
+                            <span>
+                                <i class="envelope icon"></i>
+                                <a href="#" id="companEmail"></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixteen wide mobile sixteen wide tablet only center aligned column">
+                <h1 id="welcomeUserMobile" class="ui medium grey header"></h1>
+                <div id="cards" class="ui link two stackable cards">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/CEO.jpg">
+                        </div>
+                        <div class="content">
+                            <div id="fullNameMobile" class="header"></div>
+                            <div class="meta">
+                                <a>CEO</a>
+                            </div>
+                            <div id="descriptionMobile" class="description">
+
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span>
+                                Follow me:
+                            </span>
+                            <span class="right floated">
+                                <i class="facebook icon"></i>
+                                <a href="#">Facebook</a>
+                            </span>
+                            <br>
+                            <span class="right floated">
+                                <i class="twitter icon"></i>
+                                <a href="#">Twitter</a>
+                            </span>
+                            <br>
+                            <span class="right floated">
+                                <i class="linkedin icon"></i>
+                                <a href="#">LINKEDIN</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/images/building.jpg">
+                        </div>
+                        <div class="content">
+                            <div id="companyNameMobile" class="header"></div>
+                            <!-- <div class="meta">
+                                <span class="date">something</span>
+                            </div> -->
+                            <div id="aboutCompanyMobile" class="description">
+
+
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span>
+                                <i class="building outline icon"></i>
+                                <a id="streetMobile" href="#"></a>
+                            </span>
+                            <br>
+                            <br>
+                            <span>
+                                <i class="phone icon"></i>
+                                <a href="#" id="phoneNumberMobile"></a>
+                            </span>
+                            <br>
+                            <br>
+                            <span>
+                                <i class="envelope icon"></i>
+                                <a href="#" id="companEmailMobile"></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixteen wide mobile sixteen wide tablet twelve wide computer center aligned column">
+                <div class="customButtonPosition">
+                    <div class="ui small buttons">
+                        <button class="ui small button active">Profile</button>
+                        <button class="ui small button"><a href="../create-ad.html">Create Listing</a></button>
+                        <button class="ui small button"><a href="../messages.html">Messages</a></button>
+                        <button class="ui small button">Settings</button>
+                    </div>
+                </div>
+                <div id="about" class="ui piled segment">
+                    <h4 class="ui grey header">About the company:</h4>
+                    <p class="aboutTheCompany"></p>
+                    <p class="aboutTheCompany"></p>
+                    <p></p>
+                </div>
+                <h4 class="ui left aligned grey header">ADS listed</h4>
+                <div id="ads" class="ui two cards">
+                    <!-- <div class="left floated card">
+                        <div class="content">
+                            <img class="left floated mini ui image" src="./assets/images/unnamed.jpg">
+                            <div class="header">
+                                Company name
+                            </div>
+                            <div class="meta">
+                                Looking for workers
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptates ea
+                                repudiandae placeat esse cupiditate consequuntur tempore at deleniti quaerat magnam
+                                dolorum,
+                                dolorem autem accusantium sed quae cumque laudantium tenetur!
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <button class="positive ui button">See AD</button>
+                        </div>
+                    </div>
+                    <div class="right floated card">
+                        <div class="content">
+                            <img class="left floated mini ui image"
+                                src="./assets/images/oliwier-gesla-1058805-unsplash-1030x687.jpg">
+                            <div class="header">
+                                Company name
+                            </div>
+                            <div class="meta">
+                                Looking for workers
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, iste. Maxime
+                                quasi
+                                eum
+                                in odio optio fugit officia non a, veniam nemo amet animi magni aut laboriosam!
+                                Dicta,
+                                illo
+                                dolorem.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <button class="positive ui button">See AD</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="five wide tablet five wide computer only column">
+                    <img class="ui small image" src="./assets/images/cla-logo.png" alt="CLA Logo">
+                    <div class="ui basic segment">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="sixteen wide mobile only column">
+                    <img class="ui small image" src="./assets/images/cla-logo.png" alt="CLA Logo">
+                    <div class="ui basic segment">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="five wide tablet five wide computer only column">
+                    <div class="list">
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">About us</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Contact</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Marketing</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight wide mobile only column">
+                    <div class="list">
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">About us</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Contact</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Marketing</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="five wide tablet five wide computer only column">
+                    <div class="list">
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="facebook icon "></i> Facebook</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="instagram icon"></i> Instagram</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="twitter icon"></i> Twitter</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="youtube icon"></i> YouTube</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="linkedin icon"></i> LinkedIn</a></div>
+                    </div>
+                </div>
+                <div class="eight wide mobile only column">
+                    <div class="list">
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="facebook icon "></i> Facebook</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="instagram icon"></i> Instagram</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="twitter icon"></i> Twitter</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="youtube icon"></i> YouTube</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="linkedin icon"></i> LinkedIn</a></div>
+                    </div>
+                </div>
+            </div>
+            <p class="ui center aligned white inverted header customFontFooter">&copy; 2020 Company Listing App. All
+                rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="../script/signUp.logIn.btns.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.ui.dropdown').dropdown();
+        </script>
+    <script src="./company.profile.js"></script>
+    <script src="./logout.js"></script>
+</body>
+
+</html>

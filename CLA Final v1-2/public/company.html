@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./style/custom.css" type="text/css" />
+    <title>Company Listing Application</title>
+</head>
+
+<body>
+    <!-- Top Navigation Menu -->
+
+    <div class="navColor">
+        <nav class="ui stackable borderless container menu inverted">
+            <img class="ui small image logo" src="./img/cla-logo.png" alt="CLA Logo">
+            <a href="./index.html" class="item">Home</a>
+            <a href="./category-page/index.html" class="item">Categories</a>
+            <a href="about.html" class="item">About</a>
+            <a href="contact.html" class="item active">Contact</a>
+            <div class="ui dropdown item">
+                Search <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="./search-companies.html">Search Companies</a>
+                    <a class="item active" href="./search-ads.html">Search Ads</a>
+                    <a class="item">Search Jobs</a>
+                </div>
+            </div>
+            <div class="ui dropdown item" value="active">
+                Info <i class="dropdown icon"></i>
+                <div class="menu active">
+                    <a class="item" href="./how-it-works/index.html">How it Works</a>
+                    <a class="item" href="create-ad.html">Create Ad</a>
+                    <a class="item" href="./faq/index.html">FAQ</a>
+                </div>
+            </div>
+
+            <div class="right menu">
+                <form class="item">
+                    <div class="ui buttons">
+                        <a href="./company.html">
+                            <div class="ui blue button">Sign Up</div>
+                        </a>
+                        <div class="or"></div>
+                        <a href="./login.html">
+                            <div class="ui green button">Log In</div>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- END Of - Top Navigation Menu -->
+
+    <!--REGISTER FORM-->
+    <div class="ui  segment ">
+        <h1 class="ui centered header six column grid">Register Company</h1>
+        <br />
+        <br />
+        <br />
+        <div class="ui  grid stackable ">
+            <div class="four wide column"></div>
+            <div class="four wide column">
+
+                <div class="ui  form ">
+
+                    <div class="field required">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" value="" placeholder="First Name">
+                        <p class="errorParagCo"></p>
+                    </div>
+                    <div class="field required">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" value="" placeholder="Last Name">
+                        <p class="errorParagCo"></p>
+                    </div>
+                    <div class="field required">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" value="" placeholder="Password">
+                        <p class="errorParagCo"></p>
+                    </div>
+                    <div class="field required">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" name="companyName" value="" placeholder="Company Name">
+                        <p class="errorParagCo"></p>
+                    </div>
+
+                    <div class="field required">
+                        <label for="companyAddress">Company Address</label>
+                        <input type="text" id="companyAddress" name="companyAddress" value=""
+                            placeholder="Company Address">
+                        <p class="errorParagCo"></p>
+                    </div>
+
+                    <div class="field required">
+                        <label for="companyCountry">Company Country</label>
+                        <input type="text" id="companyCountry" name="companyCountry" value=""
+                            placeholder="Company Country">
+                        <p class="errorParagCo"></p>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="four wide column">
+                <div class="ui  form">
+                    <div class="field">
+                        <label for="companyCategoryIndustry">Company Category / Industry</label>
+                        <select class="ui dropdown" id="companyCategoryIndustry">
+                            <option class="item">Computer Electronics & Technology</option>
+                            <option class="item">Arts & Entertainment</option>
+                            <option class="item">Business and Consumer Servicese</option>
+                            <option class="item">E-Commerce & Shopping</option>
+                            <option class="item">Finance</option>
+                            <option class="item">Food & Drink</option>
+                            <option class="item">Health</option>
+                            <option class="item">Heavy industry & Engineering</option>
+                            <option class="item">Home & Garden</option>
+                            <option class="item">Pets & Animals</option>
+                            <option class="item">Real Estate</option>
+                            <option class="item">Scince & Education</option>
+                            <option class="item">Sports</option>
+                            <option class="item">Travel & Tourism</option>
+                            <option class="item">Vehicles</option>
+                        </select>
+                    </div>
+
+                    <div class="field required">
+                        <label for="companyRegNumber">Company Reg. Number</label>
+                        <input type="text" id="companyRegNumber" name="companyRegNumber" value=""
+                            placeholder="Company Reg. Number">
+                        <p class="errorParagCo"></p>
+                    </div>
+
+                    <div class="field required">
+                        <label for="companyEmail">Company Email</label>
+                        <input type="text" id="companyEmail" name="companyEmail" value="" placeholder="Company Email">
+                        <p class="errorParagCo"></p>
+                    </div>
+
+                    <div class="field required">
+                        <label for="companyPhone">Company Phone</label>
+                        <input type="text" id="companyPhone" name="companyPhone" value="" placeholder="Company Phone">
+                        <p class="errorParagCo"></p>
+                    </div>
+
+                    <div class="field required">
+                        <label for="companyWebsite">Company Website</label>
+                        <input type="url" id="companyWebsite" name="companyWebsite" value=""
+                            placeholder="www.mysite.com">
+                        <p class="errorParagCo"></p>
+                    </div>
+                    <div class="ui  checkbox">
+                        <input id="termsAndCond" type="checkbox" name="newsletter">
+                        <label>Accept terms and conditions</label>
+                        <p class="errorParagCo"></p>
+                    </div>
+                    <br />
+                    <br />
+                    <div id="sumbitBtnGj" class="ui green basic bottom attached button" tabindex="0">Submit</div>
+                </div>
+            </div>
+            <div class="four wide column"></div>
+        </div>
+    </div>
+
+
+    <div class="brands-logo-section">
+        <p>Trusted by</p>
+        <div class="ui four column grid">
+            <div class="column">
+                <img src="./img/brands/323887.png" alt="">
+            </div>
+            <div class="column">
+                <img src="./img/brands/323887.png" alt="">
+            </div>
+            <div class="column">
+                <img src="./img/brands/323887.png" alt="">
+            </div>
+            <div class="column">
+                <img src="./img/brands/323887.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="five wide tablet five wide computer only column">
+                    <img class="ui small image" src="./img/cla-logo.png" alt="CLA Logo">
+                    <div class="ui basic segment">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="sixteen wide mobile only column">
+                    <img class="ui small image" src="./img/cla-logo.png" alt="CLA Logo">
+                    <div class="ui basic segment">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="five wide tablet five wide computer only column">
+                    <div class="list">
+                        <div class="item customFontFooter"><a class="customFontFooter" href="/about.html">About us</a>
+                        </div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="/contact.html">Contact</a>
+                        </div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Marketing</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight wide mobile only column">
+                    <div class="list">
+                        <div class="item customFontFooter"><a class="customFontFooter" href="/about.html">About us</a>
+                        </div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="/contact.html">Contact</a>
+                        </div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Marketing</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="five wide tablet five wide computer only column">
+                    <div class="list">
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="facebook icon "></i>
+                                Facebook</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="instagram icon"></i>
+                                Instagram</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="twitter icon"></i>
+                                Twitter</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="youtube icon"></i>
+                                YouTube</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="linkedin icon"></i>
+                                LinkedIn</a></div>
+                    </div>
+                </div>
+                <div class="eight wide mobile only column">
+                    <div class="list">
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="facebook icon "></i>
+                                Facebook</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="instagram icon"></i>
+                                Instagram</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="twitter icon"></i>
+                                Twitter</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="youtube icon"></i>
+                                YouTube</a></div>
+                        <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i
+                                    class="linkedin icon"></i>
+                                LinkedIn</a></div>
+                    </div>
+                </div>
+            </div>
+            <p class="ui center aligned white inverted header customFontFooter">&copy; 2020 Company Listing App. All
+                rights reserved.</p>
+        </div>
+    </footer>
+
+
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $(".rating").rating();
+        $('.ui.dropdown').dropdown();
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmgNZGoslcNki771U-ED3hx10crn-EmFU&libraries=places&callback=initMap"
+        async defer></script>
+    <script src="./script/companyScript.js"></script>
+</body>
+
+</html>
