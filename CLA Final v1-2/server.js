@@ -8,8 +8,9 @@ const uuid = require('uuid');
 
 const routes = require('./routes');
 
-const port = process.env.port || 80,
+const port = process.env.port || 8888,
     ip = '0.0.0.0';
+
 
 const staticRoute = path.join(__dirname, '/public'); 
 
