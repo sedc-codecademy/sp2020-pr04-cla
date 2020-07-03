@@ -17,8 +17,6 @@ let markers = [];
 const database = "http://localhost/createNewComp";
 
 
-
-
 reset.addEventListener("click", function () {
   postContainer.innerHTML = "";
   keywordInput.value = "";
@@ -50,6 +48,33 @@ const searchDataPosts = function (item) {
 
 function initMap() {
 
+  if (document.referrer === "http://localhost/category-page/index.html" && localStorage.category_value != "") {
+
+    categoryIndustry.value = localStorage.category_value;
+    // categoryIndustry.textContent = localStorage.category_value;
+
+
+    fetch(database)
+      .then(data => data.json())
+      .then(function (result) {
+        try {
+          postContainer.innerHTML = "";
+          for (const item of result) {
+            if (categoryIndustry.value === item.companyCategory) {
+              console.log(item)
+              codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
+              postContainer.innerHTML += searchDataPosts(item);
+            }
+          }
+        }
+        catch (error) {
+          console.log("Error: " + error);
+        }
+      });
+  }
+
+  localStorage.removeItem("category_value");
+
   if (document.referrer === "http://localhost/index.html" && localStorage.keyword != "") {
 
     keywordInput.value = localStorage.keyword;
@@ -62,7 +87,7 @@ function initMap() {
           for (const item of result) {
             if (item.companyName.includes(keywordInput.value)) {
               console.log(item)
-              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
               postContainer.innerHTML += searchDataPosts(item);
             }
           }
@@ -83,7 +108,7 @@ function initMap() {
           for (const item of result) {
             if (locationInput.value === item.companyCountry) {
               console.log(item)
-              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
               postContainer.innerHTML += searchDataPosts(item);
             }
           }
@@ -94,7 +119,7 @@ function initMap() {
       })
 
   } else if (document.referrer === "http://localhost/index.html" && localStorage.category != "") {
-    
+
     categoryIndustry.value = localStorage.category;
 
     fetch(database)
@@ -103,9 +128,9 @@ function initMap() {
         try {
           postContainer.innerHTML = "";
           for (const item of result) {
-            if (categoryIndustry.value  === item.companyCategory) {
+            if (categoryIndustry.value === item.companyCategory) {
               console.log(item)
-              codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
               postContainer.innerHTML += searchDataPosts(item);
             }
           }
@@ -137,7 +162,7 @@ function initMap() {
             for (const item of result) {
               if (item.companyName.includes(keywordInput.value)) {
                 console.log(item)
-                codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
 
                 postContainer.innerHTML += searchDataPosts(item);
               }
@@ -159,7 +184,7 @@ function initMap() {
             postContainer.innerHTML = "";
             for (const item of result) {
               if (locationInput.value === item.companyCountry) {
-                codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
                 postContainer.innerHTML += searchDataPosts(item);
               }
             }
@@ -179,8 +204,8 @@ function initMap() {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
-              if (categoryIndustry.value  === item.companyCategory) {
-                codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+              if (categoryIndustry.value === item.companyCategory) {
+                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
                 console.log(item)
                 postContainer.innerHTML += searchDataPosts(item);
               }
@@ -338,6 +363,26 @@ function initMap() {
 
     markers.push(marker);
 
+
+    // Check for custonIcon
+    if (props.iconImage) {
+      marker.setIcon(props.iconImage);
+    };
+    // Check Content
+    if (props.content) {
+      const infoWindow = new google.maps.InfoWindow({
+        content: props.content
+      });
+      marker.addListener('click', function () {
+        if (currentInfoWindow != null) {
+          currentInfoWindow.close();
+        }
+        infoWindow.open(map, marker);
+        currentInfoWindow = infoWindow;
+      });
+    };
+
+
     // Sets the map on all markers in the array.
     function setMapOnAll(map) {
       for (var i = 0; i < markers.length; i++) {
@@ -385,58 +430,60 @@ function initMap() {
 
     // let markerCluster = new MarkerClusterer(map, markers, mcOptions);
 
-    // Check for custonIcon
-    if (props.iconImage) {
-      marker.setIcon(props.iconImage);
-    };
-    // Check Content
-    if (props.content) {
-      const infoWindow = new google.maps.InfoWindow({
-        content: props.content
-      });
-      marker.addListener('click', function () {
-        if (currentInfoWindow != null) {
-          currentInfoWindow.close();
-        }
-        infoWindow.open(map, marker);
-        currentInfoWindow = infoWindow;
-      });
-    };
+
   };
 
 
   // Funkcija za dinamicki stavanje pinpoint! mora da ima evtlistener
 
   var codeAddress = function (props, about, mailAdd, phoneNum, webSite) {
+
+
     let address = props;
 
     geocoder.geocode({ 'address': address }, function (results, status) {
-      if (status === 'OK') {
+
+      // console.log(results)
+      if (status === "OK") {
+
+
         map.setCenter(results[0].geometry.location);
+
         addMarker({
           coords: results[0].geometry.location,
           content: `<div class="ui raised segment">
-                    <h3 style="color: teal;" class="ui header">Company Name: ${about}</h3>
-                    <div class="ui fitted divider"></div> 
-                    <div class="ui teal  segment">
-                        <h4>Email: ${mailAdd}</h4>
-                    </div>
-                    <div class="ui teal segment">
-                        <h4>Phone Number: ${phoneNum}</h4>
-                    </div>
-                    <div class="ui teal segment">
-                        <h4>Web Address: <a href="${webSite}" target="_blank">${webSite}</a></h4>
-                    </div>
-                    <br/>
-                    
-                    <button class="ui teal basic button">Company Profile</button>
-                    <button class="ui teal basic button">Show Listing</button>
-                    </div>`
+                                <h3 style="color: teal;" class="ui header">Company Name: ${about}</h3>
+                                <div class="ui fitted divider"></div> 
+                                <div class="ui teal  segment">
+                                    <h4>Email: ${mailAdd}</h4>
+                                </div>
+                                <div class="ui teal segment">
+                                    <h4>Phone Number: ${phoneNum}</h4>
+                                </div>
+                                <div class="ui teal segment">
+                                    <h4>Web Address: <a href="${webSite}" target="_blank">${webSite}</a></h4>
+                                </div>
+                                <br/>
+                                
+                                <button class="ui teal basic button">Company Profile</button>
+                                <button class="ui teal basic button">Show Listing</button>
+                                </div>`
         })
+
+
+
+
       } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
-        setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite), 100);
+        setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite), 200);
       }
+
     })
+
+
+
+
+
+
   };
 
 

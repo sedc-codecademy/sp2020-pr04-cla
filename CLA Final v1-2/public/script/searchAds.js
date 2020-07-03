@@ -70,7 +70,7 @@ function initMap() {
             postContainer.innerHTML = "";
             for (const item of result) {
               if (item.adTitle.includes(keywordInput.value)) {
-                codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
                 postContainer.innerHTML += cardContentDynamic(item);
               }
             }
@@ -92,7 +92,7 @@ function initMap() {
             postContainer.innerHTML = "";
             for (const item of result) {
               if (locationInput.value === item.companyCountry) {
-                codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
                 postContainer.innerHTML += cardContentDynamic(item);
               }
             }
@@ -114,7 +114,7 @@ function initMap() {
             postContainer.innerHTML = "";
             for (const item of result) {
               if (item.adCategory.includes(categoryIndustry.value)) {
-                codeAddress(item.companyAddress, item.companyName, item.emailAddress, item.phoneNumber, item.website)
+                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
                 console.log(item)
                 postContainer.innerHTML += cardContentDynamic(item);
               }

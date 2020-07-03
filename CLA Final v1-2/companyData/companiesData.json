@@ -9,10 +9,17 @@
         "companyEmail": "example1@email.com",
         "companyName": "Company One LTD",
         "companyCountry": "Macedonia",
+        "companyRegNumber": "Lee22358",
         "companyAddress": "Ilija Miov",
         "can_advertise": true,
         "dateOfRegistration": "11-02-2020",
         "companyWebsite": "www.exampleweb.com",
+        "companyEmployees": "123",
+        "companyFounded": "2001",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
+        "businessEntity": "Partnership",
+        "companyType": "",
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "companyCategory": "Heavy industry & Engineering"
     },
     {
@@ -24,6 +31,7 @@
         "companyEmail": "second@mail.example",
         "companyName": "Company Two LTD",
         "companyCountry": "Germany",
+        "companyRegNumber": "Rack1150",
         "companyAddress": "Rilski Kongres 38",
         "can_advertise": true,
         "dateOfRegistration": "30-01-2020",
@@ -32,6 +40,12 @@
             "someweb.com",
             "extraweb.com"
         ],
+        "companyEmployees": "200",
+        "companyFounded": "2003",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
+        "businessEntity": "Partnership",
+        "companyType": "",
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "companyCategory": "Scince & Education"
     },
     {
@@ -43,10 +57,17 @@
         "companyEmail": "example1@email.com",
         "companyName": "SEDC - Company",
         "companyCountry": "Macedonia",
+        "companyRegNumber": "Roast44679",
         "companyAddress": "11 Oktomvri 33A, 1000 Skopje",
         "can_advertise": false,
         "dateOfRegistration": "15-01-2020",
         "companyWebsite": "www.testtest.com",
+        "companyEmployees": "120",
+        "companyFounded": "2005",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
+        "businessEntity": "Partnership",
+        "companyType": "",
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "companyCategory": "Computer Electronics & Technology"
     },
     {
@@ -58,10 +79,17 @@
         "companyEmail": "bomb@shout.com",
         "companyName": "CLA- Kiko Home",
         "companyCountry": "United States",
+        "companyRegNumber": "Devi44321",
         "companyAddress": "Emile Zola 7, Skopje",
         "can_advertise": true,
         "dateOfRegistration": "11-09-2018",
         "companyWebsite": "fakewebsite.net",
+        "companyEmployees": "100",
+        "companyFounded": "2010",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
+        "businessEntity": "Partnership",
+        "companyType": "",
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti! ",
         "companyCategory": "Health"
     },
     {
@@ -73,10 +101,17 @@
         "companyEmail": "plastic@skopje.com",
         "companyName": "Extra Company",
         "companyCountry": "Macedonia",
+        "companyRegNumber": "Mac3345",
         "companyAddress": "Boulevard Krushevska Republika Skopje 1000",
         "can_advertise": false,
         "dateOfRegistration": "11-03-2020",
         "companyWebsite": "www.plastikaeftino.com",
+        "companyEmployees": "80",
+        "companyFounded": "2002",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
+        "businessEntity": "Partnership",
+        "companyType": "",
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "companyCategory": "Finance"
     },
     {
@@ -88,10 +123,17 @@
         "companyEmail": "helloworld@skopje.com",
         "companyName": "Cedevita Company",
         "companyCountry": "Macedonia",
+        "companyRegNumber": "Bob67854",
         "companyAddress": "Boulevard Nikola Karev, Skopje",
         "can_advertise": false,
         "dateOfRegistration": "11-03-2020",
         "companyWebsite": "www.vinaria-bobski.com",
+        "companyEmployees": "50",
+        "companyFounded": "2004",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
+        "businessEntity": "Partnership",
+        "companyType": "",
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "companyCategory": "Arts & Entertainment"
     },
     {
@@ -109,10 +151,10 @@
         "companyWebsite": "www.test.com",
         "companyEmployees": "256",
         "companyFounded": "2010",
-        "serviceDescribe": "We offer good service. BlaBLa ",
+        "serviceDescribe": "We offer good service. And we Have trust between employees",
         "businessEntity": "Corporation",
         "companyType": "",
-        "companyAbout": "wqeqewqeqweqweqweqweqweqweqweqweqweqw 1"
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     },
     {
         "id": 8,
@@ -128,11 +170,11 @@
         "companyPhone": "123123123",
         "companyWebsite": "www.toni.com",
         "companyEmployees": "123",
-        "companyFounded": "2003",
-        "serviceDescribe": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
+        "companyFounded": "2015",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     },
     {
         "id": 9,
@@ -149,10 +191,10 @@
         "companyWebsite": "www.ace.com",
         "companyEmployees": "2000",
         "companyFounded": "1995",
-        "serviceDescribe": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     },
     {
         "id": 10,
@@ -169,10 +211,10 @@
         "companyWebsite": "www.ace.com",
         "companyEmployees": "26",
         "companyFounded": "1995",
-        "serviceDescribe": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti! "
     },
     {
         "id": 11,
@@ -189,10 +231,10 @@
         "companyWebsite": "www.koki.com",
         "companyEmployees": "87",
         "companyFounded": "1995",
-        "serviceDescribe": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     },
     {
         "id": 12,
@@ -209,10 +251,10 @@
         "companyWebsite": "www.ace.com",
         "companyEmployees": "2",
         "companyFounded": "1995",
-        "serviceDescribe": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti! "
     },
     {
         "id": 13,
@@ -229,10 +271,10 @@
         "companyWebsite": "www.mite.com",
         "companyEmployees": "25",
         "companyFounded": "1995",
-        "serviceDescribe": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     },
     {
         "id": 14,
@@ -249,10 +291,10 @@
         "companyWebsite": "www.vesna.com",
         "companyEmployees": "23",
         "companyFounded": "1995",
-        "serviceDescribe": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti! "
     },
     {
         "id": 15,
@@ -269,10 +311,10 @@
         "companyWebsite": "www.rade.com",
         "companyEmployees": "200",
         "companyFounded": "1995",
-        "serviceDescribe": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     },
     {
         "id": 16,
@@ -289,10 +331,10 @@
         "companyWebsite": "www.simona.com",
         "companyEmployees": "7",
         "companyFounded": "1995",
-        "serviceDescribe": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Partnership",
         "companyType": "",
-        "companyAbout": "We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! We offer dummy data! "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     },
     {
         "id": 17,
@@ -309,10 +351,10 @@
         "companyWebsite": "www.test.com",
         "companyEmployees": "2000",
         "companyFounded": "2010",
-        "serviceDescribe": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Proprietorship",
         "companyType": "",
-        "companyAbout": "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     },
     {
         "id": 18,
@@ -329,10 +371,10 @@
         "companyWebsite": "www.martin.com",
         "companyEmployees": "200",
         "companyFounded": "1995",
-        "serviceDescribe": "Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test ",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Proprietorship",
         "companyType": "",
-        "companyAbout": "Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test Dummy Test "
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti! "
     },
     {
         "id": 19,
@@ -349,9 +391,29 @@
         "companyWebsite": "www.test.com",
         "companyEmployees": "133",
         "companyFounded": "2005",
-        "serviceDescribe": "qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwe",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
         "businessEntity": "Proprietorship",
         "companyType": "",
-        "companyAbout": "qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwe"
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
+    },
+    {
+        "id": 20,
+        "firstName": "Boban",
+        "lastName": "Bobov",
+        "password": "bobo123",
+        "companyName": "BobanCompany",
+        "companyAddress": "Tetovo, North Macedonia",
+        "companyCountry": "Macedonia",
+        "companyRegNumber": "Bobo4456",
+        "companyCategory": "Business and Consumer Servicese",
+        "companyEmail": "bobo@gmail.com",
+        "companyPhone": "071435478",
+        "companyWebsite": "www.bobicompany.com",
+        "companyEmployees": "12",
+        "companyFounded": "1998",
+        "serviceDescribe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!",
+        "businessEntity": "Corporation",
+        "companyType": "",
+        "companyAbout": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores saepe veritatis, perspiciatis ullam est quasi provident adipisci architecto dignissimos modi similique facere laboriosam, neque quidem cumque eos obcaecati sit sunt?Omnis ipsam maxime deleniti eos nemo ea voluptates necessitatibus vitae, consectetur atque asperiores quis ex modi eveniet, harum est delectus, quidem minima qui quasi tempore libero laborum? Maiores, laboriosam corrupti!"
     }
 ]

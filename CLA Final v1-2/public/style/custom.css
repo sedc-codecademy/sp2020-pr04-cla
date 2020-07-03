@@ -135,6 +135,10 @@ body {
     max-height: 155px;
 }
 
+.customClass .card-custom-classs {
+    min-height: 100%;
+}
+
 
 .ui.grid.customImage {
     background-image: url("../img/desktop2.jpg");
