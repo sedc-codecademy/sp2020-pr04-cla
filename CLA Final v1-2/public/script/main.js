@@ -233,8 +233,8 @@ function initMap() {
                                     </div>
                                     <br/>
                                     
-                                    <button class="ui teal basic button">Company Profile</button>
-                                    <button class="ui teal basic button">Show Listing</button>
+                                    <button class="ui teal basic button" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${about}')">Company Profile</button>
+                                    <button class="ui teal basic button" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${about}')">Show Listing</button>
                                     </div>`
                 })
 
@@ -242,8 +242,8 @@ function initMap() {
 
 
             } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
-                setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite ), 200);  
-            } 
+                setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite), 200);
+            }
 
         })
 

@@ -24,4 +24,9 @@ newCompany.get('/', (req, res) => {
     ncc.showComp(res.sendFile(jsonCompanies))
 })
 
+newCompany.get('/title/:name', (req, res) => {
+    if(req.params.name)
+    res.status(200).json(ncc.getCompTitle(req.params.name))
+
+})
 module.exports = newCompany;

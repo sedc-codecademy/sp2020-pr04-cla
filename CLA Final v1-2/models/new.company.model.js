@@ -1,6 +1,8 @@
 const fs = require('fs');
 const newCompanies = require('./new.comp.setting.model');
-
+const path = require('path');
+const jsonComp = path.join(__dirname, '../companyData/companiesData.json');
+const compFile = JSON.parse(fs.readFileSync(jsonComp))
 
 class SaveComp {
     constructor() {}
@@ -30,6 +32,12 @@ class SaveComp {
     showCompanies(file) {
         return file
     }
+
+    getCompTitle(title){
+        return compFile.filter(comp => comp.companyName == title)
+    }
+
+
 }
 
 
