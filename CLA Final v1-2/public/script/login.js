@@ -1,12 +1,12 @@
 const loginBtn = document.getElementById("loginBtn");
 
 const login = async () => {
-    let email = document.querySelector('input[name="email"]').value;
-    let password = document.querySelector('input[name="password"]').value;
+    let email = document.getElementById('usernameLogin').value;
+    let password = document.getElementById('passwordLogin').value;
 
     let user;
 
-    // email && password ? user = await makeLogin({ email, password }) : swal('Missing email or password');
+     //email && password ? user = await makeLogin({ email, password }) : swal('Missing email or password');
 
     if (email && password) {
         user = await makeLogin({ email, password })
@@ -49,7 +49,6 @@ const makeLogin = ({ email, password }) => {
             } else {
                 localStorage.setItem('user', JSON.stringify(data));
                 window.location.href = '../profile-and-ad-pages/company-profile.html'
-                // console.log(data)
                 return true;
             }
         })
@@ -61,7 +60,9 @@ const makeLogin = ({ email, password }) => {
         })
 }
 
+
 loginBtn.addEventListener('click', function (e) {
     e.preventDefault();
     login();
 })
+
