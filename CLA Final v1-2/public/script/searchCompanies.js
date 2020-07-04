@@ -32,7 +32,7 @@ const searchDataPosts = function (item) {
             <img src="./img/Microsoft Building some image.jpg" class="hidden content">
           </div>
           <div class="content">
-            <a class="header">${item.companyName}</a>
+            <a class="header" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${item.companyName}')" >${item.companyName}</a>
             <div class="meta">
               <span class="date">${item.companyCountry}</span>
             </div>
@@ -465,8 +465,8 @@ function initMap() {
                                 </div>
                                 <br/>
                                 
-                                <button class="ui teal basic button">Company Profile</button>
-                                <button class="ui teal basic button">Show Listing</button>
+                                <button class="ui teal basic button" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${about}')">Company Profile</button>
+                                <button class="ui teal basic button" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${about}')">Show Listing</button>
                                 </div>`
         })
 

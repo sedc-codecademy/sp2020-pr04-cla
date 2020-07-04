@@ -12,6 +12,10 @@ class NewCompController {
     showComp(file){
         return ncm.showCompanies(file)
     }
+
+    getCompTitle(title){
+        return ncm.getCompTitle(title)
+    }
 }
 
 module.exports = NewCompController;

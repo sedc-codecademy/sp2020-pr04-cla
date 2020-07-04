@@ -37,14 +37,14 @@ reset.addEventListener("click", function () {
 // }
 
 
-function cardContentDynamic(item){
-    return `
+function cardContentDynamic(item) {
+  return `
   <div class="ui card">
   <a class="image" href="#">
   <img src="./img/Steel-Factory-640x428.jpg">
   </a>
   <div class="content">
-  <a class="header" href="#">${item.adTitle}</a>
+  <a class="header" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${item.companyName}')" href="#">${item.adTitle}</a>
   <div class="meta">
   <a>${item.companyName}</a>
   <br>
@@ -359,8 +359,8 @@ function initMap() {
                     </div>
                     <br/>
                     
-                    <button class="ui teal basic button">Company Profile</button>
-                    <button class="ui teal basic button">Show Listing</button>
+                    <button class="ui teal basic button" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${about}')">Company Profile</button>
+                    <button class="ui teal basic button" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${about}')">Show Listing</button>
                     </div>`
         })
       } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
