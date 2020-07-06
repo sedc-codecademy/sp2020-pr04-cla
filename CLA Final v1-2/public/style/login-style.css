@@ -1,0 +1,86 @@
+.ui.segment {
+    display: flex;
+    justify-content: center;
+    height: 708px;
+}
+.ui.placeholder.segment {
+    background-color: white;
+    top: 70px;
+}
+
+.right-img {
+    display: flex!important;
+    align-items: center;
+}
+
+.social-icons {
+    width: 100%;
+    max-width: 260px;
+    margin-top: 10px;
+}
+
+.social-icons h1 {
+    line-height: 30px;
+}
+.ui.placeholder.segment {
+    width: 880px;
+    height: 455px;
+}
+
+.ui.medium.rounded.image {
+    width: 410px;
+}
+
+.ui.form {
+    bottom: 25px;
+}
+
+.ui.left.icon.input {
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+.user.icon {
+    color: blue;
+}
+
+.lock.icon {
+    color: blue;
+}
+
+
+.ui.blue.submit.button {
+    margin-bottom: 10px;
+}
+
+.ui.grid {
+    position: relative;
+    margin-bottom: -20px;
+    justify-content: space-around
+}
+
+h4 {
+    position: absolute;
+    bottom: 28px;
+}
+
+p:last-child {
+    margin-bottom: 15px;
+}
+
+.ui.checkbox {
+    display: flex;
+}
+
+.ui.medium.circular.image {
+    height: 125px;
+    bottom: 7px;
+}
+
+.ui.blue.submit.button {
+    color: #527881;
+    background: #cde5ef;
+    border: 1px solid;
+    border-color: #b4ccce #b3c0c8 #9eb9c2;
+    border-radius: 12px;
+}

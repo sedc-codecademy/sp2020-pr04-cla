@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="./style/custom.css" type="text/css">
+  <title>CLA Contact Page</title>
+</head>
+
+<body>
+  <!-- Top Navigation Menu -->
+
+  <div class="navColor">
+    <nav class="ui stackable borderless container menu inverted">
+      <img class="ui small image logo" src="./img/cla-logo.png" alt="CLA Logo">
+      <a href="./index.html" class="item">Home</a>
+      <a href="./category-page/index.html" class="item">Categories</a>
+      <a href="about.html" class="item">About</a>
+      <a href="contact.html" class="item active">Contact</a>
+      <div class="ui dropdown item">
+        Search <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="./search-companies.html">Search Companies</a>
+          <a class="item" href="./search-ads.html">Search Ads</a>
+          <a class="item">Search Jobs</a>
+        </div>
+      </div>
+      <div class="ui dropdown item" value="active">
+        Info <i class="dropdown icon"></i>
+        <div class="menu active">
+          <a class="item" href="./how-it-works/index.html">How it Works</a>
+          <a class="item" href="./pricing-page/index.html">Pricing</a>
+          <a class="item" href="./faq/index.html">FAQ</a>
+        </div>
+      </div>
+
+      <div class="right menu">
+        <form class="item">
+          <div id="signLogBtns" class="ui buttons">
+            <a href="company.html">
+              <div class="ui button">Sign Up</div>
+            </a>
+            <div class="or"></div>
+            <a href="./login.html">
+              <div class="ui positive button">Log in</div>
+            </a>
+          </div>
+          <div id="yourProfilebtn" class="ui teal compact selection dropdown inverted">
+            <i class="dropdown icon"></i>
+            <div class="text ">Profile</div>
+            <div class="menu">
+              <a class="item" href="./profile-and-ad-pages/company-profile.html">Your Profile</a>
+              <a class="item" id="logoutBtn">
+                Logout
+              </a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <!-- END Of - Top Navigation Menu -->
+
+
+  <!-- Map For Contact-->
+
+  <div id="map-div" class="container">
+    <div class="ui  grid stackable">
+      <div class="twelve wide column">
+        <div id="map" class="container"></div>
+      </div>
+      <div class="four wide column">
+        <div class="ui size vertical segment">
+          <h1 class="ui top header">
+            Contact info
+          </h1>
+          <div>
+            <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi
+              nulla
+              ex duo.
+              Vis.Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot
+              wisi nulla
+              ex duo.
+              Vis
+            </p>
+            <br />
+            <div>
+              <i class="phone icon big"></i>++389-000-000-00, ++389-222-222-22
+            </div>
+            <br />
+            <div>
+              <i class="envelope icon big"></i>seavus@test.com, seavus_admin@test.com
+            </div>
+            <br />
+            <div>
+              <i class="map marker icon big"></i>11th October St. 33, Skopje 1000
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="ui segment">
+    <h1 class="ui centered header six column grid">Leave Reply or Ask Question</h1>
+    <br />
+    <br />
+    <br />
+    <div class="ui grid stackable">
+
+      <div class="two wide column"></div>
+      <div class="six wide column">
+        <form class="ui large form">
+          <div class="field required">
+            <label>First Name</label>
+            <input type="text" id="firstNameGj" name="first-name" placeholder="First Name">
+            <p class="errorParagGj"></p>
+          </div>
+          <div class="field required">
+            <label>Last Name</label>
+            <input type="text" id="lastNameGj" name="last-name" placeholder="Last Name">
+            <p class="errorParagGj"></p>
+          </div>
+          <div class="field required">
+            <label>E-Mail Address</label>
+            <input type="email" id="emailGj" name="email" placeholder="Email">
+            <p class="errorParagGj"></p>
+          </div>
+        </form>
+      </div>
+      <div class="six wide column">
+        <form class="ui large form">
+          <div class="field required">
+            <label>Message</label>
+            <textarea id="textareaGj"></textarea>
+            <p class="errorParagGj"></p>
+          </div>
+          <div id="sumbitBtnGj" class="ui green basic bottom attached button" tabindex="0">Submit</div>
+        </form>
+      </div>
+      <div class="two wide column"></div>
+    </div>
+
+  </div>
+
+
+  <!-- Companies and Logo section -->
+  <div class="brands-logo-section">
+    <p>Trusted by</p>
+    <div class="ui four column grid">
+      <div class="column">
+        <img src="./img/brands/323887.png" alt="">
+      </div>
+      <div class="column">
+        <img src="./img/brands/323887.png" alt="">
+      </div>
+      <div class="column">
+        <img src="./img/brands/323887.png" alt="">
+      </div>
+      <div class="column">
+        <img src="./img/brands/323887.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="five wide tablet five wide computer only column">
+          <img class="ui small image" src="./img/cla-logo.png" alt="CLA Logo">
+          <div class="ui basic segment">
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+        <div class="sixteen wide mobile only column">
+          <img class="ui small image" src="./img/cla-logo.png" alt="CLA Logo">
+          <div class="ui basic segment">
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+        <div class="five wide tablet five wide computer only column">
+          <div class="list">
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">About us</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Contact</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Marketing</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+        <div class="eight wide mobile only column">
+          <div class="list">
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">About us</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Contact</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Marketing</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+        <div class="five wide tablet five wide computer only column">
+          <div class="list">
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="facebook icon "></i>
+                Facebook</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="instagram icon"></i>
+                Instagram</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="twitter icon"></i>
+                Twitter</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="youtube icon"></i>
+                YouTube</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="linkedin icon"></i>
+                LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="eight wide mobile only column">
+          <div class="list">
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="facebook icon "></i>
+                Facebook</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="instagram icon"></i>
+                Instagram</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="twitter icon"></i>
+                Twitter</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="youtube icon"></i>
+                YouTube</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="linkedin icon"></i>
+                LinkedIn</a></div>
+          </div>
+        </div>
+      </div>
+      <p class="ui center aligned white inverted header customFontFooter">&copy; 2020 Company Listing App. All
+        rights reserved.</p>
+    </div>
+  </footer>
+
+
+  </div>
+
+  <script src="./script/signUp.logIn.btns.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <script>
+    $(".rating").rating();
+    $('.ui.dropdown').dropdown();
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmgNZGoslcNki771U-ED3hx10crn-EmFU&callback=initMap">
+    </script>
+  <script src="./script/contactMap.js"></script>
+  <script src="./script/contact.js"></script>
+  <script src="./profile-and-ad-pages/logout.js"></script>
+</body>
+
+</html>

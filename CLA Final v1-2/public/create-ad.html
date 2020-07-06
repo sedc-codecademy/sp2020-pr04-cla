@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./style/custom.css" type="text/css">
+    <title>Create Ad - CLA</title>
+</head>
+
+<body>
+
+
+    <!-- Top Navigation Menu -->
+
+    <div class="navColor">
+        <nav class="ui stackable borderless container menu inverted">
+            <img class="ui small image logo" src="./img/cla-logo.png" alt="CLA Logo">
+            <a href="./index.html" class="item">Home</a>
+            <a href="./category-page/index.html" class="item">Categories</a>
+            <a href="about.html" class="item">About</a>
+            <a href="contact.html" class="item">Contact</a>
+            <div class="ui dropdown item">
+                Search <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="./search-companies.html">Search Companies</a>
+                    <a class="item" href="./search-ads.html">Search Ads</a>
+                    <a class="item">Search Jobs</a>
+                </div>
+            </div>
+            <div class="ui dropdown item" value="active">
+                Info <i class="dropdown icon"></i>
+                <div class="menu active">
+                    <a class="item" href="./how-it-works/index.html">How it Works</a>
+                    <a class="item" href="./pricing-page/index.html">Pricing</a>
+                    <a class="item" href="./faq/index.html">FAQ</a>
+                </div>
+            </div>
+
+            <div class="right menu">
+                <form class="item">
+                    <div id="signLogBtns" class="ui buttons">
+                        <a href="company.html">
+                            <div class="ui button">Sign Up</div>
+                        </a>
+                        <div class="or"></div>
+                        <a href="./login.html">
+                            <div class="ui positive button">Log in</div>
+                        </a>
+                    </div>
+                    <div id="yourProfilebtn" class="ui teal compact selection dropdown inverted">
+                        <i class="dropdown icon"></i>
+                        <div class="text ">Profile</div>
+                        <div class="menu">
+                            <a class="item" href="./profile-and-ad-pages/company-profile.html">Your Profile</a>
+                            <a class="item" id="logoutBtn">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- END Of - Top Navigation Menu -->
+
+    <div class="ui container heading-top">
+        <a class="ui big green ribbon label">Credits Available: 100</a>
+        <div class="ui blue center aligned segment">
+            <h2>Create and Publish Ad</h2>
+        </div>
+    </div>
+
+    <div class="ui container ad-inputs">
+
+        <div class="ui row">
+            <div class="ui center aligned segment">
+                <h4 class="ui dividing header">Industry</h4>
+                <div class="field"></div>
+
+                <div id="catInput " class="ui fluid multiple search selection dropdown">
+                    <input id="myInputTest" type="hidden" name="receipt" />
+                    <i class="dropdown icon"></i>
+                    <div id="selCateg" class="default text">Select Category/s </div>
+
+                    <div id="menuCate" class="menu">
+                        <div class="item categ" data-value="Computer Electronics & Technology" data-text="Computer Electronics & Technology">
+                            <i class="building scale blue icon"></i>
+                            Computer Electronics & Technology
+                        </div>
+                        <div class="item categ" data-value="Business and Consumer Servicese" data-text="Business and Consumer Servicese">
+                            <i class="briefcase scale blue icon"></i>
+                            Business and Consumer Servicese
+                        </div>
+                        <div class="item categ" data-value="Heavy industry & Engineering" data-text="Heavy industry & Engineering">
+                            <i class="wrench scale blue icon"></i>
+                            Heavy industry & Engineering
+                        </div>
+                        <div class="item categ" data-value="Health" data-text="Health">
+                            <i class="flask scale blue icon"></i>
+                            Health
+                        </div>
+                        <div class="item categ" data-value="Home & Garden" data-text="Home & Garden">
+                            <i class="shopping basket scale blue icon"></i>
+                            Home & Garden
+                        </div>
+                        <div class="item categ" data-value="Scince & Education" data-text="Scince & Education">
+                            <i class="rocket scale blue icon"></i>
+                            Scince & Education
+                        </div>
+                        <div class="item categ" data-value="Sports" data-text="Sports">
+                            <i class="futbol outline blue icon"></i>
+                            Sports
+                        </div>
+                        <div class="item categ" data-value="Travel & Tourism" data-text="Travel & Tourism">
+                            <i class="globe blue icon"></i>
+                            Travel & Tourism
+                        </div>
+                        <div class="item categ" data-value="Vehicles" data-text="Vehicles">
+                            <i class="car blue icon"></i>
+                            Vehicles
+                        </div>
+                        <div class="item categ" data-value="Real Estate" data-text="Real Estate">
+                            <i class="map pin blue icon"></i>
+                            Real Estate
+                        </div>
+                        <div class="item categ" data-value="Pets & Animals" data-text="Pets & Animals">
+                            <i class="paw blue icon"></i>
+                            Pets & Animals
+                        </div>
+                        <div class="item categ" data-value="Food & Drink" data-text="Food & Drink">
+                            <i class="utensils blue icon"></i>
+                            Food & Drink
+                        </div>
+                        <div class="item categ" data-value="Finance" data-text="Finance">
+                            <i class="money bill alternate blue icon"></i>
+                            Finance
+                        </div>
+                        <div class="item categ" data-value="E-Commerce & Shopping" data-text="E-Commerce & Shopping">
+                            <i class="credit card outline blue icon"></i>
+                            E-Commerce & Shopping
+                        </div>
+                        <div class="item categ" data-value="Arts & Entertainment" data-text="Arts & Entertainment">
+                            <i class="paint brush blue icon"></i>
+                            Arts & Entertainment
+                        </div>
+
+
+                    </div>
+                </div>
+                <p class="errMsg"></p>
+            </div>
+        </div>
+
+
+        <div class="ui row">
+            <div class="ui center aligned segment">
+                <div class="ui fluid right labeled input">
+                    <input id="adTitle" type="text" placeholder="Title">
+                    <a class="ui blue tag label">
+                        Enter Ad Title
+                    </a>
+                </div>
+                <p class="errMsg"></p>
+            </div>
+        </div>
+
+        <div class="ui row">
+            <div class="ui center aligned segment">
+                <div class="ui fluid right labeled input">
+                    <input id="prodType" type="text" placeholder="Type">
+                    <a class="ui blue tag label">
+                        Product Type
+                    </a>
+                </div>
+                <p class="errMsg"></p>
+            </div>
+        </div>
+
+        <div class="ui row">
+            <div class="ui center aligned segment">
+                <div class="ui fluid right labeled input">
+                    <label for="amount" class="ui label">$</label>
+                    <input type="text" placeholder="Amount" id="amount">
+                    <a class="ui blue tag label">
+                        Enter Amount
+                    </a>
+                    <!-- <div class="ui basic floating dropdown button">
+                        <div class="text">Unit</div>
+                        <i class="dropdown icon"></i>
+                        <select class="ui dropdown" class="ui dropdown">
+                            <option class="item">KG</option>
+                            <option class="item">Ton</option>
+                        </select>
+                    </div> -->
+                </div>
+                <p class="errMsg"></p>
+            </div>
+        </div>
+
+
+
+
+        <div class="ui row">
+            <div class="ui center aligned segment">
+                <div class="ui placeholder segment">
+                    <div class="ui icon header">
+                        <i class="images icon"></i>
+                        Upload your pictures for this Ad. Max size 5MB per picture.
+                    </div>
+                    <div class="ui primary button">Upload Pictures</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui row">
+            <div class="ui center aligned segment">
+                <div class="ui form">
+                    <div class="field">
+                        <h4>Enter the Description about the product/service that your Company Offer: </h4>
+                        <textarea id="txtArea" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                <p class="errMsg"></p>
+            </div>
+        </div>
+
+        <div class="ui row">
+            <div class="ui center aligned segment">
+                <div class="ui toggle checkbox">
+                    <input id="termsCond" type="checkbox" name="gift" tabindex="0" class="hidden">
+                    <label>I accept CLA Terms and Conditions for posting this listing.</label>
+                </div>
+                <p class="errMsg"></p>
+            </div>
+        </div>
+
+        <div class="ui row last-row-off">
+            <div class="ui center aligned segment">
+                <div class="ui green animated button" tabindex="0">
+                    <div class="visible content">Confirm and Publish Ad</div>
+                    <div id="btn" class="hidden content">
+                        <i class="paper plane icon"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="./script/signUp.logIn.btns.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <script>
+            $('.checkbox').checkbox('attach events', '.toggle.button');
+            $('.ui.dropdown').dropdown();
+        </script>
+        <script src="./script/create.ad.js"></script>
+        <script src="./profile-and-ad-pages/logout.js"></script>
+
+</body>
+
+</html>

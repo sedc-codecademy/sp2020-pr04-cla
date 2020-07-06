@@ -1,0 +1,274 @@
+[
+    {
+        "id": 1,
+        "adCategory": [
+            "Finance",
+            "Scince & Education"
+        ],
+        "adTitle": "Milo Mathews",
+        "adType": "Milo Mathews",
+        "adAmount": "100 in Stock",
+        "adDescription": "BOOK SALE... Come down to our newly opened Book Store Conected to our Company. Educational and a lot of helpful books in Stock...From newt week we will have also Fantasy books and history. Check us out on our location or contact us for more information!",
+        "companyAddress": "Ilija Miov",
+        "companyName": "Company One LTD",
+        "companyEmail": "example1@email.com",
+        "companyWebsite": "www.exampleweb.com",
+        "companyPhone": "071456223",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 2,
+        "adCategory": [
+            "Finance",
+            "Scince & Education"
+        ],
+        "adTitle": "Kasey Murphy",
+        "adType": "Kasey Murphy",
+        "adAmount": "10 in Stock",
+        "adDescription": "SELLING SCHOOL SETS... We have Ten in stock. Our set includes 2 erasable crayons, 20 note sheets, 20 hall passes, 20 awards, 20 worksheets, 20 good-job stickers, 20 grade book sheets, 20 report cards and 2 double-sided dry erase sheets that include a U.S. map, world map, weather map and calendar. Come get yoyrs now on our location!",
+        "companyAddress": "Rilski Kongres 38",
+        "companyName": "Company Two LTD",
+        "companyEmail": "second@mail.example",
+        "companyWebsite": [
+            "www.test.com",
+            "someweb.com",
+            "extraweb.com"
+        ],
+        "companyPhone": "078563322",
+        "companyCountry": "Germany"
+    },
+    {
+        "id": 3,
+        "adCategory": [
+            "Finance"
+        ],
+        "adTitle": "Eric Rooney",
+        "adType": "Eric Rooney",
+        "adAmount": "2 in Stock",
+        "adDescription": "SELLING TWO CARS... The cars are in super good shape and they are both made in 2015. Nissan and Ford focus. For more information and a price contact me or find me on my location!",
+        "companyAddress": "Emile Zola 7, Skopje",
+        "companyName": "SEDC - Company",
+        "companyEmail": "example1@email.com",
+        "companyWebsite": "www.testtest.com",
+        "companyPhone": "077642357",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 4,
+        "adCategory": [
+            "Heavy industry & Engineering"
+        ],
+        "adTitle": "Andy Sparks",
+        "adType": "Andy Sparks",
+        "adAmount": "200 in Stock",
+        "adDescription": "WE GOT 200 COAL BAGS ON SALE... Anyone who needs coal you can come to our location and get yours or contact us we have a deliverry Truck. WE can negotiate the price",
+        "companyAddress": "Emile Zola 7, Skopje",
+        "companyName": "CLA- Kiko Home",
+        "companyEmail": "bomb@shout.com",
+        "companyWebsite": "fakewebsite.net",
+        "companyPhone": "070134668",
+        "companyCountry": "United States"
+    },
+    {
+        "id": 5,
+        "adCategory": [
+            "Home & Garden"
+        ],
+        "adTitle": "Asha Wharton",
+        "adType": "Asha Wharton",
+        "adAmount": "50 in Stock",
+        "adDescription": "SELLING FLOWERS AND BOUQUETS. Get your bouquet for a birthay or graduation party or simply to make someone's day. Find us on our location where our store is or save 20% by calling us and we can deliver it to you!!!",
+        "companyAddress": "Boulevard Krushevska Republika Skopje 1000",
+        "companyName": "Extra Company",
+        "companyEmail": "plastic@skopje.com",
+        "companyWebsite": "www.plastikaeftino.com",
+        "companyPhone": "072367432",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 8,
+        "adCategory": [
+            "Pets & Animals",
+            "Sports"
+        ],
+        "adTitle": "Kristofer Findlay",
+        "adType": "Kristofer Findlay",
+        "adAmount": "10 in Stock",
+        "adDescription": "BIG SALE IN OUR PET SHOP... Get your next best friend now on an exclusive price. WE have now talking parrots, new fishes, and cute new puppies who need a good warm home. Come to our store on our location or make a Call and we also do delivery to your home",
+        "companyAddress": "Solunska 22, Gevgelija, North Macedonia",
+        "companyName": "Toni Company",
+        "companyEmail": "toni@gmail.com",
+        "companyWebsite": "www.toni.com",
+        "companyPhone": "076345245",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 8,
+        "adCategory": [
+            " Accounting",
+            " Chemical Lab"
+        ],
+        "adTitle": "Rowena Philip",
+        "adType": "Rowena Philip",
+        "adAmount": "5 in Stock",
+        "adDescription": "SELLING AND CREATING ALBUMS FOR YOUR PICTURES... Send us your pictures and tell what kind of shape album you imagine we will make it. you also can bring us picture to our store on our location or simply contact us on our email!!! ",
+        "companyAddress": "Solunska 22, Gevgelija, North Macedonia",
+        "companyName": "Toni Company",
+        "companyEmail": "toni@gmail.com",
+        "companyWebsite": "www.toni.com",
+        "companyPhone": "070689532",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "E-Commerce & Shopping",
+            "Computer Electronics & Technology"
+        ],
+        "adTitle": "Jarrad Field",
+        "adType": "Jarrad Field",
+        "adAmount": "Out of Stock",
+        "adDescription": "WE are in need for HR person in our company... Anyone interested should have Exelent knowlege in computer work, Exelent experience in English, 2 Years experience is required and nice to have People skills... Contact us on our phone or come to our location and apply! ",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyName": "My Comapany",
+        "companyEmail": "test.mail@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 9,
+        "adCategory": [
+            "Computer Electronics & Technology",
+            "Health"
+        ],
+        "adTitle": "Tyriq Giles",
+        "adType": "Tyriq Giles",
+        "adAmount": "1 in Stock",
+        "adDescription": "NEW SALE NEW SALE NEW SALE... Brand new RAZER mouse, keyboard and a lot more...WE now take orders for costum computers...YOU can make your own computer with what parts you want in it, Also we ship WORLDWIDE, Find us on our Location or Contact us!",
+        "companyAddress": "Partizanska 35, Skopje, North Macedonia",
+        "companyName": "Ace Company-Delcevo",
+        "companyEmail": "ace@yahoo.com",
+        "companyWebsite": "www.ace.com",
+        "companyPhone": "071696969",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 17,
+        "adCategory": [
+            "Health",
+            "Travel & Tourism"
+        ],
+        "adTitle": "Caroline Randall",
+        "adType": "Caroline Randall",
+        "adAmount": "3 in Stock",
+        "adDescription": "Hello we have a Mobile pharmacy... Any medicine you need now delivered to you in a matter of minutes to one hour max... Contact us on our mobile number!",
+        "companyAddress": "Rilski Kongres, Skopje, North Macedonia",
+        "companyName": "Trajcev Company",
+        "companyEmail": "trajcev@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555444",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "Travel & Tourism",
+            "Vehicles"
+        ],
+        "adTitle": "Samia Scott",
+        "adType": "Samia Scott",
+        "adAmount": "16 in Stock",
+        "adDescription": "Selling Vouchers for vacation who last 2 years. We travel to Greece. Transport included, Dinner included with Breakfast and Dinner. We have a lot of combination vouchers... Contact us or find us on our location!",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyName": "My Comapany",
+        "companyEmail": "test.mail@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071467555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "Vehicles",
+            "Business and Consumer Servicese"
+        ],
+        "adTitle": "Shantelle Parks",
+        "adType": "Shantelle Parks",
+        "adAmount": "4 in Stock",
+        "adDescription": "CARS ON SALE...Big sale on our cars. You can check out our site and see anything you like contact us or find us on our location. We also can make a delivery to you. Not shipping worldwide",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyName": "My Comapany",
+        "companyEmail": "test.mail@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555248",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 10,
+        "adCategory": [
+            "Business and Consumer Servicese",
+            "Food & Drink"
+        ],
+        "adTitle": "Elisha May",
+        "adType": "Elisha May",
+        "adAmount": "Out of Stock",
+        "adDescription": "Looking for workers in my Company. We sell burgers. We need waiter/waitress, Bus boy/girl...find us on our location or call us anyone interested. ",
+        "companyAddress": "Kocani, North Macedonia",
+        "companyName": "Ace Company",
+        "companyEmail": "ace1@yahoo.com",
+        "companyWebsite": "www.ace.com",
+        "companyPhone": "071512565",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 7,
+        "adCategory": [
+            "Food & Drink"
+        ],
+        "adTitle": "Fateh Bryan",
+        "adType": "Fateh Bryan",
+        "adAmount": "25 in Stock",
+        "adDescription": "We sell whey protein We sell whey protein We sell whey protein... Get yours now we got small packiges and also large. WE do WORLDWIDE Shipping anyone interested contact us ",
+        "companyAddress": "Risto Farsinin, Gevgelija, North Macedonia",
+        "companyName": "My Comapany",
+        "companyEmail": "test.mail@gmail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "071555555",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 18,
+        "adCategory": [
+            "Accounting",
+            "Engineering"
+        ],
+        "adTitle": "Niamh Martin",
+        "adType": "Niamh Martin",
+        "adAmount": "10 in Stock",
+        "adDescription": "Selling Pipes from 10 meters long to 100 meters long and from 3 meters wide to 10 meters i can do chipping world wide find me on my location or call my phone  ",
+        "companyAddress": "Partizanski Odredi 87, Boulevard Partizanski Odredi, Skopje, North Macedonia",
+        "companyName": "Martin Company",
+        "companyEmail": "martin@gmail.com",
+        "companyWebsite": "www.martin.com",
+        "companyPhone": "07245758",
+        "companyCountry": "Macedonia"
+    },
+    {
+        "id": 22,
+        "adCategory": [
+            "Health",
+            "Scince & Education"
+        ],
+        "adTitle": "Dummy Health",
+        "adType": "Cure for covid",
+        "adAmount": "A lot of that",
+        "adDescription": "Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy ",
+        "companyAddress": "Skopje, North Macedonia",
+        "companyName": "Company DummyOne",
+        "companyEmail": "qwe123@mail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "123123",
+        "companyCountry": "Macedonia"
+    }
+]

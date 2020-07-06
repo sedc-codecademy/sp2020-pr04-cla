@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="./style/custom.css" type="text/css">
+  <title>CLA Home Page</title>
+</head>
+
+<body>
+
+  <!-- Top Navigation Menu -->
+
+  <div class="navColor">
+    <nav class="ui stackable borderless container menu inverted">
+      <img class="ui small image logo" src="./img/cla-logo.png" alt="CLA Logo">
+      <a href="./index.html" class="active item">Home</a>
+      <a href="./category-page/index.html" class="item">Categories</a>
+      <a href="about.html" class="item">About</a>
+      <a href="contact.html" class="item">Contact</a>
+      <div class="ui dropdown item">
+        Search <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="./search-companies.html">Search Companies</a>
+          <a class="item" href="./search-ads.html">Search Ads</a>
+          <a class="item">Search Jobs</a>
+        </div>
+      </div>
+      <div class="ui dropdown item">
+        Info <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="./how-it-works/index.html">How it Works</a>
+          <a class="item" href="./pricing-page/index.html">Pricing</a>
+          <a class="item" href="./faq/index.html">FAQ</a>
+        </div>
+      </div>
+
+      <div class="right menu">
+        <form  class="item">
+          <div id="signLogBtns" class="ui buttons">
+            <a href="company.html">
+              <div class="ui button">Sign Up</div>
+            </a>
+            <div class="or"></div>
+            <a href="./login.html">
+              <div class="ui positive button">Log in</div>
+            </a>
+          </div>
+          <div id="yourProfilebtn" class="ui teal compact selection dropdown inverted">
+            <i class="dropdown icon"></i>
+            <div class="text ">Profile</div>
+            <div class="menu">
+              <a class="item" href="./profile-and-ad-pages/company-profile.html">Your Profile</a>
+              <a class="item" id="logoutBtn">
+                Logout
+              </a>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Google map  -->
+  
+  <div id="map" class="container">
+
+  </div><br>
+
+  <!-- Serach Bar -->
+  <div id="topMenuDiv" class="ui container menu-container-mid">
+    <div class="four column stackable ui grid search-bar-container">
+      <div class="column">
+        <select id="companyCategoryIndustry" class="ui compact selection dropdown first-dropdown">
+          <option selected="" value="articles">All Categories</option>
+          <option class="item">Arts & Entertainment</option>
+          <option class="item">Business and Consumer Servicese</option>
+          <option class="item">Computer Electronics & Technology</option>
+          <option class="item">E-Commerce & Shopping</option>
+          <option class="item">Finance</option>
+          <option class="item">Food & Drink</option>
+          <option class="item">Health</option>
+          <option class="item">Heavy industry & Engineering</option>
+          <option class="item">Home & Garden</option>
+          <option class="item">Pets & Animals</option>
+          <option class="item">Real Estate</option>
+          <option class="item">Scince & Education</option>
+          <option class="item">Sports</option>
+          <option class="item">Travel & Tourism</option>
+          <option class="item">Vehicles</option>
+        </select>
+      </div>
+      <div class="column">
+        <div class="ui fluid icon input focus">
+          <input id="enterAddress" type="text" placeholder="Enter Country">
+          <i class="inverted circular location arrow icon"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui fluid icon input focus">
+          <input id="enterKeyword" type="text" placeholder="Keyword">
+          <i class="inverted circular crosshairs icon"></i>
+        </div>
+      </div>
+      <div class="column">
+        <div class="right menu">
+          <form class="item">
+            <div class="ui action input focus">
+              <select class="ui compact selection dropdown">
+                <option value="all">100km</option>
+                <option selected="" value="articles">25km</option>
+                <option value="products">50km</option>
+              </select>
+              <div id="searchBtn" class="ui green button">Search</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div><br><br>
+  <!-- Companies Cards with Icon and description -->
+  <div id="category-shortcards" class="ui container">
+    <div class="ui grid category-cards">
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="arts" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="balance scale blue icon"></i></div>
+            <div class="meta">Arts & Entertainment</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="business" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="wrench scale blue icon"></i></div>
+            <div class="meta">Business and Consumer...</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="computer" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="briefcase scale blue icon"></i></div>
+            <div class="meta">Computer Electronics &...</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="eCommerce" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="building scale blue icon"></i></div>
+            <div class="meta">E-Commerce & Shopping</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="finance" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="flask scale blue icon"></i></div>
+            <div class="meta">Finance</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="food" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="shopping basket scale blue icon"></i></div>
+            <div class="meta">Food & Drink</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="health" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="rocket scale blue icon"></i></div>
+            <div class="meta">Health</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="industry" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="ship scale blue icon"></i></div>
+            <div class="meta">Heavy industry &...</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="home" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="tree scale blue icon"></i></div>
+            <div class="meta">Home & Garden</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <div class="eight wide mobile three wide computer center aligned column">
+        <div id="pets" class="ui blue card">
+          <div class="content">
+            <div class="header"><i class="tty scale blue icon"></i></div>
+            <div class="meta">Pets & Animals</div>
+          </div>
+          <div class="extra content">
+            <i class="check icon"></i>
+            0 Companies
+          </div>
+        </div>
+      </div>
+      <a href="./category-page/index.html">See all categories</a>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- Top Rated Companies Block - 5 elements -->
+
+  <div class="ui container">
+    <h2 class="ui large center aligned grey header">Top Rated Companies on CLA</h2>
+    <div class="ui equal width grid">
+      <div class="sixteen wide mobile eight wide computer column">
+        <div class="ui column grid">
+          <div class="column">
+            <div class="ui fluid blue card main-toprate">
+              <div class="image">
+                <img src="./img/Steel-Factory-640x428.jpg">
+              </div>
+              <div class="content">
+                <span class="right floated">
+                  <a>Automobile Category</a>
+                </span>
+                <a href="#" class="header">Ford LTD</a>
+                <div class="meta">
+                  <span class="date">Minesota, Address Some 19DK, United States</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sixteen wide mobile eight wide computer column custom-class">
+        <div class="ui two column grid">
+          <div class="column customClass">
+            <div class="ui fluid blue card card-custom-classs">
+              <div class="ui fluid image">
+                <img src="./img/Microsoft Building some image.jpg">
+              </div>
+              <div class="extra content">
+                <a href="#" class="header">Microsoft</a>
+                <p>Address of the company or smth else</p>
+              </div>
+            </div>
+          </div>
+          <div class="column customClass">
+            <div class="ui fluid blue card card-custom-classs">
+              <div class="image">
+                <img src="./img/Google Office image 1.jpg">
+              </div>
+              <div class="extra content">
+                <a href="#" class="header">Google Inc</a>
+                <p>Address of the company or smth else</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui two column grid">
+          <div class="column customClass">
+            <div class="ui fluid blue card card-custom-classs">
+              <div class="image">
+                <img src="./img/Uber front Home Page image.jpg">
+              </div>
+              <div class="extra content">
+                <a href="#" class="header">Uber San Francisco</a>
+                <p>Address of the company or smth else</p>
+              </div>
+            </div>
+          </div>
+          <div class="column customClass">
+            <div class="ui fluid blue card card-custom-classs">
+              <div class="image">
+                <img src="./img/woodshop.jpg">
+              </div>
+              <div class="extra content">
+                <a href="#" class="header">Microsoft</a>
+                <p>Address of the company or smth else</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sixteen wide mobile sixteen wide computer column">
+        <button class="ui right floated blue basic button">Show All</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+  <!-- Buy & Sell section with Ad cards -->
+
+
+  <div class="ui container">
+    <h2 class="ui large center aligned header">Buy & Sell online locally or internationally</h2>
+    <h6 class="ui medium center aligned grey header">For all interested to list classified ad, please register <a
+        href="#"> here.</a></h6>
+    <div class="ui blue three item menu">
+      <a class="active item"><b>Top Rated</b></a>
+      <a class="item"><b>Latest</b></a>
+      <a class="item"><b>Random</b></a>
+    </div>
+    <div id="dynamicAdsContainer" class="ui four stackable cards">
+      
+
+    </div>
+  </div><br><br><br><br>
+
+  <!-- Placing Ads with Fullwitdht image section -->
+  <div class="ui grid customImage">
+    <div class="ui container">
+      <div class="ui two column grid">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row">
+          <div class="sixteen wide large screen computer only column">
+            <h1 class="ui huge inverted header customFontsize">Placing ads has never been easier!</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="sixteen wide tablet mobile only column">
+            <h1 class="ui huge inverted header customFont">Placing ads has never been easier!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="ui three column stackable grid">
+        <div class="six wide computer column"><button class="ui huge green button">Learn how CLA
+            works&nbsp;&nbsp;</button></div>
+        <div class="six wide computer column"><button class="ui huge blue button">Register your company</button></div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </div><br><br>
+
+
+  <!-- Cost and Offer section with 3 pricing features -->
+  <div class="ui container pricing-offer-container">
+    <div class="ui central aligned divided grid">
+      <div class="large screen computer only row">
+        <div class="two wide column">
+          <p class="ui massive green circular label"><br>FREE</p>
+        </div>
+        <div class="fourteen wide column">
+          <h1 class="ui huge header customFontsizeLarge">List your company</h1>
+          <h6 class="ui small grey header customFontsizeLarge">Create beautiful company profile and list it on
+            our directory for free forever.</h6>
+        </div>
+      </div>
+      <div class="tablet only row">
+        <div class="two wide column">
+          <p class="ui big green circular label"><br>FREE</p>
+        </div>
+        <div class="fourteen wide column">
+          <h1 class="ui large header customFontsizeTablet">List your company</h1>
+          <h6 class="ui medium grey header customFontsizeTablet">Create beautiful company profile and list it
+            on our directory for free forever.</h6>
+        </div>
+      </div>
+      <div class="mobile only row">
+        <div class="two wide column">
+          <p class="ui medium green circular label"><br>FREE</p>
+        </div>
+        <div class="thirteen wide column">
+          <h1 class="ui large header customFontsizeMobile">List your company</h1>
+          <h6 class="ui small grey header customFontsizeMobile">Create beautiful company profile and list it
+            on our directory for free forever.</h6>
+        </div>
+      </div>
+      <div class="large screen computer only row">
+        <div class="two wide column">
+          <p class="ui massive green circular label"><br>FREE</p>
+        </div>
+        <div class="fourteen wide column">
+          <h1 class="ui huge header customFontsizeLarge">Always FREE ad posting</h1>
+          <h6 class="ui small grey header customFontsizeLarge">Post as many ads as you like for 30 days
+            without limitations and 100% FREE.</h6>
+        </div>
+      </div>
+      <div class="tablet only row">
+        <div class="two wide column">
+          <p class="ui big green circular label"><br>FREE</p>
+        </div>
+        <div class="fourteen wide column">
+          <h1 class="ui large header customFontsizeTablet">Always FREE ad posting</h1>
+          <h6 class="ui medium grey header customFontsizeTablet">Post as many ads as you like for 30 days
+            without limitations and 100% FREE.</h6>
+        </div>
+      </div>
+      <div class="mobile only row">
+        <div class="two wide column">
+          <p class="ui medium green circular label"><br>FREE</p>
+        </div>
+        <div class="thirteen wide column">
+          <h1 class="ui large header customFontsizeMobile">Always FREE ad posting</h1>
+          <h6 class="ui small grey header customFontsizeMobile">Post as many ads as you like for 30 days
+            without limitations and 100% FREE.</h6>
+        </div>
+      </div>
+      <div class="large screen computer only row">
+        <div class="two wide column">
+          <p class="ui massive yellow circular label"><br>FREE</p>
+        </div>
+        <div class="fourteen wide column">
+          <h1 class="ui huge header customFontsizeLarge color">Premium Exposure</h1>
+          <h6 class="ui small grey header customFontsizeLarge">It’s very simple to choose pricing & level of
+            exposure on our <a href="#">pricing page.</a></h6>
+        </div>
+      </div>
+      <div class="tablet only row">
+        <div class="two wide column">
+          <p class="ui big yellow circular label"><br>FREE</p>
+        </div>
+        <div class="fourteen wide column">
+          <h1 class="ui large header customFontsizeTablet color">Premium Exposure</h1>
+          <h6 class="ui medium grey header customFontsizeTablet">It’s very simple to choose pricing & level of
+            exposure on our <a href="#">pricing page.</a></h6>
+        </div>
+      </div>
+      <div class="mobile only row">
+        <div class="two wide column">
+          <p class="ui medium yellow circular label"><br>FREE</p>
+        </div>
+        <div class="thirteen wide column">
+          <h1 class="ui large header customFontsizeMobile color">Premium Exposure</h1>
+          <h6 class="ui small grey header customFontsizeMobile">It’s very simple to choose pricing & level of
+            exposure on our <a href="#">pricing page.</a></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Companies and Logo section -->
+  <div class="brands-logo-section">
+    <p>Trusted by</p>
+    <div class="ui four column grid">
+      <div class="column">
+        <img src="./img/brands/323887.png" alt="">
+      </div>
+      <div class="column">
+        <img src="./img/brands/323887.png" alt="">
+      </div>
+      <div class="column">
+        <img src="./img/brands/323887.png" alt="">
+      </div>
+      <div class="column">
+        <img src="./img/brands/323887.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="five wide tablet five wide computer only column">
+          <img class="ui small image" src="./img/cla-logo.png" alt="CLA Logo">
+          <div class="ui basic segment">
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+        <div class="sixteen wide mobile only column">
+          <img class="ui small image" src="./img/cla-logo.png" alt="CLA Logo">
+          <div class="ui basic segment">
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+        <div class="five wide tablet five wide computer only column">
+          <div class="list">
+            <div class="item customFontFooter"><a class="customFontFooter" href="/about.html">About us</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="/contact.html">Contact</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Marketing</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+        <div class="eight wide mobile only column">
+          <div class="list">
+            <div class="item customFontFooter"><a class="customFontFooter" href="/about.html">About us</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="/contact.html">Contact</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Marketing</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+        <div class="five wide tablet five wide computer only column">
+          <div class="list">
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="facebook icon "></i>
+                Facebook</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="instagram icon"></i>
+                Instagram</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="twitter icon"></i>
+                Twitter</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="youtube icon"></i>
+                YouTube</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="linkedin icon"></i>
+                LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="eight wide mobile only column">
+          <div class="list">
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="facebook icon "></i>
+                Facebook</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="instagram icon"></i>
+                Instagram</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="twitter icon"></i>
+                Twitter</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="youtube icon"></i>
+                YouTube</a></div>
+            <div class="item customFontFooter"><a class="customFontFooter" href="#0"><i class="linkedin icon"></i>
+                LinkedIn</a></div>
+          </div>
+        </div>
+      </div>
+      <p class="ui center aligned white inverted header customFontFooter">&copy; 2020 Company Listing App. All
+        rights reserved.</p>
+    </div>
+  </footer>
+
+
+  </div>
+
+  <script src="./script/companyProfileRedirect.js"></script>
+  <script src="./script/signUp.logIn.btns.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <script>
+    $(".rating").rating();
+    $('.ui.dropdown').dropdown();
+  </script>
+  <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmgNZGoslcNki771U-ED3hx10crn-EmFU&callback=initMap">
+    </script>
+  <script src="./script/homeSearch.js"></script>
+  <script src="./script/home_dynamicAds.js"></script>
+  <script src="./script/main.js"></script>
+  <script src="./script/CompanyCategory.js"></script>
+  <script src="./profile-and-ad-pages/logout.js"></script>
+  
+</body>
+
+</html>
