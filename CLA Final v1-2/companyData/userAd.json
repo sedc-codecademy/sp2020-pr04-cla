@@ -253,5 +253,22 @@
         "companyWebsite": "www.martin.com",
         "companyPhone": "07245758",
         "companyCountry": "Macedonia"
+    },
+    {
+        "id": 22,
+        "adCategory": [
+            "Health",
+            "Scince & Education"
+        ],
+        "adTitle": "Dummy Health",
+        "adType": "Cure for covid",
+        "adAmount": "A lot of that",
+        "adDescription": "Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy Dummy Dumyy ",
+        "companyAddress": "Skopje, North Macedonia",
+        "companyName": "Company DummyOne",
+        "companyEmail": "qwe123@mail.com",
+        "companyWebsite": "www.test.com",
+        "companyPhone": "123123",
+        "companyCountry": "Macedonia"
     }
 ]
