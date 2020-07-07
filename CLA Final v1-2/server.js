@@ -8,7 +8,7 @@ const uuid = require('uuid');
 
 const routes = require('./routes');
 
-const port = process.env.port || 8888,
+const port = process.env.port || 80,
     ip = '0.0.0.0';
 
 

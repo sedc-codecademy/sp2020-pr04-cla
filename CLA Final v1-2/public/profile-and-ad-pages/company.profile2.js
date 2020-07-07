@@ -29,9 +29,19 @@ const getCompany = async (url) => {
     let response = await fetch(`${url}${lsCompany}`);
     let data = await response.json();
     console.log(data);
-    getAds(data[0].id)
     seeLocalStr(data);
-    loggedUser = data[0].id
+    // AD resposnse
+    getAds(data[0].id)
+    // loggedUser = data[0].id
+
+    // let responseForAd = await fetch(`http://localhost/createAd/` + loggedUser);
+    // let dataForAd = await responseForAd.json();
+    // console.log(responseForAd);
+    // console.log(dataForAd);
+    // filterUserAds(dataForAd);
+
+
+    
     // getAds();
     localStorage.removeItem('compProfile');
 
@@ -83,6 +93,8 @@ const getAds = async (id) => {
 
 };
 
+
+
 const adRedirect = (element) => {
     window.location.href = '../profile-and-ad-pages/classified-ad.html';
 
@@ -93,7 +105,7 @@ const adRedirect = (element) => {
 }
 
 
-const filterUserAds = (arr) => {
+const filterUserAds = async (arr) => {
     arr.forEach(e => {
         ads.innerHTML += `
         <div class="left floated card">
@@ -123,5 +135,5 @@ const filterUserAds = (arr) => {
 window.onload = () => {
     // seeLocalStr();
     getCompany(compNameUrl)
-    // getAdsTEst()
+
 };
