@@ -66,14 +66,16 @@ function initMap() {
               postContainer.innerHTML += searchDataPosts(item);
             }
           }
+
         }
         catch (error) {
           console.log("Error: " + error);
         }
+        localStorage.removeItem("category_value");
       });
   }
 
-  localStorage.removeItem("category_value");
+
 
   if (document.referrer === "http://localhost/index.html" && localStorage.keyword != "") {
 
@@ -132,17 +134,19 @@ function initMap() {
               console.log(item)
               codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
               postContainer.innerHTML += searchDataPosts(item);
+              
             }
           }
 
         } catch (error) {
           console.log("Error: " + error);
         }
+        localStorage.removeItem("category");
       })
   }
 
   localStorage.removeItem("keyword");
-  localStorage.removeItem("category");
+ 
   localStorage.removeItem("address");
 
 
