@@ -9,7 +9,7 @@ const uuid = require('uuid');
 const routes = require('./routes');
 
 const port = process.env.port || 80,
-    ip = '0.0.0.0';
+    ip = '167.172.190.47';
 
 
 const staticRoute = path.join(__dirname, '/public'); 
