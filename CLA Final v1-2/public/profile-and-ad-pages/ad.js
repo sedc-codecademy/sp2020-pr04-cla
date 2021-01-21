@@ -1,4 +1,4 @@
-const newDatabase = "http://localhost/createAd/title/"
+const newDatabase = "http://167.172.190.47/createAd/title/"
 const signLogBtns = document.getElementById("signLogBtns");
 const yourProfilebtn = document.getElementById("yourProfilebtn");
 let adType = document.querySelectorAll(".adType");

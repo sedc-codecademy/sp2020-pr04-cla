@@ -1,7 +1,7 @@
 const containerForAds = document.getElementById("dynamicAdsContainer");
 
-const database = "http://localhost/createAd";
-const newDatabase = "http://localhost/createAd/title/"
+const database = "http://167.172.190.47/createAd";
+const newDatabase = "http://167.172.190.47/createAd/title/"
 
 const adRedirect = (element) => {
   window.location.href =  '../profile-and-ad-pages/classified-ad.html';

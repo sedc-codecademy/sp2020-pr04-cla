@@ -174,7 +174,7 @@ let validate = () => {
     trmAndCond();
 };
 
-const postUrl = "http://localhost/createAd";
+const postUrl = "http://167.172.190.47/createAd";
 
 const postData = async (urls, content) => {
 

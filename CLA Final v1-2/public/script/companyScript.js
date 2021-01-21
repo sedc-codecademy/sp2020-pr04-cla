@@ -326,7 +326,7 @@ let storingObj = async (key) => {
 }
 
 
-const postUrl = "http://localhost/validate";
+const postUrl = "http://167.172.190.47/validate";
 
 const postData = async (urls, content) => {
     const response = await fetch(urls, {

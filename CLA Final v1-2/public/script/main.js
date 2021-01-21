@@ -1,8 +1,8 @@
 // const jsonURL = "https://raw.githubusercontent.com/sedc-codecademy/sp2020-pr04-cla/master/database.JSON";
-const newJsonUrl = "http://localhost/getCompData";
-const newCompaniesUrl = "http://localhost/getNewComp";
+const newJsonUrl = "http://167.172.190.47/getCompData";
+const newCompaniesUrl = "http://167.172.190.47/getNewComp";
 let currentInfoWindow = null;
-const companyURL = "http://localhost/createNewComp";
+const companyURL = "http://167.172.190.47/createNewComp";
 const signLogBtns = document.getElementById("signLogBtns");
 const yourProfilebtn = document.getElementById("yourProfilebtn");
 

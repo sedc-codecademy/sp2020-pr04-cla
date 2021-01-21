@@ -19,7 +19,7 @@ const body = document.querySelector("body");
 const ads = document.getElementById("ads");
 const signLogBtns = document.getElementById("signLogBtns");
 const yourProfilebtn = document.getElementById("yourProfilebtn");
-const compNameUrl = "http://localhost/createNewComp/title/";
+const compNameUrl = "http://167.172.190.47/createNewComp/title/";
 checkingForUser(signLogBtns, yourProfilebtn);
 
 let loggedUser = null;
@@ -62,10 +62,10 @@ let seeLocalStr = async (data) => {
   aboutTheCompany[1].innerText = data[0].companyAbout;
 };
 
-const companyAdURL = `http://localhost/createAd/`;
+const companyAdURL = `http://167.172.190.47/createAd/`;
 
 const getAds = async (id) => {
-  let response = await fetch(`http://localhost/createAd/` + id);
+  let response = await fetch(`http://167.172.190.47/createAd/` + id);
   let data = await response.json();
   filterUserAds(data);
 };

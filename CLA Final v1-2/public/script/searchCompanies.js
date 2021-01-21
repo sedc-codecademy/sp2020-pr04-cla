@@ -12,7 +12,7 @@ checkingForUser(signLogBtns, yourProfilebtn);
 let currentInfoWindow = null;
 let markers = [];
 
-const database = "http://localhost/createNewComp";
+const database = "http://167.172.190.47/createNewComp";
 
 reset.addEventListener("click", function () {
   postContainer.innerHTML = "";
@@ -43,7 +43,7 @@ const searchDataPosts = function (item) {
 
 function initMap() {
   if (
-    document.referrer === "http://localhost/category-page/index.html" &&
+    document.referrer === "http://167.172.190.47/category-page/index.html" &&
     localStorage.category_value != ""
   ) {
     categoryIndustry.value = localStorage.category_value;
@@ -74,7 +74,7 @@ function initMap() {
   }
 
   if (
-    document.referrer === "http://localhost/index.html" &&
+    document.referrer === "http://167.172.190.47/index.html" &&
     localStorage.keyword != ""
   ) {
     keywordInput.value = localStorage.keyword;
@@ -101,7 +101,7 @@ function initMap() {
         }
       });
   } else if (
-    document.referrer === "http://localhost/index.html" &&
+    document.referrer === "http://167.172.190.47/index.html" &&
     localStorage.address != ""
   ) {
     locationInput.value = localStorage.address;
@@ -129,7 +129,7 @@ function initMap() {
         }
       });
   } else if (
-    document.referrer === "http://localhost/index.html" &&
+    document.referrer === "http://167.172.190.47/index.html" &&
     localStorage.category != ""
   ) {
     categoryIndustry.value = localStorage.category;

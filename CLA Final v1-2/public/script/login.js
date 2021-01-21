@@ -23,7 +23,7 @@ const login = async () => {
 }
 
 const makeLogin = ({ email, password }) => {
-    fetch('//localhost/login', {
+    fetch('//167.172.190.47/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
