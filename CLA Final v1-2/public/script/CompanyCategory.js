@@ -9,13 +9,10 @@ let heavyIndustry = document.getElementById("industry");
 let homeAndGarden = document.getElementById("home");
 let petsAndAnimals = document.getElementById("pets");
 
-
 function initCompCategory() {
   const getData = async (url) => {
     let response = await fetch(url);
     let data = await response.json();
-
-
 
     var count1 = 0;
     var count2 = 0;
@@ -37,7 +34,7 @@ function initCompCategory() {
       if (data[i].companyCategory === "Arts & Entertainment") {
         count1++;
 
-        artsAndEntertainment.innerHTML = '';
+        artsAndEntertainment.innerHTML = "";
         artsAndEntertainment.innerHTML += `
                 <div class="content">
             <div class="header"><i class="ship scale blue icon"></i></div>
@@ -48,14 +45,13 @@ function initCompCategory() {
             ${count1} Compainies
           </div>
                 
-                `
-      }
-
-
-      else if (data[i].companyCategory === "Business and Consumer Servicese") {
+                `;
+      } else if (
+        data[i].companyCategory === "Business and Consumer Servicese"
+      ) {
         count2++;
 
-        businessAndConsumer.innerHTML = '';
+        businessAndConsumer.innerHTML = "";
         businessAndConsumer.innerHTML += `
                 <div class="content">
             <div class="header"><i class="wrench scale blue icon"></i></div>
@@ -66,16 +62,13 @@ function initCompCategory() {
             ${count2} Companies
           </div>
                 
-                `
-
-
-
-      }
-
-      else if (data[i].companyCategory === "Computer Electronics & Technology") {
+                `;
+      } else if (
+        data[i].companyCategory === "Computer Electronics & Technology"
+      ) {
         count3++;
 
-        computerElectronics.innerHTML = '';
+        computerElectronics.innerHTML = "";
         computerElectronics.innerHTML += `
                 <div class="content">
             <div class="header"><i class="wrench scale blue icon"></i></div>
@@ -86,13 +79,11 @@ function initCompCategory() {
             ${count3} Companies
           </div>
                 
-                `
-      }
-
-      else if (data[i].companyCategory === "E-Commerce & Shopping") {
+                `;
+      } else if (data[i].companyCategory === "E-Commerce & Shopping") {
         count4++;
 
-        eCommerce.innerHTML = '';
+        eCommerce.innerHTML = "";
         eCommerce.innerHTML += `
                 <div class="content">
             <div class="header"><i class="wrench scale blue icon"></i></div>
@@ -103,13 +94,11 @@ function initCompCategory() {
             ${count4} Companies
           </div>
                 
-                `
-      }
-
-      else if (data[i].companyCategory === "Finance") {
+                `;
+      } else if (data[i].companyCategory === "Finance") {
         count5++;
 
-        finance.innerHTML = '';
+        finance.innerHTML = "";
         finance.innerHTML += `
                 <div class="content">
             <div class="header"><i class="wrench scale blue icon"></i></div>
@@ -120,13 +109,11 @@ function initCompCategory() {
             ${count5} Companies
           </div>
                 
-                `
-      }
-
-      else if (data[i].companyCategory === "Food & Drink") {
+                `;
+      } else if (data[i].companyCategory === "Food & Drink") {
         count6++;
 
-        foodAndDrink.innerHTML = '';
+        foodAndDrink.innerHTML = "";
         foodAndDrink.innerHTML += `
                 <div class="content">
             <div class="header"><i class="wrench scale blue icon"></i></div>
@@ -137,13 +124,11 @@ function initCompCategory() {
             ${count6} Companies
           </div>
                 
-                `
-      }
-
-      else if (data[i].companyCategory === "Health") {
+                `;
+      } else if (data[i].companyCategory === "Health") {
         count7++;
 
-        health.innerHTML = '';
+        health.innerHTML = "";
         health.innerHTML += `
                 <div class="content">
             <div class="header"><i class="wrench scale blue icon"></i></div>
@@ -154,14 +139,11 @@ function initCompCategory() {
             ${count7} Companies
           </div>
                 
-                `
-      }
-
-
-      else if (data[i].companyCategory === "Heavy industry & Engineering") {
+                `;
+      } else if (data[i].companyCategory === "Heavy industry & Engineering") {
         count8++;
 
-        heavyIndustry.innerHTML = '';
+        heavyIndustry.innerHTML = "";
         heavyIndustry.innerHTML += `
                 <div class="content">
             <div class="header"><i class="ship scale blue icon"></i></div>
@@ -172,13 +154,11 @@ function initCompCategory() {
             ${count8} Compainies
           </div>
                 
-                `
-      }
-
-      else if (data[i].companyCategory === "Home & Garden") {
+                `;
+      } else if (data[i].companyCategory === "Home & Garden") {
         count9++;
 
-        homeAndGarden.innerHTML = '';
+        homeAndGarden.innerHTML = "";
         homeAndGarden.innerHTML += `
                 <div class="content">
             <div class="header"><i class="ship scale blue icon"></i></div>
@@ -189,13 +169,11 @@ function initCompCategory() {
             ${count9} Compainies
           </div>
                 
-                `
-      }
-
-      else if (data[i].companyCategory === "Pets & Animals") {
+                `;
+      } else if (data[i].companyCategory === "Pets & Animals") {
         count10++;
 
-        petsAndAnimals.innerHTML = '';
+        petsAndAnimals.innerHTML = "";
         petsAndAnimals.innerHTML += `
                 <div class="content">
             <div class="header"><i class="ship scale blue icon"></i></div>
@@ -206,60 +184,22 @@ function initCompCategory() {
             ${count10} Compainies
           </div>
                 
-                `
-      }
-
-      else if (data[i].companyCategory === "Real Estate") {
+                `;
+      } else if (data[i].companyCategory === "Real Estate") {
         count11++;
-
-
-      }
-
-      else if (data[i].companyCategory === "Scince & Education") {
+      } else if (data[i].companyCategory === "Scince & Education") {
         count12++;
-
-
-      }
-
-      else if (data[i].companyCategory === "Sports") {
+      } else if (data[i].companyCategory === "Sports") {
         count13++;
-
-
-      }
-
-      else if (data[i].companyCategory === "Travel & Tourism") {
+      } else if (data[i].companyCategory === "Travel & Tourism") {
         count14++;
-
-
-      }
-
-      else if (data[i].companyCategory === "Vehicles") {
+      } else if (data[i].companyCategory === "Vehicles") {
         count15++;
-
-
       }
-
-
-
-
-
-
-
-
     }
-
-
-
-
   };
 
-
   getData(companyURL);
-
-
-
-
 }
 
 initCompCategory();
-
