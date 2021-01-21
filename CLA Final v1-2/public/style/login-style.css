@@ -84,3 +84,12 @@ p:last-child {
     border-color: #b4ccce #b3c0c8 #9eb9c2;
     border-radius: 12px;
 }
+
+@media all and (max-width: 650px){
+   .ourDivResponsive{
+       display: none !important;
+   }
+   .myInnerContainer{
+       width: 100% !important;
+   }
+}

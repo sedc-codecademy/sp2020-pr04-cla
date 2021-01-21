@@ -7,7 +7,6 @@ let categoryIndustry = document.getElementById("categoryIndustry");
 const signLogBtns = document.getElementById("signLogBtns");
 const yourProfilebtn = document.getElementById("yourProfilebtn");
 
-
 checkingForUser(signLogBtns, yourProfilebtn);
 
 let currentInfoWindow = null;
@@ -20,22 +19,7 @@ reset.addEventListener("click", function () {
   postContainer.innerHTML = "";
   keywordInput.value = "";
   locationInput.value = "";
-})
-
-// function checkIdandReturn(item){
-//   let companyName = "";
-//   fetch(clientDatabase)
-//   .then(data => data.json())
-//   .then(function(result){
-//     for (const client of result) {
-//       if(client.userId === item){
-//         companyName = client.companyName;
-//         return companyName;
-//       }
-//     }
-//   })
-// }
-
+});
 
 function cardContentDynamic(item) {
   return `
@@ -54,100 +38,100 @@ function cardContentDynamic(item) {
   <a><b>${item.adCategory}</b></a>
   </div>
   </div>
-  </div>`
+  </div>`;
 }
 
-
 function initMap() {
-
   search.addEventListener("click", function () {
-
     if (keywordInput.value !== "") {
       fetch(database)
-        .then(data => data.json())
+        .then((data) => data.json())
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
               if (item.adTitle.includes(keywordInput.value)) {
-                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
+                codeAddress(
+                  item.companyAddress,
+                  item.companyName,
+                  item.companyEmail,
+                  item.companyPhone,
+                  item.companyWebsite
+                );
                 postContainer.innerHTML += cardContentDynamic(item);
               }
             }
-
-
           } catch (error) {
-            console.log(error)
+            console.log(error);
           }
-        })
-
-
-
+        });
     } else if (locationInput.value !== "") {
-
       fetch(database)
-        .then(data => data.json())
+        .then((data) => data.json())
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
               if (locationInput.value === item.companyCountry) {
-                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
+                codeAddress(
+                  item.companyAddress,
+                  item.companyName,
+                  item.companyEmail,
+                  item.companyPhone,
+                  item.companyWebsite
+                );
                 postContainer.innerHTML += cardContentDynamic(item);
               }
             }
-
-
-
           } catch (error) {
-            console.log(error)
+            console.log(error);
           }
-        })
-
-    }
-    else if (categoryIndustry.value !== "") {
-
+        });
+    } else if (categoryIndustry.value !== "") {
       fetch(database)
-        .then(data => data.json())
+        .then((data) => data.json())
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
               if (item.adCategory.includes(categoryIndustry.value)) {
-                codeAddress(item.companyAddress, item.companyName, item.companyEmail, item.companyPhone, item.companyWebsite)
-                console.log(item)
+                codeAddress(
+                  item.companyAddress,
+                  item.companyName,
+                  item.companyEmail,
+                  item.companyPhone,
+                  item.companyWebsite
+                );
+
                 postContainer.innerHTML += cardContentDynamic(item);
               }
             }
-
-
-
           } catch (error) {
-            console.log(error)
+            console.log(error);
           }
-        })
-
-    }
-    else {
-
+        });
+    } else {
       fetch(database)
-        .then(data => data.json())
+        .then((data) => data.json())
         .then(function (result) {
           try {
             postContainer.innerHTML = "";
             for (const item of result) {
               postContainer.innerHTML += cardContentDynamic(item);
+              codeAddress(
+                item.companyAddress,
+                item.companyName,
+                item.companyEmail,
+                item.companyPhone,
+                item.companyWebsite
+              );
             }
-
-
           } catch (error) {
-            console.log(error)
+            console.log(error);
           }
-        })
+        });
     }
-
-  })
-
+  });
 
   // Geocoder za convert na adresi vo lat i lng
 
@@ -160,103 +144,103 @@ function initMap() {
     center: { lat: 41.6086, lng: 21.7452 },
     styles: [
       {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        featureType: "administrative",
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#444444"
-          }
-        ]
+            color: "#444444",
+          },
+        ],
       },
       {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
+        featureType: "landscape",
+        elementType: "all",
+        stylers: [
           {
-            "color": "#f2f2f2"
-          }
-        ]
+            color: "#f2f2f2",
+          },
+        ],
       },
       {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
+        featureType: "poi",
+        elementType: "all",
+        stylers: [
           {
-            "visibility": "off"
-          }
-        ]
+            visibility: "off",
+          },
+        ],
       },
       {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
+        featureType: "road",
+        elementType: "all",
+        stylers: [
           {
-            "saturation": -100
+            saturation: -100,
           },
           {
-            "lightness": 45
-          }
-        ]
+            lightness: 45,
+          },
+        ],
       },
       {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
+        featureType: "road.highway",
+        elementType: "all",
+        stylers: [
           {
-            "visibility": "simplified"
-          }
-        ]
+            visibility: "simplified",
+          },
+        ],
       },
       {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
+        featureType: "road.highway",
+        elementType: "geometry.fill",
+        stylers: [
           {
-            "color": "#f18900"
-          }
-        ]
+            color: "#f18900",
+          },
+        ],
       },
       {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
+        featureType: "road.arterial",
+        elementType: "labels.icon",
+        stylers: [
           {
-            "visibility": "off"
-          }
-        ]
+            visibility: "off",
+          },
+        ],
       },
       {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
+        featureType: "transit",
+        elementType: "all",
+        stylers: [
           {
-            "visibility": "off"
-          }
-        ]
+            visibility: "off",
+          },
+        ],
       },
       {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
+        featureType: "water",
+        elementType: "all",
+        stylers: [
           {
-            "color": "#46bcec"
+            color: "#46bcec",
           },
           {
-            "visibility": "on"
-          }
-        ]
+            visibility: "on",
+          },
+        ],
       },
       {
-        "featureType": "water",
-        "elementType": "geometry.fill",
-        "stylers": [
+        featureType: "water",
+        elementType: "geometry.fill",
+        stylers: [
           {
-            "color": "#3e738d"
-          }
-        ]
-      }
-    ]
-  }
+            color: "#3e738d",
+          },
+        ],
+      },
+    ],
+  };
 
   const map = new google.maps.Map(document.getElementById("map"), options);
 
@@ -266,7 +250,7 @@ function initMap() {
     const marker = new google.maps.Marker({
       position: props.coords,
       map: map,
-      icon: props.iconImage
+      icon: props.iconImage,
     });
 
     markers.push(marker);
@@ -294,17 +278,16 @@ function initMap() {
       markers = [];
     }
 
-
     reset.addEventListener("click", function () {
       postContainer.innerHTML = "";
       keywordInput.value = "";
       locationInput.value = "";
-      deleteMarkers()
-    })
+      deleteMarkers();
+    });
 
     search.addEventListener("click", function () {
-      deleteMarkers()
-    })
+      deleteMarkers();
+    });
     // Za marker clusters odkomentiri
 
     // const mcOptions = {
@@ -319,29 +302,29 @@ function initMap() {
     // Check for custonIcon
     if (props.iconImage) {
       marker.setIcon(props.iconImage);
-    };
+    }
     // Check Content
     if (props.content) {
       const infoWindow = new google.maps.InfoWindow({
-        content: props.content
+        content: props.content,
       });
-      marker.addListener('click', function () {
+      marker.addListener("click", function () {
         if (currentInfoWindow != null) {
           currentInfoWindow.close();
         }
         infoWindow.open(map, marker);
         currentInfoWindow = infoWindow;
       });
-    };
-  };
+    }
+  }
 
   // Funkcija za dinamicki stavanje pinpoint! mora da ima evtlistener
 
   var codeAddress = function (props, about, mailAdd, phoneNum, webSite) {
     let address = props;
 
-    geocoder.geocode({ 'address': address }, function (results, status) {
-      if (status === 'OK') {
+    geocoder.geocode({ address: address }, function (results, status) {
+      if (status === "OK") {
         map.setCenter(results[0].geometry.location);
         addMarker({
           coords: results[0].geometry.location,
@@ -361,14 +344,14 @@ function initMap() {
                     
                     <button class="ui teal basic button" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${about}')">Company Profile</button>
                     <button class="ui teal basic button" onClick="seeCompanyProfile('compProfile', '../profile-and-ad-pages/company-profile2.html', '${about}')">Show Listing</button>
-                    </div>`
-        })
+                    </div>`,
+        });
       } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
-        setTimeout(codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite), 100);
+        setTimeout(
+          codeAddress.bind(null, props, about, mailAdd, phoneNum, webSite),
+          100
+        );
       }
-    })
+    });
   };
-
-
-};
-
+}
