@@ -8,8 +8,7 @@ const uuid = require('uuid');
 
 const routes = require('./routes');
 
-const port = process.env.port || 80,
-    ip = '167.172.190.47';
+const port = process.env.port || 80;
 
 
 const staticRoute = path.join(__dirname, '/public'); 
@@ -22,6 +21,6 @@ app.use(bodyParser.json());
 
 app.use('/', routes);
 
-http.createServer(app).listen(port, ip, () => {
+http.createServer(app).listen(port, () => {
     console.log('Http server is running!');
 });
