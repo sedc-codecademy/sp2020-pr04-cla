@@ -33,7 +33,8 @@ Our first sketch - [Adobe XD Design](https://xd.adobe.com/view/e15d9083-bede-4a8
 
 ### ⚙ Project Name: Company Listing App
 
-### 🌐 Hosted [here](http://167.172.190.47/)
+### 🌐 Hosted [here](http://167.172.190.47/) 
+#### Demo Login : `example1@email.com` `77777`
 
 ### 🧙‍♂️ Web Development Mentor : Martin Panovski
 
